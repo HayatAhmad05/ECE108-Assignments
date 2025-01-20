@@ -24,7 +24,7 @@ Def Q1a1_to_Q1a2 := weaker
 Def Q1b1 := p → r
 Def Q1b2 := p ∧ q → r
 
-Def Q1b1_to_Q1b2 : weaker
+Def Q1b1_to_Q1b2 := weaker
 
 -- *Q1c:* compare Q1c1 and Q1c2
 Def Q1c1 := p → r
