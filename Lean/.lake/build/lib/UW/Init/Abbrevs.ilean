@@ -1,0 +1,1 @@
+{"version":3,"references":{"{\"c\":{\"n\":\"xorProp\",\"m\":\"UW.Init.Abbrevs\"}}":{"usages":[[5,20,5,27,"«_aux_UW_Init_Abbrevs___macroRules_term_⊕__1_1»",5,0,5,27,5,0,5,27]],"definition":[3,7,3,14]},"{\"c\":{\"n\":\"Lean.Parser.Category.term\",\"m\":\"Init.Notation\"}}":{"usages":[[0,12,0,16]],"definition":null}},"module":"UW.Init.Abbrevs"}

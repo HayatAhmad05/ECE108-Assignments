@@ -1,0 +1,12264 @@
+// Lean compiler output
+// Module: UW.Init.Syntax
+// Imports: Init
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+static lean_object* l_simpleJustification_____closed__3;
+LEAN_EXPORT lean_object* l_usingClause_quot;
+LEAN_EXPORT lean_object* l_logicObjCatTheorem;
+static lean_object* l_usingItem_quot___closed__5;
+static lean_object* l_inductRule_quot___closed__1;
+static lean_object* l_assertTarget_quot___closed__3;
+static lean_object* l_introRuleOrIntro___x2c_____closed__2;
+static lean_object* l_elimRuleName_quot___closed__2;
+static lean_object* l_elimRule_quot___closed__10;
+static lean_object* l_asmIdAsm_____closed__4;
+static lean_object* l_caseRuleCases_____closed__2;
+static lean_object* l_assertRule_quot___closed__4;
+static lean_object* l_contradictJustification_quot___closed__10;
+static lean_object* l_usingItem_quot___closed__1;
+static lean_object* l_usingItemLogic___closed__4;
+static lean_object* l_proofTree__By_______closed__2;
+static lean_object* l_logicObjCatLemma___closed__2;
+static lean_object* l_elimRuleNameAndElim___closed__3;
+static lean_object* l_asmNum_quot___closed__18;
+static lean_object* l_logicObj_quot___closed__6;
+static lean_object* l_assertTarget_quot___closed__9;
+LEAN_EXPORT lean_object* l_elimRuleNameNotElim;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__10;
+static lean_object* l_proofTree__By___x3b_x7b___x7d___closed__5;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__6;
+static lean_object* l_orIntroRuleName_quot___closed__8;
+static lean_object* l_proofTree__By___x7b___x7d___closed__4;
+static lean_object* l_assertRule_quot___closed__2;
+static lean_object* l_inductRuleInductStrongEdges___closed__4;
+static lean_object* l_logicObjCatDefinition___closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__2;
+LEAN_EXPORT lean_object* l_usingItemGoal;
+static lean_object* l_simpleJustification_quot___closed__5;
+static lean_object* l_simpleJustification____1___closed__1;
+static lean_object* l_usingItem____1___closed__3;
+LEAN_EXPORT lean_object* l_simpleJustificationArith;
+static lean_object* l_elimRuleNameIffElim___closed__2;
+static lean_object* l_contradictJustificationContradiction___x2c_____closed__2;
+static lean_object* l_proofTree__By___x7b___x7d___closed__9;
+static lean_object* l_elimRule_______closed__4;
+static lean_object* l_substRule_quot___closed__4;
+static lean_object* l_caseRuleCases_____closed__6;
+static lean_object* l_substRule____Into_____closed__8;
+static lean_object* l_termProof_____closed__5;
+LEAN_EXPORT lean_object* l_elimRuleNameForallElim;
+static lean_object* l_elimRuleNameAndElim___closed__4;
+static lean_object* l_introRule_quot___closed__3;
+static lean_object* l_elimRuleNameForallElim___closed__3;
+static lean_object* l_assertTarget_quot___closed__5;
+static lean_object* l_introRuleAndIntro___x2c_____closed__8;
+LEAN_EXPORT lean_object* l_simpleJustificationLogic;
+LEAN_EXPORT lean_object* l_targetGoal;
+static lean_object* l_proofTree__By___x7b___x7d___closed__2;
+static lean_object* l_asmAsm___x3a_____closed__1;
+LEAN_EXPORT lean_object* l_substNameSubstRev;
+static lean_object* l_elimRuleNameExistsElim___closed__3;
+static lean_object* l_target_____closed__2;
+LEAN_EXPORT lean_object* l_inductRuleInductNat;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__4;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__5;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_proofRule;
+LEAN_EXPORT lean_object* l_usingItem__;
+static lean_object* l_asmNum_quot___closed__17;
+static lean_object* l_substRule____Into__By_____closed__4;
+static lean_object* l_caseRuleCases_____closed__3;
+static lean_object* l_substNameSubstRev___closed__3;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_asm;
+static lean_object* l_inductRuleInductSet___closed__3;
+static lean_object* l_simpleJustification_quot___closed__3;
+static lean_object* l_elimRuleNameForallElim___closed__2;
+LEAN_EXPORT lean_object* l_simpleJustification__;
+static lean_object* l_logicObjCat_quot___closed__5;
+static lean_object* l_asmAsm___x3a_____closed__5;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_justification;
+LEAN_EXPORT lean_object* l_usingItem____1;
+static lean_object* l_elimRule_________closed__3;
+static lean_object* l_target_quot___closed__2;
+static lean_object* l_substNameSubstRev___closed__5;
+static lean_object* l_substRule____Into__By_____closed__6;
+static lean_object* l_asmNum_quot___closed__5;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_caseRule;
+LEAN_EXPORT lean_object* l_assertTarget__;
+LEAN_EXPORT lean_object* l_logicObjCat_quot;
+static lean_object* l_simpleJustification_quot___closed__7;
+static lean_object* l_asmNum_quot___closed__19;
+LEAN_EXPORT lean_object* l_elimRuleNameExistsElim;
+static lean_object* l_target_quot___closed__6;
+static lean_object* l_elimRuleName_quot___closed__1;
+static lean_object* l_termAsmNumToString_____closed__6;
+static lean_object* l_introRuleAndIntro___x2c_____closed__6;
+static lean_object* l_proofRule____4___closed__3;
+static lean_object* l_asmId_quot___closed__3;
+static lean_object* l_simpleJustification_____closed__2;
+static lean_object* l_asmNum_quot___closed__11;
+static lean_object* l_substRule____Into_____closed__5;
+static lean_object* l_proofTree__By___x3b_x7b___x7d___closed__4;
+static lean_object* l_substRule____Into_____closed__7;
+static lean_object* l_usingClauseUsing_____closed__3;
+static lean_object* l_usingClauseUsing_____closed__7;
+static lean_object* l_inductRuleInductStrongSet___closed__2;
+LEAN_EXPORT lean_object* l_elimRule_quot;
+static lean_object* l_proofRule_quot___closed__3;
+static lean_object* l_elimRuleNameIffElimRev___closed__1;
+static lean_object* l_asm_quot___closed__1;
+static lean_object* l_substRule____Into_____closed__3;
+static lean_object* l_proofRule_quot___closed__5;
+LEAN_EXPORT lean_object* l_proofRule____5;
+LEAN_EXPORT lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d__;
+LEAN_EXPORT lean_object* l_asmAsm___x3aVar_x28___x3a___x29;
+LEAN_EXPORT lean_object* l_asmNum_quot;
+static lean_object* l_substName_quot___closed__7;
+static lean_object* l_substRule_quot___closed__9;
+static lean_object* l_elimRuleNameImplElimRev___closed__5;
+static lean_object* l_targetGoal___closed__5;
+static lean_object* l_elimRuleName_quot___closed__9;
+static lean_object* l_targetGoal___closed__4;
+LEAN_EXPORT lean_object* l_justification____1;
+static lean_object* l_assertRule_quot___closed__9;
+static lean_object* l_sequent___u22a2_____closed__10;
+static lean_object* l_assertRuleAssert__By_____closed__6;
+static lean_object* l_termAsmNumToString_____closed__4;
+static lean_object* l_introRuleOrIntro___x2c_____closed__1;
+static lean_object* l_asmId_quot___closed__1;
+static lean_object* l_inductRuleInductStrongSet___closed__1;
+static lean_object* l_proofRule_quot___closed__7;
+static lean_object* l_contradictJustification_quot___closed__9;
+LEAN_EXPORT lean_object* l_elimRuleNameAndElim;
+static lean_object* l_elimRuleNameNotElim___closed__3;
+static lean_object* l_substRule____Into__By_____closed__5;
+static lean_object* l_proofRule____5___closed__3;
+static lean_object* l_substRule____Into_____closed__4;
+static lean_object* l_asmNum_quot___closed__10;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_logicObj;
+static lean_object* l_proofTree_quot___closed__4;
+static lean_object* l_assertRuleAssert__By_____closed__3;
+static lean_object* l_simpleJustificationArith___closed__2;
+static lean_object* l_contradictJustificationContradiction___x2c_____closed__6;
+static lean_object* l_elimRuleNameNotElim___closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__6;
+LEAN_EXPORT lean_object* l_justification_quot;
+static lean_object* l_substName_quot___closed__2;
+static lean_object* l_asmIdAsm_____closed__3;
+LEAN_EXPORT lean_object* l_sequent___u22a2__;
+static lean_object* l_justification_____closed__1;
+static lean_object* l_sequent___u22a2_____closed__1;
+static lean_object* l_proofRule____2___closed__1;
+static lean_object* l_orIntroRuleNameOrIntroLeft___closed__1;
+static lean_object* l_elimRule_quot___closed__4;
+static lean_object* l_contradictJustificationContradiction___x2c_____closed__5;
+static lean_object* l_usingClause_quot___closed__6;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_usingItem;
+static lean_object* l_logicObjCatTheorem___closed__4;
+static lean_object* l_target_quot___closed__9;
+static lean_object* l_simpleJustification_quot___closed__10;
+static lean_object* l_substSrc____1___closed__1;
+static lean_object* l_proofTree__By___x7b___x7d___closed__5;
+static lean_object* l_subproofTree_quot___closed__6;
+static lean_object* l_contradictJustification_quot___closed__1;
+static lean_object* l_substSrc_____closed__1;
+static lean_object* l_asmNum___x2f_____closed__4;
+static lean_object* l_assertRule_quot___closed__7;
+LEAN_EXPORT lean_object* l_proofTree__By___x3b_x7b___x7d;
+static lean_object* l_inductRuleInductStrongPos___closed__5;
+static lean_object* l_contradictJustificationContradiction_____closed__4;
+LEAN_EXPORT lean_object* l_substRule____Into____;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_elimRule;
+static lean_object* l_contradictJustification_quot___closed__3;
+static lean_object* l_caseRule_quot___closed__7;
+static lean_object* l_asmIdAsm_____closed__6;
+static lean_object* l_introRule_quot___closed__5;
+static lean_object* l_orIntroRuleName_quot___closed__7;
+static lean_object* l_termProof_____closed__3;
+static lean_object* l_justification_____closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__18;
+static lean_object* l_inductRuleInductStrongEdges___closed__5;
+static lean_object* l_substRule____Into__By_____closed__8;
+static lean_object* l_inductRule_quot___closed__2;
+static lean_object* l_proofTree__QED_____closed__5;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__7;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__7;
+static lean_object* l_elimRule_quot___closed__7;
+lean_object* l_Lean_Syntax_node5(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_substSrc_quot;
+static lean_object* l_simpleJustificationLogic___closed__1;
+static lean_object* l_logicObj_quot___closed__5;
+uint8_t l_Lean_Syntax_isOfKind(lean_object*, lean_object*);
+static lean_object* l_substSrc_quot___closed__8;
+static lean_object* l_elimRuleNameOrElimLeft___closed__5;
+static lean_object* l_asmAsm___x3a_____closed__7;
+static lean_object* l_asmNum_quot___closed__2;
+static lean_object* l_contradictJustification_quot___closed__2;
+static lean_object* l_asmNum___x2f_____closed__1;
+static lean_object* l_elimRuleNameOrElimRight___closed__3;
+LEAN_EXPORT lean_object* l_justification____;
+static lean_object* l_introRuleOrIntro___x2c_____closed__8;
+static lean_object* l_target____1___closed__2;
+static lean_object* l_inductRuleInductStrongNat___closed__5;
+LEAN_EXPORT lean_object* l_logicObjCatDefinition;
+static lean_object* l_justification_quot___closed__1;
+static lean_object* l_introRuleOrIntro___x2c_____closed__3;
+static lean_object* l_assertRule_quot___closed__8;
+LEAN_EXPORT lean_object* l_substNameSubst;
+LEAN_EXPORT lean_object* l_contradictJustificationContradiction___x2c__;
+static lean_object* l_asmAsm___x3a_____closed__4;
+LEAN_EXPORT lean_object* l_proofTree__QED__;
+static lean_object* l_orIntroRuleNameOrIntroRight___closed__1;
+LEAN_EXPORT lean_object* l_introRuleOrIntro___x2c__;
+static lean_object* l_asmNum_quot___closed__1;
+static lean_object* l_inductRuleInductStrongNat___closed__2;
+static lean_object* l_asmNum_quot___closed__3;
+static lean_object* l_orIntroRuleName_quot___closed__10;
+static lean_object* l_orIntroRuleNameOrIntroRight___closed__2;
+static lean_object* l_logicObj_____closed__3;
+static lean_object* l_logicObj_quot___closed__2;
+static lean_object* l_substNameSubst___closed__5;
+static lean_object* l_logicObjCatLemma___closed__3;
+static lean_object* l_elimRule_______closed__1;
+LEAN_EXPORT lean_object* l_inductRuleInductStrongEdges;
+static lean_object* l_elimRuleNameOrElimRight___closed__2;
+static lean_object* l_usingClauseUsing_____closed__9;
+static lean_object* l_proofTree__QED_____closed__4;
+static lean_object* l_substName_quot___closed__5;
+static lean_object* l_proofRule_____closed__2;
+static lean_object* l_asmIdAsm_____closed__2;
+LEAN_EXPORT lean_object* l_assertRuleAssert__;
+static lean_object* l_elimRuleNameImplElimRev___closed__4;
+static lean_object* l_sequent_quot___closed__5;
+static lean_object* l_elimRuleNameIffElimRev___closed__4;
+LEAN_EXPORT lean_object* l_proofRule____1;
+static lean_object* l_termAsmNumToString_____closed__2;
+static lean_object* l_termProof_____closed__4;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__9;
+static lean_object* l_sequent___u22a2_____closed__2;
+LEAN_EXPORT lean_object* l_termProof__;
+static lean_object* l_simpleJustification_quot___closed__9;
+static lean_object* l_usingItem_quot___closed__6;
+static lean_object* l_inductRuleInductNat___closed__2;
+static lean_object* l_target_____closed__3;
+static lean_object* l_usingItemGoal___closed__2;
+static lean_object* l_introRule_________closed__2;
+static lean_object* l_usingItem_____closed__3;
+static lean_object* l_substRule____Into__By_____closed__7;
+static lean_object* l_orIntroRuleNameOrIntroLeft___closed__5;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_introRule;
+static lean_object* l_substRule____Into_____closed__9;
+LEAN_EXPORT lean_object* l_usingItem_quot;
+static lean_object* l_proofRule____4___closed__2;
+static lean_object* l_introRule_quot___closed__8;
+static lean_object* l_logicObjCatAxiom___closed__4;
+static lean_object* l_proofTree__QED_____closed__1;
+LEAN_EXPORT lean_object* l_introRuleAndIntro___x2c__;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_assertTarget;
+static lean_object* l_logicObjCat_quot___closed__9;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__12;
+LEAN_EXPORT lean_object* l_inductRuleInductStrongSet;
+static lean_object* l_assertRuleAssert_____closed__2;
+static lean_object* l_asmAsm___x3a_____closed__10;
+static lean_object* l_inductRuleInductStrongSet___closed__4;
+static lean_object* l_simpleJustification_quot___closed__6;
+static lean_object* l_sequent_quot___closed__9;
+static lean_object* l_asmNum_quot___closed__13;
+static lean_object* l_elimRuleNameOrElimRight___closed__1;
+static lean_object* l_usingItemGoal___closed__3;
+static lean_object* l_elimRuleNameImplElimRev___closed__3;
+static lean_object* l_logicObjCatLemma___closed__4;
+static lean_object* l_justification_______closed__3;
+static lean_object* l_substNameSubst___closed__3;
+static lean_object* l_asm_quot___closed__3;
+static lean_object* l_logicObj_quot___closed__3;
+static lean_object* l_assertTarget_quot___closed__1;
+LEAN_EXPORT lean_object* l_termAsmNumToString__;
+LEAN_EXPORT lean_object* l_elimRuleNameImplElim;
+LEAN_EXPORT lean_object* l_target____1;
+static lean_object* l_usingItemArith___closed__2;
+static lean_object* l_orIntroRuleName_quot___closed__5;
+static lean_object* l_proofTree__QED_____closed__7;
+static lean_object* l_assertRuleAssert__By_____closed__5;
+static lean_object* l_substName_quot___closed__4;
+LEAN_EXPORT lean_object* l_assertTarget_quot;
+static lean_object* l_elimRuleNameIffElim___closed__3;
+static lean_object* l_inductRuleInductList___closed__5;
+static lean_object* l_inductRuleInductList___closed__2;
+static lean_object* l_justification_____closed__3;
+static lean_object* l_substSrc_quot___closed__6;
+static lean_object* l_introRuleOrIntro___x2c_____closed__7;
+LEAN_EXPORT lean_object* l_substName_quot;
+static lean_object* l_orIntroRuleName_quot___closed__1;
+static lean_object* l_caseRule_quot___closed__1;
+static lean_object* l_elimRuleName_quot___closed__3;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__8;
+static lean_object* l_usingClause_quot___closed__1;
+static lean_object* l_elimRuleNameIffElim___closed__1;
+static lean_object* l_logicObjCatLemma___closed__1;
+static lean_object* l_proofTree__By___x3b_x7b___x7d___closed__3;
+static lean_object* l_substSrc____1___closed__2;
+LEAN_EXPORT lean_object* l_caseRuleCases__;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_substSrc;
+static lean_object* l_proofTree__By___x7b___x7d___closed__1;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__13;
+static lean_object* l_elimRuleNameExistsElim___closed__4;
+static lean_object* l_substRule____Into_____closed__6;
+static lean_object* l_orIntroRuleNameOrIntroRight___closed__5;
+static lean_object* l_target____1___closed__3;
+static lean_object* l_elimRuleNameForallElim___closed__4;
+static lean_object* l_elimRuleNameAndElim___closed__5;
+LEAN_EXPORT lean_object* l_elimRule______;
+LEAN_EXPORT lean_object* l_contradictJustificationContradiction__;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_proofTree;
+static lean_object* l_targetGoal___closed__1;
+static lean_object* l_proofRule____4___closed__1;
+static lean_object* l_usingItemArith___closed__3;
+static lean_object* l_assertTarget_quot___closed__8;
+static lean_object* l_elimRuleName_quot___closed__8;
+LEAN_EXPORT lean_object* l_elimRuleNameOrElimRight;
+static lean_object* l_substRule_quot___closed__3;
+static lean_object* l_elimRuleNameImplElim___closed__2;
+static lean_object* l_logicObjCat_quot___closed__1;
+static lean_object* l_justificationArithUsing_____closed__4;
+static lean_object* l_justificationArithUsing_____closed__2;
+static lean_object* l_usingClauseUsing_____closed__6;
+static lean_object* l_subproofTreeSubproof___x3a_______closed__3;
+static lean_object* l_sequent___u22a2_____closed__9;
+static lean_object* l_target_quot___closed__5;
+static lean_object* l_asmId_quot___closed__6;
+static lean_object* l_logicObjCatAxiom___closed__1;
+LEAN_EXPORT lean_object* l_justification__;
+static lean_object* l_inductRule_quot___closed__10;
+lean_object* l_Lean_SourceInfo_fromRef(lean_object*, uint8_t);
+static lean_object* l_elimRuleNameNotElim___closed__4;
+static lean_object* l_subproofTreeSubproof___x3a_______closed__1;
+static lean_object* l_asmAsm___x3a_____closed__3;
+static lean_object* l_asmId_quot___closed__2;
+static lean_object* l_inductRuleInductStrongEdges___closed__1;
+static lean_object* l_inductRuleInductList___closed__3;
+LEAN_EXPORT lean_object* l_assertRule_quot;
+static lean_object* l_substRule_quot___closed__10;
+static lean_object* l_inductRuleInductStrongPos___closed__1;
+static lean_object* l_usingItemLogic___closed__5;
+static lean_object* l_elimRule_quot___closed__9;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__3;
+static lean_object* l_substNameSubstRev___closed__2;
+static lean_object* l_assertRuleAssert__By_____closed__4;
+static lean_object* l_inductRuleInductNat___closed__3;
+static lean_object* l_usingItem____1___closed__2;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_logicObjCat;
+static lean_object* l_proofRule____5___closed__2;
+static lean_object* l_inductRuleInductNat___closed__1;
+static lean_object* l_inductRule_quot___closed__7;
+LEAN_EXPORT lean_object* l_inductRuleInductStrongList;
+static lean_object* l_substRule____Into_______closed__3;
+static lean_object* l_caseRule_quot___closed__4;
+static lean_object* l_assertTarget_quot___closed__2;
+static lean_object* l_asm_quot___closed__4;
+static lean_object* l_orIntroRuleName_quot___closed__3;
+static lean_object* l_orIntroRuleNameOrIntroLeft___closed__4;
+static lean_object* l_proofRule____1___closed__1;
+static lean_object* l_introRule_quot___closed__10;
+static lean_object* l_substRule_quot___closed__1;
+static lean_object* l_asmNum_____closed__4;
+static lean_object* l_contradictJustificationContradiction___x2c_____closed__4;
+static lean_object* l_subproofTreeSubproof___x3a_______closed__6;
+static lean_object* l_termProof_____closed__1;
+static lean_object* l_elimRuleNameIffElim___closed__5;
+static lean_object* l_subproofTreeSubproof___x3a_______closed__2;
+static lean_object* l_usingItem_quot___closed__9;
+static lean_object* l_elimRuleName_quot___closed__5;
+LEAN_EXPORT lean_object* l_elimRuleNameImplElimRev;
+LEAN_EXPORT lean_object* l_inductRuleInductStrongPos;
+static lean_object* l_asmNum_quot___closed__4;
+static lean_object* l_assertTarget_____closed__1;
+static lean_object* l_elimRule_quot___closed__2;
+static lean_object* l_substRule_quot___closed__7;
+LEAN_EXPORT lean_object* l_introRule______;
+static lean_object* l_elimRuleNameExistsElim___closed__2;
+static lean_object* l_introRuleAndIntro___x2c_____closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__2;
+static lean_object* l_inductRuleInductSet___closed__4;
+static lean_object* l_substName_quot___closed__6;
+static lean_object* l_subproofTree_quot___closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__17;
+static lean_object* l_usingItem_____closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__11;
+static lean_object* l_assertTarget_quot___closed__10;
+static lean_object* l_proofTree__By___x7b___x7d___closed__3;
+static lean_object* l_substSrc_quot___closed__4;
+static lean_object* l_elimRuleNameExistsElim___closed__1;
+static lean_object* l_substName_quot___closed__3;
+static lean_object* l_proofRule____1___closed__2;
+LEAN_EXPORT lean_object* l_substRule_quot;
+static lean_object* l_logicObjCatTheorem___closed__2;
+static lean_object* l_introRuleOrIntro___x2c_____closed__4;
+static lean_object* l_inductRuleInductStrongVertices___closed__5;
+LEAN_EXPORT lean_object* l_elimRuleName_quot;
+static lean_object* l_substRule____Into_____closed__2;
+static lean_object* l_introRule_________closed__4;
+static lean_object* l_sequent___u22a2_____closed__5;
+static lean_object* l_justificationLogicUsing_____closed__1;
+static lean_object* l_elimRule_quot___closed__8;
+static lean_object* l_contradictJustificationContradiction_____closed__1;
+static lean_object* l_justificationLogicUsing_____closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__14;
+static lean_object* l_usingClause_quot___closed__4;
+static lean_object* l_substRule_quot___closed__5;
+static lean_object* l_target_quot___closed__1;
+static lean_object* l_asm_quot___closed__6;
+static lean_object* l_usingItemArith___closed__5;
+static lean_object* l_substSrc_quot___closed__1;
+static lean_object* l_substNameSubstRev___closed__1;
+static lean_object* l_usingItem_quot___closed__8;
+static lean_object* l_usingItem_quot___closed__3;
+static lean_object* l_sequent_quot___closed__10;
+static lean_object* l_asmId_quot___closed__7;
+static lean_object* l_inductRuleInductList___closed__1;
+lean_object* l_Lean_Syntax_node3(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+static lean_object* l_introRuleOrIntro___x2c_____closed__5;
+static lean_object* l_asmNum_quot___closed__9;
+static lean_object* l_simpleJustification____1___closed__2;
+static lean_object* l_substNameSubst___closed__4;
+static lean_object* l_subproofTree_quot___closed__4;
+LEAN_EXPORT lean_object* l_asmId_quot;
+static lean_object* l_orIntroRuleNameOrIntroRight___closed__3;
+LEAN_EXPORT lean_object* l_sequent_quot;
+static lean_object* l_assertRuleAssert_____closed__1;
+static lean_object* l_proofRule____5___closed__1;
+static lean_object* l_asmAsm___x3a_____closed__6;
+LEAN_EXPORT lean_object* l_logicObjCatAxiom;
+static lean_object* l_substSrc_quot___closed__7;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__4;
+static lean_object* l_inductRuleInductNat___closed__5;
+static lean_object* l_proofRule_quot___closed__6;
+static lean_object* l_justificationLogicUsing_____closed__3;
+static lean_object* l_termAsmNumToString_____closed__1;
+static lean_object* l_caseRule_quot___closed__2;
+static lean_object* l_usingClause_quot___closed__2;
+static lean_object* l_proofTree__By___x7b___x7d___closed__7;
+static lean_object* l_asmNum_quot___closed__6;
+static lean_object* l_substRule_quot___closed__8;
+static lean_object* l_elimRuleNameOrElimLeft___closed__2;
+static lean_object* l_inductRuleInductPos___closed__1;
+static lean_object* l_proofTree__By_______closed__4;
+static lean_object* l_usingClause_quot___closed__10;
+static lean_object* l_logicObjCatAxiom___closed__3;
+LEAN_EXPORT lean_object* l_introRule_quot;
+static lean_object* l_logicObjCatDefinition___closed__1;
+static lean_object* l_justification_quot___closed__3;
+static lean_object* l_substRule____Into__By_____closed__2;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_asmId;
+static lean_object* l_elimRuleNameOrElim___closed__3;
+static lean_object* l_elimRuleNameIffElimRev___closed__5;
+LEAN_EXPORT lean_object* l_substSrc__;
+static lean_object* l_logicObjCatTheorem___closed__5;
+static lean_object* l_justification_quot___closed__8;
+static lean_object* l_proofTree__By_______closed__6;
+static lean_object* l_justificationLogicUsing_____closed__5;
+static lean_object* l_inductRuleInductStrongNat___closed__3;
+static lean_object* l_inductRuleInductStrongList___closed__4;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__10;
+static lean_object* l_asmNum_____closed__6;
+static lean_object* l_orIntroRuleNameOrIntroLeft___closed__3;
+static lean_object* l_elimRuleNameOrElim___closed__5;
+static lean_object* l_substRule____Into__By_____closed__3;
+static lean_object* l_elimRuleNameNotElim___closed__1;
+static lean_object* l_justification_quot___closed__2;
+static lean_object* l_substRule____Into_______closed__2;
+static lean_object* l_asmNum___x2f_____closed__2;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__9;
+static lean_object* l_inductRuleInductSet___closed__5;
+static lean_object* l_justification____2___closed__4;
+lean_object* l_Lean_Name_str___override(lean_object*, lean_object*);
+static lean_object* l_elimRuleNameOrElim___closed__1;
+static lean_object* l_subproofTreeSubproof___x3a_______closed__7;
+static lean_object* l_proofRule_quot___closed__1;
+static lean_object* l_sequent___u22a2_____closed__3;
+static lean_object* l_usingClause_quot___closed__3;
+static lean_object* l_proofTree__By___x3b_x7b___x7d___closed__9;
+static lean_object* l_sequent_____closed__1;
+static lean_object* l_elimRuleNameOrElim___closed__2;
+lean_object* l_Lean_Syntax_node2(lean_object*, lean_object*, lean_object*, lean_object*);
+static lean_object* l_elimRuleNameElims___closed__5;
+static lean_object* l_sequent_quot___closed__1;
+static lean_object* l_target_quot___closed__8;
+static lean_object* l_elimRuleNameOrElimRight___closed__4;
+LEAN_EXPORT lean_object* l_assertTarget____1;
+LEAN_EXPORT lean_object* l_usingItemArith;
+static lean_object* l_logicObj_quot___closed__7;
+static lean_object* l_proofTree__QED_____closed__2;
+static lean_object* l_justification____2___closed__3;
+static lean_object* l_sequent___u22a2_____closed__4;
+LEAN_EXPORT lean_object* l_substRule____Into__By__;
+lean_object* l_Lean_Syntax_getArg(lean_object*, lean_object*);
+static lean_object* l_substNameSubst___closed__2;
+static lean_object* l_assertTarget____1___closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__8;
+static lean_object* l_substName_quot___closed__10;
+static lean_object* l_logicObjCatDefinition___closed__5;
+LEAN_EXPORT lean_object* l_asm_quot;
+static lean_object* l_orIntroRuleName_quot___closed__4;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__15;
+static lean_object* l_usingItem____1___closed__1;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_subproofTree;
+static lean_object* l_elimRule_quot___closed__6;
+static lean_object* l_subproofTree_quot___closed__10;
+static lean_object* l_asmNum_____closed__3;
+static lean_object* l_elimRule_quot___closed__5;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_substName;
+static lean_object* l_asmAsm___x3a_____closed__9;
+static lean_object* l_inductRule_quot___closed__4;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__6;
+static lean_object* l_proofTree__By___x3b_x7b___x7d___closed__2;
+static lean_object* l_proofTree__By___x7b___x7d___closed__11;
+static lean_object* l_assertTarget_____closed__3;
+static lean_object* l_substRule____Into_______closed__4;
+static lean_object* l_assertTargetGoal___closed__2;
+static lean_object* l_proofRule_____closed__3;
+static lean_object* l_assertTarget_____closed__2;
+static lean_object* l_simpleJustification_____closed__1;
+static lean_object* l_elimRule_quot___closed__3;
+static lean_object* l_elimRuleNameNotElim___closed__5;
+static lean_object* l_logicObjCat_quot___closed__3;
+static lean_object* l_asm_quot___closed__2;
+static lean_object* l_justification_______closed__1;
+static lean_object* l_introRuleAndIntro___x2c_____closed__4;
+LEAN_EXPORT lean_object* l_elimRuleNameOrElim;
+static lean_object* l_inductRule_quot___closed__8;
+static lean_object* l_assertRuleAssert_____closed__4;
+static lean_object* l_assertRuleAssert_____closed__6;
+static lean_object* l_elimRule_________closed__2;
+static lean_object* l_proofRule____1___closed__3;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_sequent;
+static lean_object* l_proofRule____3___closed__3;
+static lean_object* l_inductRuleInductStrongVertices___closed__1;
+static lean_object* l_elimRuleNameIffElimRev___closed__2;
+static lean_object* l_subproofTree_quot___closed__1;
+static lean_object* l_inductRuleInductStrongPos___closed__4;
+static lean_object* l_inductRuleInductStrongSet___closed__3;
+static lean_object* l_substSrc_____closed__3;
+static lean_object* l_contradictJustificationContradiction_____closed__6;
+static lean_object* l_caseRuleCases_____closed__8;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__11;
+LEAN_EXPORT lean_object* l_proofRule__;
+static lean_object* l_logicObjCat_quot___closed__8;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_elimRuleName;
+static lean_object* l_asmAsm___x3a_____closed__8;
+static lean_object* l_target_quot___closed__4;
+static lean_object* l_proofTree_quot___closed__6;
+LEAN_EXPORT lean_object* l_orIntroRuleNameOrIntroRight;
+LEAN_EXPORT lean_object* l_inductRule_quot;
+static lean_object* l_justification_quot___closed__5;
+static lean_object* l_logicObjCatDefinition___closed__3;
+LEAN_EXPORT lean_object* l_asmAsm___x3a__;
+LEAN_EXPORT lean_object* l_logicObj__;
+static lean_object* l_asmIdAsm_____closed__1;
+static lean_object* l_sequent___u22a2_____closed__7;
+static lean_object* l_assertRule_quot___closed__3;
+static lean_object* l_termProof_____closed__6;
+LEAN_EXPORT lean_object* l_orIntroRuleNameOrIntroLeft;
+static lean_object* l_usingItemArith___closed__4;
+LEAN_EXPORT lean_object* l_sequent__;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__10;
+static lean_object* l_caseRule_quot___closed__8;
+static lean_object* l_usingClauseUsing_____closed__2;
+static lean_object* l_elimRule_________closed__1;
+static lean_object* l_inductRule_quot___closed__6;
+static lean_object* l_proofTree__By___x3b_x7b___x7d___closed__8;
+static lean_object* l_usingClauseUsing_____closed__5;
+LEAN_EXPORT lean_object* l_elimRuleNameElims;
+static lean_object* l_introRuleAndIntro___x2c_____closed__7;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__16;
+static lean_object* l_assertTargetGoal___closed__1;
+static lean_object* l_justification_______closed__4;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_target;
+LEAN_EXPORT lean_object* l_proofRule____4;
+static lean_object* l_proofTree__By___x3b_x7b___x7d___closed__7;
+static lean_object* l_orIntroRuleName_quot___closed__9;
+static lean_object* l_elimRuleName_quot___closed__6;
+static lean_object* l_simpleJustificationArith___closed__1;
+static lean_object* l_substSrc_quot___closed__2;
+LEAN_EXPORT lean_object* l_contradictJustification_quot;
+static lean_object* l_usingItem_quot___closed__7;
+static lean_object* l_usingClause_quot___closed__5;
+static lean_object* l_subproofTreeSubproof___x3a_______closed__5;
+static lean_object* l_proofTree_quot___closed__8;
+static lean_object* l_orIntroRuleNameOrIntroLeft___closed__2;
+static lean_object* l_elimRuleNameElims___closed__4;
+LEAN_EXPORT lean_object* l_target_quot;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_orIntroRuleName;
+static lean_object* l_usingClause_quot___closed__8;
+static lean_object* l_usingItemLogic___closed__3;
+static lean_object* l_proofRule_____closed__1;
+static lean_object* l_asmNum_____closed__2;
+static lean_object* l_target_quot___closed__3;
+LEAN_EXPORT lean_object* l_logicObj_quot;
+static lean_object* l_substRule_quot___closed__2;
+static lean_object* l_elimRuleNameImplElim___closed__1;
+static lean_object* l_elimRuleName_quot___closed__4;
+static lean_object* l_sequent_____closed__3;
+static lean_object* l_elimRuleNameAndElim___closed__1;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_inductRule;
+static lean_object* l_substSrc____1___closed__3;
+static lean_object* l_orIntroRuleNameOrIntroRight___closed__4;
+LEAN_EXPORT lean_object* l_justificationArithUsing__;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_asmNum;
+LEAN_EXPORT lean_object* l_inductRuleInductStrongNat;
+static lean_object* l_simpleJustificationArith___closed__3;
+static lean_object* l_introRule_quot___closed__6;
+static lean_object* l_targetGoal___closed__3;
+LEAN_EXPORT lean_object* l_justificationLogicUsing__;
+LEAN_EXPORT lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1(lean_object*, lean_object*, lean_object*);
+static lean_object* l_justification____1___closed__2;
+LEAN_EXPORT lean_object* l_subproofTreeSubproof___x3a____;
+static lean_object* l_usingItem_quot___closed__10;
+static lean_object* l_sequent_quot___closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__9;
+static lean_object* l_asmNum___x2f_____closed__6;
+static lean_object* l_inductRule_quot___closed__3;
+static lean_object* l_logicObj_quot___closed__9;
+LEAN_EXPORT lean_object* l_proofTree_quot;
+static lean_object* l_logicObjCatAxiom___closed__2;
+static lean_object* l_caseRule_quot___closed__10;
+static lean_object* l_introRuleAndIntro___x2c_____closed__3;
+static lean_object* l_proofRule____2___closed__3;
+LEAN_EXPORT lean_object* l_elimRuleNameOrElimLeft;
+static lean_object* l_proofRule_quot___closed__10;
+static lean_object* l_usingClause_quot___closed__9;
+static lean_object* l_elimRuleName_quot___closed__10;
+static lean_object* l_inductRuleInductStrongEdges___closed__3;
+static lean_object* l_assertRule_quot___closed__1;
+static lean_object* l_elimRule_______closed__3;
+static lean_object* l_simpleJustification_quot___closed__8;
+LEAN_EXPORT lean_object* l_substRule____Into__;
+static lean_object* l_proofTree_quot___closed__5;
+static lean_object* l_logicObjCat_quot___closed__4;
+LEAN_EXPORT lean_object* l_substSrc____1;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__2;
+static lean_object* l_justification_______closed__2;
+static lean_object* l_usingClauseUsing_____closed__8;
+static lean_object* l_termAsmNumToString_____closed__3;
+static lean_object* l_subproofTree_quot___closed__7;
+static lean_object* l_substRule____Into_______closed__5;
+static lean_object* l_elimRuleNameImplElim___closed__5;
+static lean_object* l_contradictJustificationContradiction_____closed__3;
+static lean_object* l_caseRule_quot___closed__6;
+static lean_object* l_justification_quot___closed__7;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_contradictJustification;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_substRule;
+LEAN_EXPORT lean_object* l_proofTree__By____;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__7;
+LEAN_EXPORT lean_object* l_elimRuleNameIffElim;
+static lean_object* l_target_____closed__1;
+static lean_object* l_elimRuleNameOrElimRight___closed__5;
+lean_object* l_Lean_Name_mkStr2(lean_object*, lean_object*);
+static lean_object* l_inductRuleInductStrongPos___closed__3;
+static lean_object* l_asmNum___x2f_____closed__3;
+LEAN_EXPORT lean_object* l_assertTargetGoal;
+static lean_object* l_inductRuleInductSet___closed__1;
+LEAN_EXPORT lean_object* l_subproofTree_quot;
+static lean_object* l_simpleJustification_quot___closed__1;
+static lean_object* l_asmNum_quot___closed__8;
+lean_object* l_Lean_Syntax_node1(lean_object*, lean_object*, lean_object*);
+static lean_object* l_subproofTree_quot___closed__9;
+static lean_object* l_introRule_quot___closed__2;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_usingClause;
+static lean_object* l_contradictJustificationContradiction_____closed__2;
+static lean_object* l_sequent___u22a2_____closed__6;
+static lean_object* l_logicObjCat_quot___closed__7;
+LEAN_EXPORT lean_object* l_usingClauseUsing__;
+static lean_object* l_substRule____Into__By_____closed__1;
+static lean_object* l_elimRule_______closed__2;
+static lean_object* l_assertRuleAssert__By_____closed__7;
+static lean_object* l_usingItem_____closed__1;
+static lean_object* l_logicObjCat_quot___closed__10;
+static lean_object* l_termProof_____closed__2;
+static lean_object* l_contradictJustification_quot___closed__6;
+static lean_object* l_substSrc_____closed__2;
+static lean_object* l_inductRule_quot___closed__9;
+static lean_object* l_substSrc_quot___closed__5;
+static lean_object* l_elimRuleNameElims___closed__2;
+static lean_object* l_substRule____Into_____closed__1;
+static lean_object* l_elimRuleNameElims___closed__1;
+static lean_object* l_elimRuleName_quot___closed__7;
+static lean_object* l_substSrc_quot___closed__9;
+static lean_object* l_caseRule_quot___closed__9;
+static lean_object* l_asm_quot___closed__7;
+static lean_object* l_proofTree__QED_____closed__3;
+static lean_object* l_sequent___u22a2_____closed__8;
+static lean_object* l_justification_quot___closed__10;
+static lean_object* l_sequent_quot___closed__6;
+static lean_object* l_asm_quot___closed__8;
+LEAN_EXPORT lean_object* l_justification____2;
+static lean_object* l_justification_quot___closed__9;
+static lean_object* l_proofRule_quot___closed__2;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__1;
+static lean_object* l_substRule____Into_______closed__1;
+static lean_object* l_inductRuleInductList___closed__4;
+static lean_object* l_elimRuleNameElims___closed__3;
+LEAN_EXPORT lean_object* l_assertRuleAssert__By__;
+static lean_object* l_asmId_quot___closed__4;
+static lean_object* l_contradictJustificationContradiction_____closed__5;
+static lean_object* l_substName_quot___closed__1;
+LEAN_EXPORT lean_object* l_inductRuleInductPos;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__3;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__3;
+static lean_object* l_subproofTree_quot___closed__8;
+static lean_object* l_inductRuleInductStrongNat___closed__4;
+static lean_object* l_logicObjCatTheorem___closed__3;
+static lean_object* l_simpleJustification____1___closed__3;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__5;
+static lean_object* l_proofTree_quot___closed__10;
+static lean_object* l_proofTree__By___x3b_x7b___x7d___closed__1;
+static lean_object* l_proofRule_quot___closed__9;
+static lean_object* l_usingClauseUsing_____closed__10;
+static lean_object* l_justification_quot___closed__4;
+static lean_object* l_sequent_quot___closed__3;
+static lean_object* l_justification____1___closed__1;
+static lean_object* l_introRuleAndIntro___x2c_____closed__5;
+static lean_object* l_simpleJustification_quot___closed__4;
+static lean_object* l_assertTarget____1___closed__1;
+static lean_object* l_usingItem_quot___closed__4;
+static lean_object* l_justificationLogicUsing_____closed__4;
+static lean_object* l_inductRuleInductStrongPos___closed__2;
+static lean_object* l_assertRuleAssert_____closed__5;
+static lean_object* l_proofTree_quot___closed__2;
+static lean_object* l_assertRuleAssert__By_____closed__1;
+static lean_object* l_introRuleOrIntro___x2c_____closed__6;
+LEAN_EXPORT lean_object* l_simpleJustification____1;
+LEAN_EXPORT lean_object* l_simpleJustification_quot;
+static lean_object* l_subproofTree_quot___closed__3;
+static lean_object* l_justification____2___closed__1;
+static lean_object* l_assertRuleAssert_____closed__3;
+static lean_object* l_asmNum_quot___closed__12;
+static lean_object* l_asmNum_quot___closed__16;
+static lean_object* l_proofTree__By_______closed__3;
+static lean_object* l_orIntroRuleName_quot___closed__2;
+LEAN_EXPORT lean_object* l_usingItemLogic;
+static lean_object* l_termAsmNumToString_____closed__5;
+static lean_object* l_elimRuleNameOrElimLeft___closed__1;
+static lean_object* l_inductRuleInductStrongList___closed__2;
+LEAN_EXPORT lean_object* l_inductRuleInductStrongVertices;
+static lean_object* l_inductRuleInductPos___closed__4;
+static lean_object* l_subproofTreeSubproof___x3a_______closed__9;
+static lean_object* l_proofRule_quot___closed__4;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_simpleJustification;
+static lean_object* l_proofRule____3___closed__2;
+LEAN_EXPORT lean_object* l_proofRule_quot;
+static lean_object* l_asmId_quot___closed__10;
+static lean_object* l_proofTree__By_______closed__5;
+static lean_object* l_elimRuleNameIffElimRev___closed__3;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__8;
+static lean_object* l_inductRule_quot___closed__5;
+static lean_object* l_caseRule_quot___closed__3;
+static lean_object* l_elimRuleNameAndElim___closed__2;
+static lean_object* l_substNameSubst___closed__1;
+static lean_object* l_usingItemLogic___closed__2;
+static lean_object* l_elimRuleNameExistsElim___closed__5;
+static lean_object* l_introRule_________closed__1;
+static lean_object* l_logicObj_quot___closed__1;
+static lean_object* l_orIntroRuleName_quot___closed__6;
+static lean_object* l_proofTree__QED_____closed__6;
+static lean_object* l_usingItemGoal___closed__1;
+static lean_object* l_introRule_________closed__3;
+static lean_object* l_assertRuleAssert__By_____closed__2;
+static lean_object* l_logicObj_____closed__1;
+static lean_object* l_substRule_quot___closed__6;
+static lean_object* l_caseRuleCases_____closed__7;
+static lean_object* l_assertTargetGoal___closed__3;
+LEAN_EXPORT lean_object* l_Lean_Parser_Category_assertRule;
+static lean_object* l_proofTree__By_______closed__1;
+static lean_object* l_asmNum___x2f_____closed__5;
+static lean_object* l_inductRuleInductStrongEdges___closed__2;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__5;
+static lean_object* l_targetGoal___closed__2;
+static lean_object* l_proofTree__QED_____closed__8;
+static lean_object* l_elimRuleNameImplElimRev___closed__1;
+LEAN_EXPORT lean_object* l_target__;
+static lean_object* l_proofRule____3___closed__1;
+static lean_object* l_assertRule_quot___closed__6;
+static lean_object* l_asmId_quot___closed__8;
+static lean_object* l_introRule_quot___closed__7;
+static lean_object* l_logicObjCatTheorem___closed__1;
+LEAN_EXPORT lean_object* l_proofTree__By___x7b___x7d;
+static lean_object* l_elimRule_quot___closed__1;
+static lean_object* l_caseRuleCases_____closed__5;
+static lean_object* l_asmNum_quot___closed__7;
+LEAN_EXPORT lean_object* l_orIntroRuleName_quot;
+static lean_object* l_sequent_quot___closed__7;
+static lean_object* l_elimRuleNameForallElim___closed__5;
+static lean_object* l_proofTree__By___x3b_x7b___x7d___closed__6;
+static lean_object* l_logicObjCatAxiom___closed__5;
+static lean_object* l_simpleJustificationLogic___closed__3;
+static lean_object* l_subproofTree_quot___closed__5;
+static lean_object* l_inductRuleInductStrongNat___closed__1;
+lean_object* l_Lean_Name_mkStr4(lean_object*, lean_object*, lean_object*, lean_object*);
+static lean_object* l_introRule_quot___closed__4;
+static lean_object* l_introRule_quot___closed__9;
+static lean_object* l_logicObjCatDefinition___closed__4;
+static lean_object* l_proofTree__By___x7b___x7d___closed__6;
+static lean_object* l_caseRuleCases_____closed__1;
+static lean_object* l_justificationArithUsing_____closed__3;
+static lean_object* l_elimRuleNameImplElimRev___closed__2;
+static lean_object* l_assertTarget_quot___closed__4;
+LEAN_EXPORT lean_object* l_proofRule____3;
+static lean_object* l_proofRule_quot___closed__8;
+LEAN_EXPORT lean_object* l_asmIdAsm__;
+static lean_object* l_asmNum_____closed__5;
+static lean_object* l_simpleJustificationLogic___closed__2;
+static lean_object* l_usingClauseUsing_____closed__4;
+static lean_object* l_elimRuleNameForallElim___closed__1;
+static lean_object* l_inductRuleInductStrongVertices___closed__2;
+static lean_object* l_contradictJustificationContradiction___x2c_____closed__1;
+static lean_object* l_logicObj_quot___closed__10;
+static lean_object* l_proofTree__By___x7b___x7d___closed__8;
+static lean_object* l_substNameSubstRev___closed__4;
+static lean_object* l_introRuleAndIntro___x2c_____closed__1;
+static lean_object* l_inductRuleInductStrongSet___closed__5;
+LEAN_EXPORT lean_object* l_asmNum__;
+static lean_object* l_usingClauseUsing_____closed__1;
+static lean_object* l_substSrc_quot___closed__10;
+static lean_object* l_assertRule_quot___closed__5;
+static lean_object* l_subproofTreeSubproof___x3a_______closed__8;
+static lean_object* l_justification____1___closed__3;
+static lean_object* l_sequent_____closed__2;
+static lean_object* l_asmId_quot___closed__5;
+static lean_object* l_inductRuleInductPos___closed__2;
+static lean_object* l_caseRule_quot___closed__5;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__1;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__1;
+static lean_object* l_usingClause_quot___closed__7;
+static lean_object* l_subproofTreeSubproof___x3a_______closed__4;
+static lean_object* l_sequent_____closed__4;
+static lean_object* l_sequent_quot___closed__4;
+LEAN_EXPORT lean_object* l_inductRuleInductList;
+static lean_object* l_logicObjCat_quot___closed__2;
+LEAN_EXPORT lean_object* l_caseRule_quot;
+static lean_object* l_logicObjCatLemma___closed__5;
+static lean_object* l_inductRuleInductStrongList___closed__1;
+static lean_object* l_elimRuleNameIffElim___closed__4;
+static lean_object* l_simpleJustification_quot___closed__2;
+static lean_object* l_elimRuleNameImplElim___closed__3;
+static lean_object* l_elimRuleNameOrElim___closed__4;
+static lean_object* l_target_quot___closed__10;
+static lean_object* l_introRule_________closed__5;
+static lean_object* l_inductRuleInductStrongVertices___closed__3;
+static lean_object* l_asmNum_____closed__1;
+static lean_object* l_justificationArithUsing_____closed__5;
+static lean_object* l_inductRuleInductStrongList___closed__3;
+static lean_object* l_justification_quot___closed__6;
+static lean_object* l_usingItem_quot___closed__2;
+static lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__4;
+static lean_object* l_assertRule_quot___closed__10;
+static lean_object* l_elimRuleNameOrElimLeft___closed__4;
+static lean_object* l_justificationArithUsing_____closed__1;
+static lean_object* l_asm_quot___closed__5;
+static lean_object* l_proofTree_quot___closed__9;
+static lean_object* l_caseRuleCases_____closed__4;
+static lean_object* l_contradictJustificationContradiction___x2c_____closed__3;
+static lean_object* l_target_quot___closed__7;
+static lean_object* l_target____1___closed__1;
+static lean_object* l_substSrc_quot___closed__3;
+static lean_object* l_inductRuleInductSet___closed__2;
+static lean_object* l_elimRuleNameImplElim___closed__4;
+static lean_object* l_logicObj_____closed__2;
+static lean_object* l_assertTarget____1___closed__3;
+static lean_object* l_asmAsm___x3a_____closed__2;
+static lean_object* l_inductRuleInductPos___closed__3;
+static lean_object* l_sequent_quot___closed__8;
+static lean_object* l_proofRule____2___closed__2;
+static lean_object* l_assertTarget_quot___closed__6;
+static lean_object* l_substName_quot___closed__9;
+static lean_object* l_asmNum_quot___closed__15;
+static lean_object* l_asmIdAsm_____closed__5;
+static lean_object* l_contradictJustification_quot___closed__4;
+LEAN_EXPORT lean_object* l_logicObjCatLemma;
+static lean_object* l_asmNum_quot___closed__14;
+static lean_object* l_proofTree__By___x7b___x7d___closed__10;
+LEAN_EXPORT lean_object* l_inductRuleInductSet;
+static lean_object* l_substName_quot___closed__8;
+static lean_object* l_asmId_quot___closed__9;
+LEAN_EXPORT lean_object* l_asmNum___x2f__;
+static lean_object* l_contradictJustification_quot___closed__8;
+static lean_object* l_asm_quot___closed__9;
+static lean_object* l_usingItemArith___closed__1;
+static lean_object* l_inductRuleInductNat___closed__4;
+static lean_object* l_logicObjCat_quot___closed__6;
+static lean_object* l_assertTarget_quot___closed__7;
+LEAN_EXPORT lean_object* l_elimRuleNameIffElimRev;
+static lean_object* l_justification____2___closed__2;
+static lean_object* l_contradictJustification_quot___closed__5;
+static lean_object* l_usingItemLogic___closed__1;
+static lean_object* l_elimRule_________closed__4;
+static lean_object* l_logicObj_quot___closed__8;
+static lean_object* l_proofTree_quot___closed__7;
+static lean_object* l_asmAsm___x3aVar_x28___x3a___x29___closed__19;
+static lean_object* l_proofTree_quot___closed__1;
+static lean_object* l_introRule_quot___closed__1;
+static lean_object* l_elimRuleNameOrElimLeft___closed__3;
+static lean_object* l_inductRuleInductStrongVertices___closed__4;
+static lean_object* l_asm_quot___closed__10;
+static lean_object* l_logicObj_quot___closed__4;
+static lean_object* l_contradictJustification_quot___closed__7;
+LEAN_EXPORT lean_object* l_elimRule____;
+static lean_object* l_proofTree_quot___closed__3;
+static lean_object* l_inductRuleInductStrongList___closed__5;
+static lean_object* l_inductRuleInductPos___closed__5;
+LEAN_EXPORT lean_object* l_proofRule____2;
+static lean_object* _init_l_asmNum_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Lean", 4);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__2() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Parser", 6);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Term", 4);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__4() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("quot", 4);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; 
+x_1 = l_asmNum_quot___closed__1;
+x_2 = l_asmNum_quot___closed__2;
+x_3 = l_asmNum_quot___closed__3;
+x_4 = l_asmNum_quot___closed__4;
+x_5 = l_Lean_Name_mkStr4(x_1, x_2, x_3, x_4);
+return x_5;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__6() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asmNum", 6);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asmNum_quot___closed__6;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__8() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("andthen", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmNum_quot___closed__8;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__10() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(asmNum| ", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__11() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmNum_quot___closed__10;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__12() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmNum_quot___closed__6;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__13() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asmNum_quot___closed__12;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__14() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes(")", 1);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__15() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmNum_quot___closed__14;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__16() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmNum_quot___closed__13;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__17() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmNum_quot___closed__11;
+x_3 = l_asmNum_quot___closed__16;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__18() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__7;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_asmNum_quot___closed__17;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmNum_quot___closed__19() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_asmNum_quot___closed__18;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmNum_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_asmNum_quot___closed__19;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_asmNum() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asmNum_", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmNum_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmNum_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("num", 3);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmNum_____closed__3;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmNum_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmNum_____closed__4;
+x_2 = lean_alloc_ctor(0, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmNum_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmNum_____closed__5;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmNum__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_asmNum_____closed__6;
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum___x2f_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asmNum_/_", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum___x2f_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmNum___x2f_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmNum___x2f_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("/", 1);
+return x_1;
+}
+}
+static lean_object* _init_l_asmNum___x2f_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmNum___x2f_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmNum___x2f_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmNum___x2f_____closed__4;
+x_3 = l_asmNum_____closed__5;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmNum___x2f_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; lean_object* x_5; 
+x_1 = l_asmNum___x2f_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = lean_unsigned_to_nat(0u);
+x_4 = l_asmNum___x2f_____closed__5;
+x_5 = lean_alloc_ctor(4, 4, 0);
+lean_ctor_set(x_5, 0, x_1);
+lean_ctor_set(x_5, 1, x_2);
+lean_ctor_set(x_5, 2, x_3);
+lean_ctor_set(x_5, 3, x_4);
+return x_5;
+}
+}
+static lean_object* _init_l_asmNum___x2f__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_asmNum___x2f_____closed__6;
+return x_1;
+}
+}
+static lean_object* _init_l_termAsmNumToString_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("termAsmNumToString_", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_termAsmNumToString_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_termAsmNumToString_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_termAsmNumToString_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asmNumToString", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_termAsmNumToString_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_termAsmNumToString_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_termAsmNumToString_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_termAsmNumToString_____closed__4;
+x_3 = l_asmNum_quot___closed__13;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_termAsmNumToString_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_termAsmNumToString_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_termAsmNumToString_____closed__5;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_termAsmNumToString__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_termAsmNumToString_____closed__6;
+return x_1;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("termS!_", 7);
+return x_1;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("s!", 2);
+return x_1;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__4() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("interpolatedStrKind", 19);
+return x_1;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__4;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__6() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("interpolatedStrLitKind", 22);
+return x_1;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__6;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__8() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("\"{", 2);
+return x_1;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__9() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("}/{", 3);
+return x_1;
+}
+}
+static lean_object* _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__10() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("}\"", 2);
+return x_1;
+}
+}
+LEAN_EXPORT lean_object* l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1(lean_object* x_1, lean_object* x_2, lean_object* x_3) {
+_start:
+{
+lean_object* x_4; uint8_t x_5; 
+x_4 = l_termAsmNumToString_____closed__2;
+lean_inc(x_1);
+x_5 = l_Lean_Syntax_isOfKind(x_1, x_4);
+if (x_5 == 0)
+{
+lean_object* x_6; lean_object* x_7; 
+lean_dec(x_2);
+lean_dec(x_1);
+x_6 = lean_box(1);
+x_7 = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(x_7, 0, x_6);
+lean_ctor_set(x_7, 1, x_3);
+return x_7;
+}
+else
+{
+lean_object* x_8; lean_object* x_9; lean_object* x_10; uint8_t x_11; 
+x_8 = lean_unsigned_to_nat(1u);
+x_9 = l_Lean_Syntax_getArg(x_1, x_8);
+lean_dec(x_1);
+x_10 = l_asmNum_____closed__2;
+lean_inc(x_9);
+x_11 = l_Lean_Syntax_isOfKind(x_9, x_10);
+if (x_11 == 0)
+{
+lean_object* x_12; uint8_t x_13; 
+x_12 = l_asmNum___x2f_____closed__2;
+lean_inc(x_9);
+x_13 = l_Lean_Syntax_isOfKind(x_9, x_12);
+if (x_13 == 0)
+{
+lean_object* x_14; lean_object* x_15; 
+lean_dec(x_9);
+lean_dec(x_2);
+x_14 = lean_box(1);
+x_15 = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(x_15, 0, x_14);
+lean_ctor_set(x_15, 1, x_3);
+return x_15;
+}
+else
+{
+lean_object* x_16; lean_object* x_17; lean_object* x_18; lean_object* x_19; lean_object* x_20; uint8_t x_21; 
+x_16 = lean_unsigned_to_nat(0u);
+x_17 = l_Lean_Syntax_getArg(x_9, x_16);
+x_18 = lean_unsigned_to_nat(2u);
+x_19 = l_Lean_Syntax_getArg(x_9, x_18);
+lean_dec(x_9);
+x_20 = l_asmNum_____closed__4;
+lean_inc(x_19);
+x_21 = l_Lean_Syntax_isOfKind(x_19, x_20);
+if (x_21 == 0)
+{
+lean_object* x_22; lean_object* x_23; 
+lean_dec(x_19);
+lean_dec(x_17);
+lean_dec(x_2);
+x_22 = lean_box(1);
+x_23 = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(x_23, 0, x_22);
+lean_ctor_set(x_23, 1, x_3);
+return x_23;
+}
+else
+{
+lean_object* x_24; uint8_t x_25; lean_object* x_26; lean_object* x_27; lean_object* x_28; lean_object* x_29; lean_object* x_30; lean_object* x_31; lean_object* x_32; lean_object* x_33; lean_object* x_34; lean_object* x_35; lean_object* x_36; lean_object* x_37; lean_object* x_38; lean_object* x_39; lean_object* x_40; lean_object* x_41; lean_object* x_42; lean_object* x_43; lean_object* x_44; lean_object* x_45; lean_object* x_46; 
+x_24 = lean_ctor_get(x_2, 5);
+lean_inc(x_24);
+lean_dec(x_2);
+x_25 = 0;
+x_26 = l_Lean_SourceInfo_fromRef(x_24, x_25);
+x_27 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__3;
+lean_inc(x_26);
+x_28 = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(x_28, 0, x_26);
+lean_ctor_set(x_28, 1, x_27);
+x_29 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__8;
+lean_inc(x_26);
+x_30 = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(x_30, 0, x_26);
+lean_ctor_set(x_30, 1, x_29);
+x_31 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__7;
+lean_inc(x_26);
+x_32 = l_Lean_Syntax_node1(x_26, x_31, x_30);
+x_33 = l_termAsmNumToString_____closed__3;
+lean_inc(x_26);
+x_34 = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(x_34, 0, x_26);
+lean_ctor_set(x_34, 1, x_33);
+lean_inc(x_26);
+x_35 = l_Lean_Syntax_node2(x_26, x_4, x_34, x_17);
+x_36 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__9;
+lean_inc(x_26);
+x_37 = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(x_37, 0, x_26);
+lean_ctor_set(x_37, 1, x_36);
+lean_inc(x_26);
+x_38 = l_Lean_Syntax_node1(x_26, x_31, x_37);
+x_39 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__10;
+lean_inc(x_26);
+x_40 = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(x_40, 0, x_26);
+lean_ctor_set(x_40, 1, x_39);
+lean_inc(x_26);
+x_41 = l_Lean_Syntax_node1(x_26, x_31, x_40);
+x_42 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__5;
+lean_inc(x_26);
+x_43 = l_Lean_Syntax_node5(x_26, x_42, x_32, x_35, x_38, x_19, x_41);
+x_44 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__2;
+x_45 = l_Lean_Syntax_node2(x_26, x_44, x_28, x_43);
+x_46 = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(x_46, 0, x_45);
+lean_ctor_set(x_46, 1, x_3);
+return x_46;
+}
+}
+}
+else
+{
+lean_object* x_47; lean_object* x_48; lean_object* x_49; uint8_t x_50; 
+x_47 = lean_unsigned_to_nat(0u);
+x_48 = l_Lean_Syntax_getArg(x_9, x_47);
+lean_dec(x_9);
+x_49 = l_asmNum_____closed__4;
+lean_inc(x_48);
+x_50 = l_Lean_Syntax_isOfKind(x_48, x_49);
+if (x_50 == 0)
+{
+lean_object* x_51; lean_object* x_52; 
+lean_dec(x_48);
+lean_dec(x_2);
+x_51 = lean_box(1);
+x_52 = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(x_52, 0, x_51);
+lean_ctor_set(x_52, 1, x_3);
+return x_52;
+}
+else
+{
+lean_object* x_53; uint8_t x_54; lean_object* x_55; lean_object* x_56; lean_object* x_57; lean_object* x_58; lean_object* x_59; lean_object* x_60; lean_object* x_61; lean_object* x_62; lean_object* x_63; lean_object* x_64; lean_object* x_65; lean_object* x_66; lean_object* x_67; lean_object* x_68; lean_object* x_69; 
+x_53 = lean_ctor_get(x_2, 5);
+lean_inc(x_53);
+lean_dec(x_2);
+x_54 = 0;
+x_55 = l_Lean_SourceInfo_fromRef(x_53, x_54);
+x_56 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__3;
+lean_inc(x_55);
+x_57 = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(x_57, 0, x_55);
+lean_ctor_set(x_57, 1, x_56);
+x_58 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__8;
+lean_inc(x_55);
+x_59 = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(x_59, 0, x_55);
+lean_ctor_set(x_59, 1, x_58);
+x_60 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__7;
+lean_inc(x_55);
+x_61 = l_Lean_Syntax_node1(x_55, x_60, x_59);
+x_62 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__10;
+lean_inc(x_55);
+x_63 = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(x_63, 0, x_55);
+lean_ctor_set(x_63, 1, x_62);
+lean_inc(x_55);
+x_64 = l_Lean_Syntax_node1(x_55, x_60, x_63);
+x_65 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__5;
+lean_inc(x_55);
+x_66 = l_Lean_Syntax_node3(x_55, x_65, x_61, x_48, x_64);
+x_67 = l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__2;
+x_68 = l_Lean_Syntax_node2(x_55, x_67, x_57, x_66);
+x_69 = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(x_69, 0, x_68);
+lean_ctor_set(x_69, 1, x_3);
+return x_69;
+}
+}
+}
+}
+}
+static lean_object* _init_l_asmId_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asmId", 5);
+return x_1;
+}
+}
+static lean_object* _init_l_asmId_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asmId_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmId_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(asmId| ", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_asmId_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmId_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmId_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmId_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmId_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asmId_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmId_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmId_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmId_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmId_quot___closed__4;
+x_3 = l_asmId_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmId_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmId_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_asmId_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmId_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_asmId_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmId_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_asmId_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_asmId() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_asmIdAsm_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asmIdAsm_", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_asmIdAsm_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmIdAsm_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmIdAsm_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Asm", 3);
+return x_1;
+}
+}
+static lean_object* _init_l_asmIdAsm_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmIdAsm_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmIdAsm_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmIdAsm_____closed__4;
+x_3 = l_asmNum_quot___closed__13;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmIdAsm_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmIdAsm_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmIdAsm_____closed__5;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmIdAsm__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_asmIdAsm_____closed__6;
+return x_1;
+}
+}
+static lean_object* _init_l_asm_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asm", 3);
+return x_1;
+}
+}
+static lean_object* _init_l_asm_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asm_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asm_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(asm| ", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_asm_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asm_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asm_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asm_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asm_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asm_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asm_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asm_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asm_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asm_quot___closed__4;
+x_3 = l_asm_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asm_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asm_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_asm_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asm_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_asm_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asm_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_asm_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_asm() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asmAsm_:_", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmAsm___x3a_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes(":", 1);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmAsm___x3a_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmIdAsm_____closed__5;
+x_3 = l_asmAsm___x3a_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__6() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("term", 4);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmAsm___x3a_____closed__6;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asmAsm___x3a_____closed__7;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3a_____closed__5;
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3a_____closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmAsm___x3a_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmAsm___x3a_____closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3a__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_asmAsm___x3a_____closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asmAsm_:Var(_:_)", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Var", 3);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3a_____closed__5;
+x_3 = l_asmAsm___x3aVar_x28___x3a___x29___closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__6() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("(", 1);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29___closed__6;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__5;
+x_3 = l_asmAsm___x3aVar_x28___x3a___x29___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__9() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("many1", 5);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__9;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__11() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("ident", 5);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__12() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__11;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__13() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29___closed__12;
+x_2 = lean_alloc_ctor(0, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__14() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29___closed__10;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__13;
+x_3 = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__15() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__8;
+x_3 = l_asmAsm___x3aVar_x28___x3a___x29___closed__14;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__16() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__15;
+x_3 = l_asmAsm___x3a_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__17() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__16;
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__18() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__17;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__19() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_asmAsm___x3aVar_x28___x3a___x29___closed__18;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29___closed__19;
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("asmAsm_:Var(_:_):=_", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29___closed__8;
+x_3 = l_asmAsm___x3aVar_x28___x3a___x29___closed__13;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__3;
+x_3 = l_asmAsm___x3a_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__4;
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__5;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__7() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes(":=", 2);
+return x_1;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__7;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__6;
+x_3 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__8;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__9;
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__11() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__10;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__11;
+return x_1;
+}
+}
+static lean_object* _init_l_target_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("target", 6);
+return x_1;
+}
+}
+static lean_object* _init_l_target_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_target_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_target_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(target| ", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_target_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_target_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_target_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_target_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_target_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_target_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_target_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_target_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_target_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_target_quot___closed__4;
+x_3 = l_target_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_target_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_target_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_target_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_target_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_target_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_target_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_target_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_target() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_target_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("target_", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_target_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_target_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_target_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_target_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_target__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_target_____closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_targetGoal___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("targetGoal", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_targetGoal___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_targetGoal___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_targetGoal___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Goal", 4);
+return x_1;
+}
+}
+static lean_object* _init_l_targetGoal___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_targetGoal___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_targetGoal___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_targetGoal___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_targetGoal___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_targetGoal() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_targetGoal___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_target____1___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("target__1", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_target____1___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_target____1___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_target____1___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_target____1___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_target____1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_target____1___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("sequent", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_sequent_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(sequent| ", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_sequent_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_sequent_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_sequent_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_sequent_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_sequent_quot___closed__4;
+x_3 = l_sequent_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_sequent_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_sequent_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_sequent_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_sequent_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_sequent_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_sequent_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_sequent() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_sequent_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("sequent_", 8);
+return x_1;
+}
+}
+static lean_object* _init_l_sequent_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_sequent_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_sequent_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29___closed__10;
+x_2 = l_asm_quot___closed__6;
+x_3 = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_sequent_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_sequent_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_sequent_____closed__3;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_sequent__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_sequent_____closed__4;
+return x_1;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("sequent_⊢_", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_sequent___u22a2_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("many", 4);
+return x_1;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_sequent___u22a2_____closed__3;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_sequent___u22a2_____closed__4;
+x_2 = l_asm_quot___closed__6;
+x_3 = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__6() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("⊢", 3);
+return x_1;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_sequent___u22a2_____closed__6;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_sequent___u22a2_____closed__5;
+x_3 = l_sequent___u22a2_____closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_sequent___u22a2_____closed__8;
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_sequent___u22a2_____closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_sequent___u22a2_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_sequent___u22a2_____closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_sequent___u22a2__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_sequent___u22a2_____closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleName", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_elimRuleName_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(elimRuleName| ", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleName_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleName_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_elimRuleName_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_elimRuleName_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_elimRuleName_quot___closed__4;
+x_3 = l_elimRuleName_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleName_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleName_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleName_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleName_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleName_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleName_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_elimRuleName() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameAndElim___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameAndElim", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameAndElim___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameAndElim___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameAndElim___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("AndElim", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameAndElim___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameAndElim___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameAndElim___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameAndElim___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameAndElim___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameAndElim() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameAndElim___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElim___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameOrElim", 18);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElim___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameOrElim___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElim___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("OrElim", 6);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElim___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameOrElim___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElim___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameOrElim___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameOrElim___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElim() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameOrElim___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimLeft___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameOrElimLeft", 22);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimLeft___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameOrElimLeft___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimLeft___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("OrElimLeft", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimLeft___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameOrElimLeft___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimLeft___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameOrElimLeft___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameOrElimLeft___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimLeft() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameOrElimLeft___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimRight___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameOrElimRight", 23);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimRight___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameOrElimRight___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimRight___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("OrElimRight", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimRight___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameOrElimRight___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimRight___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameOrElimRight___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameOrElimRight___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameOrElimRight() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameOrElimRight___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameNotElim___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameNotElim", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameNotElim___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameNotElim___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameNotElim___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("NotElim", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameNotElim___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameNotElim___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameNotElim___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameNotElim___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameNotElim___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameNotElim() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameNotElim___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElim___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameImplElim", 20);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElim___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameImplElim___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElim___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("ImplElim", 8);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElim___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameImplElim___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElim___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameImplElim___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameImplElim___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElim() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameImplElim___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElimRev___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameImplElimRev", 23);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElimRev___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameImplElimRev___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElimRev___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("ImplElimRev", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElimRev___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameImplElimRev___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElimRev___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameImplElimRev___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameImplElimRev___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameImplElimRev() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameImplElimRev___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElim___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameIffElim", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElim___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameIffElim___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElim___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("IffElim", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElim___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameIffElim___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElim___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameIffElim___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameIffElim___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElim() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameIffElim___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElimRev___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameIffElimRev", 22);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElimRev___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameIffElimRev___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElimRev___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("IffElimRev", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElimRev___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameIffElimRev___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElimRev___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameIffElimRev___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameIffElimRev___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameIffElimRev() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameIffElimRev___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameForallElim___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameForallElim", 22);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameForallElim___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameForallElim___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameForallElim___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("ForallElim", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameForallElim___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameForallElim___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameForallElim___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameForallElim___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameForallElim___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameForallElim() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameForallElim___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameExistsElim___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameExistsElim", 22);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameExistsElim___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameExistsElim___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameExistsElim___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("ExistsElim", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameExistsElim___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameExistsElim___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameExistsElim___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameExistsElim___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameExistsElim___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameExistsElim() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameExistsElim___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameElims___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRuleNameElims", 17);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameElims___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRuleNameElims___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRuleNameElims___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Elims", 5);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRuleNameElims___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRuleNameElims___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRuleNameElims___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRuleNameElims___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRuleNameElims___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRuleNameElims() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRuleNameElims___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("usingItem", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_usingItem_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(usingItem| ", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_usingItem_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_usingItem_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_usingItem_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_usingItem_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_usingItem_quot___closed__4;
+x_3 = l_usingItem_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_usingItem_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_usingItem_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingItem_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_usingItem_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingItem_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_usingItem_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_usingItem() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItem_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("usingItem_", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItem_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_usingItem_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingItem_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_usingItem_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingItem__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_usingItem_____closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_usingItemGoal___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("usingItemGoal", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItemGoal___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_usingItemGoal___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingItemGoal___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_usingItemGoal___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_targetGoal___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingItemGoal() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_usingItemGoal___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_usingItem____1___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("usingItem__1", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItem____1___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_usingItem____1___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingItem____1___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_usingItem____1___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingItem____1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_usingItem____1___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_usingItemArith___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("usingItemArith", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItemArith___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_usingItemArith___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingItemArith___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Arith", 5);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItemArith___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_usingItemArith___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_usingItemArith___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_usingItemArith___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_usingItemArith___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingItemArith() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_usingItemArith___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_usingItemLogic___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("usingItemLogic", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItemLogic___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_usingItemLogic___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingItemLogic___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Logic", 5);
+return x_1;
+}
+}
+static lean_object* _init_l_usingItemLogic___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_usingItemLogic___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_usingItemLogic___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_usingItemLogic___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_usingItemLogic___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingItemLogic() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_usingItemLogic___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("usingClause", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_usingClause_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(usingClause| ", 15);
+return x_1;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_usingClause_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_usingClause_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_usingClause_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_usingClause_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_usingClause_quot___closed__4;
+x_3 = l_usingClause_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_usingClause_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_usingClause_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingClause_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_usingClause_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingClause_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_usingClause_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_usingClause() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("usingClauseUsing_", 17);
+return x_1;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_usingClauseUsing_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Using", 5);
+return x_1;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_usingClauseUsing_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__5() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes(", ", 2);
+return x_1;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_usingClauseUsing_____closed__5;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__7() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes(",", 1);
+return x_1;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; uint8_t x_4; lean_object* x_5; 
+x_1 = l_usingItem_quot___closed__6;
+x_2 = l_usingClauseUsing_____closed__7;
+x_3 = l_usingClauseUsing_____closed__6;
+x_4 = 0;
+x_5 = lean_alloc_ctor(11, 3, 1);
+lean_ctor_set(x_5, 0, x_1);
+lean_ctor_set(x_5, 1, x_2);
+lean_ctor_set(x_5, 2, x_3);
+lean_ctor_set_uint8(x_5, sizeof(void*)*3, x_4);
+return x_5;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_usingClauseUsing_____closed__4;
+x_3 = l_usingClauseUsing_____closed__8;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingClauseUsing_____closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_usingClauseUsing_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_usingClauseUsing_____closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_usingClauseUsing__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_usingClauseUsing_____closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRule", 8);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_elimRule_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(elimRule| ", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_elimRule_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRule_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_elimRule_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_elimRule_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_elimRule_quot___closed__4;
+x_3 = l_elimRule_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRule_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRule_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRule_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_elimRule_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRule_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRule_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_elimRule() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRule_______closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRule__", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRule_______closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRule_______closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRule_______closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_elimRuleName_quot___closed__6;
+x_3 = l_target_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRule_______closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRule_______closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_elimRule_______closed__3;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRule____() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRule_______closed__4;
+return x_1;
+}
+}
+static lean_object* _init_l_elimRule_________closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("elimRule___", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_elimRule_________closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_elimRule_________closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_elimRule_________closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_elimRule_______closed__3;
+x_3 = l_usingClause_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRule_________closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_elimRule_________closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_elimRule_________closed__3;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_elimRule______() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_elimRule_________closed__4;
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("logicObjCat", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_logicObjCat_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(logicObjCat| ", 15);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_logicObjCat_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_logicObjCat_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_logicObjCat_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_logicObjCat_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_logicObjCat_quot___closed__4;
+x_3 = l_logicObjCat_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_logicObjCat_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_logicObjCat_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObjCat_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_logicObjCat_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObjCat_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_logicObjCat_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_logicObjCat() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatLemma___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("logicObjCatLemma", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatLemma___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_logicObjCatLemma___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObjCatLemma___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Lemma ", 6);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatLemma___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_logicObjCatLemma___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_logicObjCatLemma___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_logicObjCatLemma___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_logicObjCatLemma___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObjCatLemma() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_logicObjCatLemma___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatTheorem___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("logicObjCatTheorem", 18);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatTheorem___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_logicObjCatTheorem___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObjCatTheorem___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Theorem ", 8);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatTheorem___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_logicObjCatTheorem___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_logicObjCatTheorem___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_logicObjCatTheorem___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_logicObjCatTheorem___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObjCatTheorem() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_logicObjCatTheorem___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatDefinition___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("logicObjCatDefinition", 21);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatDefinition___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_logicObjCatDefinition___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObjCatDefinition___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Definition ", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatDefinition___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_logicObjCatDefinition___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_logicObjCatDefinition___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_logicObjCatDefinition___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_logicObjCatDefinition___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObjCatDefinition() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_logicObjCatDefinition___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatAxiom___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("logicObjCatAxiom", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatAxiom___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_logicObjCatAxiom___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObjCatAxiom___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Axiom ", 6);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObjCatAxiom___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_logicObjCatAxiom___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_logicObjCatAxiom___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_logicObjCatAxiom___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_logicObjCatAxiom___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObjCatAxiom() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_logicObjCatAxiom___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("logicObj", 8);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_logicObj_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(logicObj| ", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_logicObj_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_logicObj_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_logicObj_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_logicObj_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_logicObj_quot___closed__4;
+x_3 = l_logicObj_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_logicObj_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_logicObj_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObj_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_logicObj_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObj_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_logicObj_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_logicObj() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObj_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("logicObj_", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_logicObj_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_logicObj_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_logicObj_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_logicObj_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmAsm___x3aVar_x28___x3a___x29___closed__13;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_logicObj__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_logicObj_____closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("contradictJustification", 23);
+return x_1;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_contradictJustification_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(contradictJustification| ", 27);
+return x_1;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_contradictJustification_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_contradictJustification_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_contradictJustification_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_contradictJustification_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_contradictJustification_quot___closed__4;
+x_3 = l_contradictJustification_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_contradictJustification_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_contradictJustification_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_contradictJustification_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_contradictJustification_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_contradictJustification_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_contradictJustification_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_contradictJustification() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("contradictJustificationContradiction_", 37);
+return x_1;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_contradictJustificationContradiction_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Contradiction", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_contradictJustificationContradiction_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_contradictJustificationContradiction_____closed__4;
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_contradictJustificationContradiction_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_contradictJustificationContradiction_____closed__5;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_contradictJustificationContradiction_____closed__6;
+return x_1;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction___x2c_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("contradictJustificationContradiction_,_", 39);
+return x_1;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction___x2c_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_contradictJustificationContradiction___x2c_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction___x2c_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_usingClauseUsing_____closed__7;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction___x2c_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_contradictJustificationContradiction_____closed__5;
+x_3 = l_contradictJustificationContradiction___x2c_____closed__3;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction___x2c_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_contradictJustificationContradiction___x2c_____closed__4;
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction___x2c_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_contradictJustificationContradiction___x2c_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_contradictJustificationContradiction___x2c_____closed__5;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_contradictJustificationContradiction___x2c__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_contradictJustificationContradiction___x2c_____closed__6;
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("simpleJustification", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_simpleJustification_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(simpleJustification| ", 23);
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_simpleJustification_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_simpleJustification_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_simpleJustification_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_simpleJustification_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_simpleJustification_quot___closed__4;
+x_3 = l_simpleJustification_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_simpleJustification_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_simpleJustification_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_simpleJustification_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_simpleJustification_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_simpleJustification_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_simpleJustification_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_simpleJustification() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustification_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("simpleJustification_", 20);
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustification_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_simpleJustification_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_simpleJustification_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_simpleJustification_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_logicObj_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_simpleJustification__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_simpleJustification_____closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustificationLogic___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("simpleJustificationLogic", 24);
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustificationLogic___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_simpleJustificationLogic___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_simpleJustificationLogic___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_simpleJustificationLogic___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_usingItemLogic___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_simpleJustificationLogic() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_simpleJustificationLogic___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustificationArith___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("simpleJustificationArith", 24);
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustificationArith___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_simpleJustificationArith___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_simpleJustificationArith___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_simpleJustificationArith___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_usingItemArith___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_simpleJustificationArith() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_simpleJustificationArith___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustification____1___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("simpleJustification__1", 22);
+return x_1;
+}
+}
+static lean_object* _init_l_simpleJustification____1___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_simpleJustification____1___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_simpleJustification____1___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_simpleJustification____1___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_simpleJustification____1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_simpleJustification____1___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_justification_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("justification", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_justification_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_justification_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_justification_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(justification| ", 17);
+return x_1;
+}
+}
+static lean_object* _init_l_justification_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_justification_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_justification_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_justification_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_justification_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_justification_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_justification_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_justification_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justification_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_justification_quot___closed__4;
+x_3 = l_justification_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justification_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_justification_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_justification_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justification_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_justification_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justification_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_justification_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_justification() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_justification_______closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("justification__", 15);
+return x_1;
+}
+}
+static lean_object* _init_l_justification_______closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_justification_______closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_justification_______closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_logicObj_quot___closed__6;
+x_3 = l_usingClause_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justification_______closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_justification_______closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_justification_______closed__3;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justification____() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_justification_______closed__4;
+return x_1;
+}
+}
+static lean_object* _init_l_justificationLogicUsing_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("justificationLogicUsing_", 24);
+return x_1;
+}
+}
+static lean_object* _init_l_justificationLogicUsing_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_justificationLogicUsing_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_justificationLogicUsing_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_usingItemLogic___closed__4;
+x_3 = l_usingClauseUsing_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justificationLogicUsing_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_justificationLogicUsing_____closed__3;
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justificationLogicUsing_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_justificationLogicUsing_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_justificationLogicUsing_____closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justificationLogicUsing__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_justificationLogicUsing_____closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_justificationArithUsing_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("justificationArithUsing_", 24);
+return x_1;
+}
+}
+static lean_object* _init_l_justificationArithUsing_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_justificationArithUsing_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_justificationArithUsing_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_usingItemArith___closed__4;
+x_3 = l_usingClauseUsing_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justificationArithUsing_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_justificationArithUsing_____closed__3;
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justificationArithUsing_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_justificationArithUsing_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_justificationArithUsing_____closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justificationArithUsing__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_justificationArithUsing_____closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_justification_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("justification_", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_justification_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_justification_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_justification_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_justification_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_contradictJustification_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justification__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_justification_____closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_justification____1___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("justification__1", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_justification____1___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_justification____1___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_justification____1___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_justification____1___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_elimRule_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justification____1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_justification____1___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_justification____2___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("justification__2", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_justification____2___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_justification____2___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_justification____2___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; uint8_t x_4; lean_object* x_5; 
+x_1 = l_simpleJustification_quot___closed__6;
+x_2 = l_usingClauseUsing_____closed__7;
+x_3 = l_usingClauseUsing_____closed__6;
+x_4 = 0;
+x_5 = lean_alloc_ctor(11, 3, 1);
+lean_ctor_set(x_5, 0, x_1);
+lean_ctor_set(x_5, 1, x_2);
+lean_ctor_set(x_5, 2, x_3);
+lean_ctor_set_uint8(x_5, sizeof(void*)*3, x_4);
+return x_5;
+}
+}
+static lean_object* _init_l_justification____2___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_justification____2___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_justification____2___closed__3;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_justification____2() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_justification____2___closed__4;
+return x_1;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("assertTarget", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_assertTarget_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(assertTarget| ", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_assertTarget_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_assertTarget_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_assertTarget_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_assertTarget_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_assertTarget_quot___closed__4;
+x_3 = l_assertTarget_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_assertTarget_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_assertTarget_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertTarget_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_assertTarget_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertTarget_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_assertTarget_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_assertTarget() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_assertTarget_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("assertTarget_", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_assertTarget_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_assertTarget_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertTarget_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_assertTarget_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertTarget__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_assertTarget_____closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_assertTarget____1___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("assertTarget__1", 15);
+return x_1;
+}
+}
+static lean_object* _init_l_assertTarget____1___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_assertTarget____1___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertTarget____1___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_assertTarget____1___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertTarget____1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_assertTarget____1___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_assertTargetGoal___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("assertTargetGoal", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_assertTargetGoal___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_assertTargetGoal___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertTargetGoal___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_assertTargetGoal___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_targetGoal___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertTargetGoal() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_assertTargetGoal___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("assertRule", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_assertRule_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(assertRule| ", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_assertRule_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_assertRule_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_assertRule_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_assertRule_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_assertRule_quot___closed__4;
+x_3 = l_assertRule_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_assertRule_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_assertRule_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertRule_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_assertRule_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertRule_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_assertRule_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_assertRule() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_assertRuleAssert_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("assertRuleAssert_", 17);
+return x_1;
+}
+}
+static lean_object* _init_l_assertRuleAssert_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_assertRuleAssert_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertRuleAssert_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Assert ", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_assertRuleAssert_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_assertRuleAssert_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_assertRuleAssert_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_assertRuleAssert_____closed__4;
+x_3 = l_assertTarget_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertRuleAssert_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_assertRuleAssert_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_assertRuleAssert_____closed__5;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertRuleAssert__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_assertRuleAssert_____closed__6;
+return x_1;
+}
+}
+static lean_object* _init_l_assertRuleAssert__By_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("assertRuleAssert_By_", 20);
+return x_1;
+}
+}
+static lean_object* _init_l_assertRuleAssert__By_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_assertRuleAssert__By_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_assertRuleAssert__By_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes(" By ", 4);
+return x_1;
+}
+}
+static lean_object* _init_l_assertRuleAssert__By_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_assertRuleAssert__By_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_assertRuleAssert__By_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_assertRuleAssert_____closed__5;
+x_3 = l_assertRuleAssert__By_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertRuleAssert__By_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_assertRuleAssert__By_____closed__5;
+x_3 = l_justification_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertRuleAssert__By_____closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_assertRuleAssert__By_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_assertRuleAssert__By_____closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_assertRuleAssert__By__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_assertRuleAssert__By_____closed__7;
+return x_1;
+}
+}
+static lean_object* _init_l_substName_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substName", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_substName_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_substName_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substName_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(substName| ", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_substName_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_substName_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_substName_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substName_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substName_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_substName_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substName_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substName_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substName_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substName_quot___closed__4;
+x_3 = l_substName_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substName_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substName_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_substName_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substName_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_substName_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substName_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substName_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_substName() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_substNameSubst___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substNameSubst", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_substNameSubst___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substNameSubst___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substNameSubst___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Subst", 5);
+return x_1;
+}
+}
+static lean_object* _init_l_substNameSubst___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_substNameSubst___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_substNameSubst___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substNameSubst___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_substNameSubst___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substNameSubst() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substNameSubst___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_substNameSubstRev___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substNameSubstRev", 17);
+return x_1;
+}
+}
+static lean_object* _init_l_substNameSubstRev___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substNameSubstRev___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substNameSubstRev___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("SubstRev", 8);
+return x_1;
+}
+}
+static lean_object* _init_l_substNameSubstRev___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_substNameSubstRev___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_substNameSubstRev___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substNameSubstRev___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_substNameSubstRev___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substNameSubstRev() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substNameSubstRev___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substSrc", 8);
+return x_1;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_substSrc_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(substSrc| ", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_substSrc_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substSrc_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_substSrc_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substSrc_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substSrc_quot___closed__4;
+x_3 = l_substSrc_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substSrc_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_substSrc_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substSrc_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_substSrc_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substSrc_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substSrc_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_substSrc() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_substSrc_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substSrc_", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_substSrc_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substSrc_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substSrc_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substSrc_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substSrc__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substSrc_____closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_substSrc____1___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substSrc__1", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_substSrc____1___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substSrc____1___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substSrc____1___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substSrc____1___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_logicObj_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substSrc____1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substSrc____1___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substRule", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_substRule_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(substRule| ", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_substRule_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substRule_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_substRule_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule_quot___closed__4;
+x_3 = l_substRule_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substRule_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_substRule_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_substRule_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substRule_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_substRule() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_substRule____Into_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substRule__Into_", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_substRule____Into_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substRule____Into_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substRule____Into_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substName_quot___closed__6;
+x_3 = l_substSrc_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into_____closed__4() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes(" Into ", 6);
+return x_1;
+}
+}
+static lean_object* _init_l_substRule____Into_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_substRule____Into_____closed__4;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_substRule____Into_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule____Into_____closed__3;
+x_3 = l_substRule____Into_____closed__5;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into_____closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; uint8_t x_4; lean_object* x_5; 
+x_1 = l_target_quot___closed__6;
+x_2 = l_usingClauseUsing_____closed__7;
+x_3 = l_usingClauseUsing_____closed__6;
+x_4 = 0;
+x_5 = lean_alloc_ctor(11, 3, 1);
+lean_ctor_set(x_5, 0, x_1);
+lean_ctor_set(x_5, 1, x_2);
+lean_ctor_set(x_5, 2, x_3);
+lean_ctor_set_uint8(x_5, sizeof(void*)*3, x_4);
+return x_5;
+}
+}
+static lean_object* _init_l_substRule____Into_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule____Into_____closed__6;
+x_3 = l_substRule____Into_____closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into_____closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substRule____Into_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_substRule____Into_____closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substRule____Into_____closed__9;
+return x_1;
+}
+}
+static lean_object* _init_l_substRule____Into_______closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substRule__Into__", 17);
+return x_1;
+}
+}
+static lean_object* _init_l_substRule____Into_______closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substRule____Into_______closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substRule____Into_______closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule____Into_____closed__6;
+x_3 = l_target_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into_______closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule____Into_______closed__3;
+x_3 = l_usingClause_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into_______closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substRule____Into_______closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_substRule____Into_______closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into____() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substRule____Into_______closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_substRule____Into__By_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("substRule__Into_By_", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_substRule____Into__By_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_substRule____Into__By_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_substRule____Into__By_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substName_quot___closed__6;
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into__By_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule____Into__By_____closed__3;
+x_3 = l_substRule____Into_____closed__5;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into__By_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule____Into__By_____closed__4;
+x_3 = l_target_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into__By_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule____Into__By_____closed__5;
+x_3 = l_assertRuleAssert__By_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into__By_____closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_substRule____Into__By_____closed__6;
+x_3 = l_justification_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into__By_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_substRule____Into__By_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_substRule____Into__By_____closed__7;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_substRule____Into__By__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_substRule____Into__By_____closed__8;
+return x_1;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("caseRule", 8);
+return x_1;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_caseRule_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(caseRule| ", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_caseRule_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_caseRule_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_caseRule_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_caseRule_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_caseRule_quot___closed__4;
+x_3 = l_caseRule_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_caseRule_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_caseRule_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_caseRule_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_caseRule_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_caseRule_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_caseRule_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_caseRule() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_caseRuleCases_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("caseRuleCases_", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_caseRuleCases_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_caseRuleCases_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_caseRuleCases_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Cases ", 6);
+return x_1;
+}
+}
+static lean_object* _init_l_caseRuleCases_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_caseRuleCases_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_caseRuleCases_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asmAsm___x3a_____closed__7;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_caseRuleCases_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; uint8_t x_4; lean_object* x_5; 
+x_1 = l_caseRuleCases_____closed__5;
+x_2 = l_usingClauseUsing_____closed__7;
+x_3 = l_usingClauseUsing_____closed__6;
+x_4 = 0;
+x_5 = lean_alloc_ctor(11, 3, 1);
+lean_ctor_set(x_5, 0, x_1);
+lean_ctor_set(x_5, 1, x_2);
+lean_ctor_set(x_5, 2, x_3);
+lean_ctor_set_uint8(x_5, sizeof(void*)*3, x_4);
+return x_5;
+}
+}
+static lean_object* _init_l_caseRuleCases_____closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_caseRuleCases_____closed__4;
+x_3 = l_caseRuleCases_____closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_caseRuleCases_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_caseRuleCases_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_caseRuleCases_____closed__7;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_caseRuleCases__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_caseRuleCases_____closed__8;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRule", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_inductRule_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(inductRule| ", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRule_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRule_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_inductRule_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_inductRule_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_inductRule_quot___closed__4;
+x_3 = l_inductRule_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRule_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRule_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRule_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRule_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRule_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRule_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_inductRule() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductNat___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductNat", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductNat___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductNat___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductNat___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductNat ", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductNat___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductNat___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductNat___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductNat___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductNat___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductNat() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductNat___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongNat___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductStrongNat", 25);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongNat___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductStrongNat___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongNat___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductStrongNat ", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongNat___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductStrongNat___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongNat___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductStrongNat___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductStrongNat___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongNat() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductStrongNat___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductPos___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductPos", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductPos___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductPos___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductPos___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductPos ", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductPos___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductPos___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductPos___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductPos___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductPos___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductPos() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductPos___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongPos___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductStrongPos", 25);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongPos___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductStrongPos___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongPos___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductStrongPos ", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongPos___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductStrongPos___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongPos___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductStrongPos___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductStrongPos___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongPos() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductStrongPos___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductList___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductList", 20);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductList___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductList___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductList___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductList ", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductList___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductList___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductList___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductList___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductList___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductList() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductList___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongList___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductStrongList", 26);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongList___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductStrongList___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongList___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductStrongList ", 17);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongList___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductStrongList___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongList___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductStrongList___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductStrongList___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongList() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductStrongList___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductSet___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductSet", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductSet___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductSet___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductSet___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductSet ", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductSet___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductSet___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductSet___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductSet___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductSet___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductSet() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductSet___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongSet___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductStrongSet", 25);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongSet___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductStrongSet___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongSet___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductStrongSet ", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongSet___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductStrongSet___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongSet___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductStrongSet___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductStrongSet___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongSet() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductStrongSet___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongVertices___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductStrongVertices", 30);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongVertices___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductStrongVertices___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongVertices___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductStrongVertices ", 21);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongVertices___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductStrongVertices___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongVertices___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductStrongVertices___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductStrongVertices___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongVertices() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductStrongVertices___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongEdges___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("inductRuleInductStrongEdges", 27);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongEdges___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_inductRuleInductStrongEdges___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongEdges___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("InductStrongEdges ", 18);
+return x_1;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongEdges___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_inductRuleInductStrongEdges___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongEdges___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_inductRuleInductStrongEdges___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_inductRuleInductStrongEdges___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_inductRuleInductStrongEdges() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_inductRuleInductStrongEdges___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("orIntroRuleName", 15);
+return x_1;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_orIntroRuleName_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(orIntroRuleName| ", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_orIntroRuleName_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_orIntroRuleName_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_orIntroRuleName_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_orIntroRuleName_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_orIntroRuleName_quot___closed__4;
+x_3 = l_orIntroRuleName_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_orIntroRuleName_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_orIntroRuleName_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_orIntroRuleName_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_orIntroRuleName_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_orIntroRuleName_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_orIntroRuleName() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroLeft___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("orIntroRuleNameOrIntroLeft", 26);
+return x_1;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroLeft___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_orIntroRuleNameOrIntroLeft___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroLeft___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("OrIntroLeft", 11);
+return x_1;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroLeft___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_orIntroRuleNameOrIntroLeft___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroLeft___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_orIntroRuleNameOrIntroLeft___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_orIntroRuleNameOrIntroLeft___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroLeft() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_orIntroRuleNameOrIntroLeft___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroRight___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("orIntroRuleNameOrIntroRight", 27);
+return x_1;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroRight___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_orIntroRuleNameOrIntroRight___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroRight___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("OrIntroRight", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroRight___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_orIntroRuleNameOrIntroRight___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroRight___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_orIntroRuleNameOrIntroRight___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_orIntroRuleNameOrIntroRight___closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_orIntroRuleNameOrIntroRight() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_orIntroRuleNameOrIntroRight___closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("introRule", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_introRule_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(introRule| ", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_introRule_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_introRule_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_introRule_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_introRule_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_introRule_quot___closed__4;
+x_3 = l_introRule_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_introRule_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_introRule_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRule_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_introRule_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRule_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_introRule_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_introRule() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_introRule_________closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("introRule___", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_introRule_________closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_introRule_________closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_introRule_________closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_orIntroRuleName_quot___closed__6;
+x_3 = l_target_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRule_________closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_introRule_________closed__3;
+x_3 = l_usingClause_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRule_________closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_introRule_________closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_introRule_________closed__4;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRule______() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_introRule_________closed__5;
+return x_1;
+}
+}
+static lean_object* _init_l_introRuleAndIntro___x2c_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("introRuleAndIntro_,_", 20);
+return x_1;
+}
+}
+static lean_object* _init_l_introRuleAndIntro___x2c_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_introRuleAndIntro___x2c_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_introRuleAndIntro___x2c_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("AndIntro", 8);
+return x_1;
+}
+}
+static lean_object* _init_l_introRuleAndIntro___x2c_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_introRuleAndIntro___x2c_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_introRuleAndIntro___x2c_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_introRuleAndIntro___x2c_____closed__4;
+x_3 = l_target_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRuleAndIntro___x2c_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_introRuleAndIntro___x2c_____closed__5;
+x_3 = l_contradictJustificationContradiction___x2c_____closed__3;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRuleAndIntro___x2c_____closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_introRuleAndIntro___x2c_____closed__6;
+x_3 = l_target_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRuleAndIntro___x2c_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_introRuleAndIntro___x2c_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_introRuleAndIntro___x2c_____closed__7;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRuleAndIntro___x2c__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_introRuleAndIntro___x2c_____closed__8;
+return x_1;
+}
+}
+static lean_object* _init_l_introRuleOrIntro___x2c_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("introRuleOrIntro_,_", 19);
+return x_1;
+}
+}
+static lean_object* _init_l_introRuleOrIntro___x2c_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_introRuleOrIntro___x2c_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_introRuleOrIntro___x2c_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("OrIntro", 7);
+return x_1;
+}
+}
+static lean_object* _init_l_introRuleOrIntro___x2c_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_introRuleOrIntro___x2c_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_introRuleOrIntro___x2c_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_introRuleOrIntro___x2c_____closed__4;
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRuleOrIntro___x2c_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_introRuleOrIntro___x2c_____closed__5;
+x_3 = l_contradictJustificationContradiction___x2c_____closed__3;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRuleOrIntro___x2c_____closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_introRuleOrIntro___x2c_____closed__6;
+x_3 = l_asmId_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRuleOrIntro___x2c_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_introRuleOrIntro___x2c_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_introRuleOrIntro___x2c_____closed__7;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_introRuleOrIntro___x2c__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_introRuleOrIntro___x2c_____closed__8;
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofRule", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_proofRule_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(proofRule| ", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_proofRule_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofRule_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_proofRule_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofRule_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofRule_quot___closed__4;
+x_3 = l_proofRule_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofRule_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_proofRule_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_proofRule_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofRule_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_proofRule() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofRule_", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofRule_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofRule_____closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofRule_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_elimRule_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofRule_____closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____1___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofRule__1", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____1___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofRule____1___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofRule____1___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofRule____1___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_assertRule_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule____1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofRule____1___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____2___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofRule__2", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____2___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofRule____2___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofRule____2___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofRule____2___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_substRule_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule____2() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofRule____2___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____3___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofRule__3", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____3___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofRule____3___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofRule____3___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofRule____3___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_caseRule_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule____3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofRule____3___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____4___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofRule__4", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____4___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofRule____4___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofRule____4___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofRule____4___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_inductRule_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule____4() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofRule____4___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____5___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofRule__5", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_proofRule____5___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofRule____5___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofRule____5___closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofRule____5___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_introRule_quot___closed__6;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofRule____5() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofRule____5___closed__3;
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofTree", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_proofTree_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(proofTree| ", 13);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_proofTree_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofTree_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_proofTree_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree_quot___closed__4;
+x_3 = l_proofTree_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofTree_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_proofTree_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_proofTree_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofTree_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_proofTree() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("subproofTree", 12);
+return x_1;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_subproofTree_quot___closed__1;
+x_2 = l_asmNum_quot___closed__4;
+x_3 = l_Lean_Name_mkStr2(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("`(subproofTree| ", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_subproofTree_quot___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_subproofTree_quot___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_subproofTree_quot___closed__5;
+x_2 = lean_unsigned_to_nat(0u);
+x_3 = lean_alloc_ctor(7, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_subproofTree_quot___closed__6;
+x_3 = l_asmNum_quot___closed__15;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_subproofTree_quot___closed__4;
+x_3 = l_subproofTree_quot___closed__7;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_subproofTree_quot___closed__2;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_subproofTree_quot___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_subproofTree_quot___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__5;
+x_2 = lean_unsigned_to_nat(1024u);
+x_3 = l_subproofTree_quot___closed__9;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_subproofTree_quot() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_subproofTree_quot___closed__10;
+return x_1;
+}
+}
+static lean_object* _init_l_Lean_Parser_Category_subproofTree() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_box(0);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__QED_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofTree_QED_", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__QED_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofTree__QED_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofTree__QED_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes(" QED ", 5);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__QED_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_proofTree__QED_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_proofTree__QED_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_sequent_quot___closed__6;
+x_3 = l_proofTree__QED_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__QED_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; uint8_t x_4; lean_object* x_5; 
+x_1 = l_justification_quot___closed__6;
+x_2 = l_usingClauseUsing_____closed__7;
+x_3 = l_usingClauseUsing_____closed__6;
+x_4 = 0;
+x_5 = lean_alloc_ctor(11, 3, 1);
+lean_ctor_set(x_5, 0, x_1);
+lean_ctor_set(x_5, 1, x_2);
+lean_ctor_set(x_5, 2, x_3);
+lean_ctor_set_uint8(x_5, sizeof(void*)*3, x_4);
+return x_5;
+}
+}
+static lean_object* _init_l_proofTree__QED_____closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__QED_____closed__5;
+x_3 = l_proofTree__QED_____closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__QED_____closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofTree__QED_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_proofTree__QED_____closed__7;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__QED__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofTree__QED_____closed__8;
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__By_______closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofTree_By__", 14);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__By_______closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofTree__By_______closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofTree__By_______closed__3() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_sequent_quot___closed__6;
+x_3 = l_assertRuleAssert__By_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By_______closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__By_______closed__3;
+x_3 = l_proofRule_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By_______closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__By_______closed__4;
+x_3 = l_proofTree_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By_______closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofTree__By_______closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_proofTree__By_______closed__5;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By____() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofTree__By_______closed__6;
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofTree_By_{_}", 16);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofTree__By___x7b___x7d___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("{", 1);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_proofTree__By___x7b___x7d___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__By_______closed__4;
+x_3 = l_proofTree__By___x7b___x7d___closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = l_asmAsm___x3aVar_x28___x3a___x29___closed__10;
+x_2 = l_subproofTree_quot___closed__6;
+x_3 = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(x_3, 0, x_1);
+lean_ctor_set(x_3, 1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__By___x7b___x7d___closed__5;
+x_3 = l_proofTree__By___x7b___x7d___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__8() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("}", 1);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_proofTree__By___x7b___x7d___closed__8;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__10() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__By___x7b___x7d___closed__7;
+x_3 = l_proofTree__By___x7b___x7d___closed__9;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d___closed__11() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofTree__By___x7b___x7d___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_proofTree__By___x7b___x7d___closed__10;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By___x7b___x7d() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofTree__By___x7b___x7d___closed__11;
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d___closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("proofTree_By_;{_}", 17);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d___closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_proofTree__By___x3b_x7b___x7d___closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d___closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes(";", 1);
+return x_1;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d___closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_proofTree__By___x3b_x7b___x7d___closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d___closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__By_______closed__4;
+x_3 = l_proofTree__By___x3b_x7b___x7d___closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d___closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__By___x3b_x7b___x7d___closed__5;
+x_3 = l_proofTree__By___x7b___x7d___closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d___closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__By___x3b_x7b___x7d___closed__6;
+x_3 = l_proofTree__By___x7b___x7d___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d___closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_proofTree__By___x3b_x7b___x7d___closed__7;
+x_3 = l_proofTree__By___x7b___x7d___closed__9;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d___closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_proofTree__By___x3b_x7b___x7d___closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_proofTree__By___x3b_x7b___x7d___closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_proofTree__By___x3b_x7b___x7d() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_proofTree__By___x3b_x7b___x7d___closed__9;
+return x_1;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a_______closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("subproofTreeSubproof_:__", 24);
+return x_1;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a_______closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_subproofTreeSubproof___x3a_______closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a_______closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Subproof ", 9);
+return x_1;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a_______closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_subproofTreeSubproof___x3a_______closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a_______closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_subproofTreeSubproof___x3a_______closed__4;
+x_3 = l_asmNum_quot___closed__13;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a_______closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_subproofTreeSubproof___x3a_______closed__5;
+x_3 = l_asmAsm___x3a_____closed__4;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a_______closed__7() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_subproofTreeSubproof___x3a_______closed__6;
+x_3 = l_asmAsm___x3a_____closed__8;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a_______closed__8() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_subproofTreeSubproof___x3a_______closed__7;
+x_3 = l_proofTree_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a_______closed__9() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_subproofTreeSubproof___x3a_______closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_subproofTreeSubproof___x3a_______closed__8;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_subproofTreeSubproof___x3a____() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_subproofTreeSubproof___x3a_______closed__9;
+return x_1;
+}
+}
+static lean_object* _init_l_termProof_____closed__1() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("termProof_", 10);
+return x_1;
+}
+}
+static lean_object* _init_l_termProof_____closed__2() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; 
+x_1 = lean_box(0);
+x_2 = l_termProof_____closed__1;
+x_3 = l_Lean_Name_str___override(x_1, x_2);
+return x_3;
+}
+}
+static lean_object* _init_l_termProof_____closed__3() {
+_start:
+{
+lean_object* x_1; 
+x_1 = lean_mk_string_from_bytes("Proof ", 6);
+return x_1;
+}
+}
+static lean_object* _init_l_termProof_____closed__4() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; 
+x_1 = l_termProof_____closed__3;
+x_2 = lean_alloc_ctor(5, 1, 0);
+lean_ctor_set(x_2, 0, x_1);
+return x_2;
+}
+}
+static lean_object* _init_l_termProof_____closed__5() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_asmNum_quot___closed__9;
+x_2 = l_termProof_____closed__4;
+x_3 = l_proofTree_quot___closed__6;
+x_4 = lean_alloc_ctor(2, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_termProof_____closed__6() {
+_start:
+{
+lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
+x_1 = l_termProof_____closed__2;
+x_2 = lean_unsigned_to_nat(1022u);
+x_3 = l_termProof_____closed__5;
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
+return x_4;
+}
+}
+static lean_object* _init_l_termProof__() {
+_start:
+{
+lean_object* x_1; 
+x_1 = l_termProof_____closed__6;
+return x_1;
+}
+}
+lean_object* initialize_Init(uint8_t builtin, lean_object*);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_UW_Init_Syntax(uint8_t builtin, lean_object* w) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+l_asmNum_quot___closed__1 = _init_l_asmNum_quot___closed__1();
+lean_mark_persistent(l_asmNum_quot___closed__1);
+l_asmNum_quot___closed__2 = _init_l_asmNum_quot___closed__2();
+lean_mark_persistent(l_asmNum_quot___closed__2);
+l_asmNum_quot___closed__3 = _init_l_asmNum_quot___closed__3();
+lean_mark_persistent(l_asmNum_quot___closed__3);
+l_asmNum_quot___closed__4 = _init_l_asmNum_quot___closed__4();
+lean_mark_persistent(l_asmNum_quot___closed__4);
+l_asmNum_quot___closed__5 = _init_l_asmNum_quot___closed__5();
+lean_mark_persistent(l_asmNum_quot___closed__5);
+l_asmNum_quot___closed__6 = _init_l_asmNum_quot___closed__6();
+lean_mark_persistent(l_asmNum_quot___closed__6);
+l_asmNum_quot___closed__7 = _init_l_asmNum_quot___closed__7();
+lean_mark_persistent(l_asmNum_quot___closed__7);
+l_asmNum_quot___closed__8 = _init_l_asmNum_quot___closed__8();
+lean_mark_persistent(l_asmNum_quot___closed__8);
+l_asmNum_quot___closed__9 = _init_l_asmNum_quot___closed__9();
+lean_mark_persistent(l_asmNum_quot___closed__9);
+l_asmNum_quot___closed__10 = _init_l_asmNum_quot___closed__10();
+lean_mark_persistent(l_asmNum_quot___closed__10);
+l_asmNum_quot___closed__11 = _init_l_asmNum_quot___closed__11();
+lean_mark_persistent(l_asmNum_quot___closed__11);
+l_asmNum_quot___closed__12 = _init_l_asmNum_quot___closed__12();
+lean_mark_persistent(l_asmNum_quot___closed__12);
+l_asmNum_quot___closed__13 = _init_l_asmNum_quot___closed__13();
+lean_mark_persistent(l_asmNum_quot___closed__13);
+l_asmNum_quot___closed__14 = _init_l_asmNum_quot___closed__14();
+lean_mark_persistent(l_asmNum_quot___closed__14);
+l_asmNum_quot___closed__15 = _init_l_asmNum_quot___closed__15();
+lean_mark_persistent(l_asmNum_quot___closed__15);
+l_asmNum_quot___closed__16 = _init_l_asmNum_quot___closed__16();
+lean_mark_persistent(l_asmNum_quot___closed__16);
+l_asmNum_quot___closed__17 = _init_l_asmNum_quot___closed__17();
+lean_mark_persistent(l_asmNum_quot___closed__17);
+l_asmNum_quot___closed__18 = _init_l_asmNum_quot___closed__18();
+lean_mark_persistent(l_asmNum_quot___closed__18);
+l_asmNum_quot___closed__19 = _init_l_asmNum_quot___closed__19();
+lean_mark_persistent(l_asmNum_quot___closed__19);
+l_asmNum_quot = _init_l_asmNum_quot();
+lean_mark_persistent(l_asmNum_quot);
+l_Lean_Parser_Category_asmNum = _init_l_Lean_Parser_Category_asmNum();
+lean_mark_persistent(l_Lean_Parser_Category_asmNum);
+l_asmNum_____closed__1 = _init_l_asmNum_____closed__1();
+lean_mark_persistent(l_asmNum_____closed__1);
+l_asmNum_____closed__2 = _init_l_asmNum_____closed__2();
+lean_mark_persistent(l_asmNum_____closed__2);
+l_asmNum_____closed__3 = _init_l_asmNum_____closed__3();
+lean_mark_persistent(l_asmNum_____closed__3);
+l_asmNum_____closed__4 = _init_l_asmNum_____closed__4();
+lean_mark_persistent(l_asmNum_____closed__4);
+l_asmNum_____closed__5 = _init_l_asmNum_____closed__5();
+lean_mark_persistent(l_asmNum_____closed__5);
+l_asmNum_____closed__6 = _init_l_asmNum_____closed__6();
+lean_mark_persistent(l_asmNum_____closed__6);
+l_asmNum__ = _init_l_asmNum__();
+lean_mark_persistent(l_asmNum__);
+l_asmNum___x2f_____closed__1 = _init_l_asmNum___x2f_____closed__1();
+lean_mark_persistent(l_asmNum___x2f_____closed__1);
+l_asmNum___x2f_____closed__2 = _init_l_asmNum___x2f_____closed__2();
+lean_mark_persistent(l_asmNum___x2f_____closed__2);
+l_asmNum___x2f_____closed__3 = _init_l_asmNum___x2f_____closed__3();
+lean_mark_persistent(l_asmNum___x2f_____closed__3);
+l_asmNum___x2f_____closed__4 = _init_l_asmNum___x2f_____closed__4();
+lean_mark_persistent(l_asmNum___x2f_____closed__4);
+l_asmNum___x2f_____closed__5 = _init_l_asmNum___x2f_____closed__5();
+lean_mark_persistent(l_asmNum___x2f_____closed__5);
+l_asmNum___x2f_____closed__6 = _init_l_asmNum___x2f_____closed__6();
+lean_mark_persistent(l_asmNum___x2f_____closed__6);
+l_asmNum___x2f__ = _init_l_asmNum___x2f__();
+lean_mark_persistent(l_asmNum___x2f__);
+l_termAsmNumToString_____closed__1 = _init_l_termAsmNumToString_____closed__1();
+lean_mark_persistent(l_termAsmNumToString_____closed__1);
+l_termAsmNumToString_____closed__2 = _init_l_termAsmNumToString_____closed__2();
+lean_mark_persistent(l_termAsmNumToString_____closed__2);
+l_termAsmNumToString_____closed__3 = _init_l_termAsmNumToString_____closed__3();
+lean_mark_persistent(l_termAsmNumToString_____closed__3);
+l_termAsmNumToString_____closed__4 = _init_l_termAsmNumToString_____closed__4();
+lean_mark_persistent(l_termAsmNumToString_____closed__4);
+l_termAsmNumToString_____closed__5 = _init_l_termAsmNumToString_____closed__5();
+lean_mark_persistent(l_termAsmNumToString_____closed__5);
+l_termAsmNumToString_____closed__6 = _init_l_termAsmNumToString_____closed__6();
+lean_mark_persistent(l_termAsmNumToString_____closed__6);
+l_termAsmNumToString__ = _init_l_termAsmNumToString__();
+lean_mark_persistent(l_termAsmNumToString__);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__1 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__1();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__1);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__2 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__2();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__2);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__3 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__3();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__3);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__4 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__4();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__4);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__5 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__5();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__5);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__6 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__6();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__6);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__7 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__7();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__7);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__8 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__8();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__8);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__9 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__9();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__9);
+l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__10 = _init_l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__10();
+lean_mark_persistent(l___aux__UW__Init__Syntax______macroRules__termAsmNumToString____1___closed__10);
+l_asmId_quot___closed__1 = _init_l_asmId_quot___closed__1();
+lean_mark_persistent(l_asmId_quot___closed__1);
+l_asmId_quot___closed__2 = _init_l_asmId_quot___closed__2();
+lean_mark_persistent(l_asmId_quot___closed__2);
+l_asmId_quot___closed__3 = _init_l_asmId_quot___closed__3();
+lean_mark_persistent(l_asmId_quot___closed__3);
+l_asmId_quot___closed__4 = _init_l_asmId_quot___closed__4();
+lean_mark_persistent(l_asmId_quot___closed__4);
+l_asmId_quot___closed__5 = _init_l_asmId_quot___closed__5();
+lean_mark_persistent(l_asmId_quot___closed__5);
+l_asmId_quot___closed__6 = _init_l_asmId_quot___closed__6();
+lean_mark_persistent(l_asmId_quot___closed__6);
+l_asmId_quot___closed__7 = _init_l_asmId_quot___closed__7();
+lean_mark_persistent(l_asmId_quot___closed__7);
+l_asmId_quot___closed__8 = _init_l_asmId_quot___closed__8();
+lean_mark_persistent(l_asmId_quot___closed__8);
+l_asmId_quot___closed__9 = _init_l_asmId_quot___closed__9();
+lean_mark_persistent(l_asmId_quot___closed__9);
+l_asmId_quot___closed__10 = _init_l_asmId_quot___closed__10();
+lean_mark_persistent(l_asmId_quot___closed__10);
+l_asmId_quot = _init_l_asmId_quot();
+lean_mark_persistent(l_asmId_quot);
+l_Lean_Parser_Category_asmId = _init_l_Lean_Parser_Category_asmId();
+lean_mark_persistent(l_Lean_Parser_Category_asmId);
+l_asmIdAsm_____closed__1 = _init_l_asmIdAsm_____closed__1();
+lean_mark_persistent(l_asmIdAsm_____closed__1);
+l_asmIdAsm_____closed__2 = _init_l_asmIdAsm_____closed__2();
+lean_mark_persistent(l_asmIdAsm_____closed__2);
+l_asmIdAsm_____closed__3 = _init_l_asmIdAsm_____closed__3();
+lean_mark_persistent(l_asmIdAsm_____closed__3);
+l_asmIdAsm_____closed__4 = _init_l_asmIdAsm_____closed__4();
+lean_mark_persistent(l_asmIdAsm_____closed__4);
+l_asmIdAsm_____closed__5 = _init_l_asmIdAsm_____closed__5();
+lean_mark_persistent(l_asmIdAsm_____closed__5);
+l_asmIdAsm_____closed__6 = _init_l_asmIdAsm_____closed__6();
+lean_mark_persistent(l_asmIdAsm_____closed__6);
+l_asmIdAsm__ = _init_l_asmIdAsm__();
+lean_mark_persistent(l_asmIdAsm__);
+l_asm_quot___closed__1 = _init_l_asm_quot___closed__1();
+lean_mark_persistent(l_asm_quot___closed__1);
+l_asm_quot___closed__2 = _init_l_asm_quot___closed__2();
+lean_mark_persistent(l_asm_quot___closed__2);
+l_asm_quot___closed__3 = _init_l_asm_quot___closed__3();
+lean_mark_persistent(l_asm_quot___closed__3);
+l_asm_quot___closed__4 = _init_l_asm_quot___closed__4();
+lean_mark_persistent(l_asm_quot___closed__4);
+l_asm_quot___closed__5 = _init_l_asm_quot___closed__5();
+lean_mark_persistent(l_asm_quot___closed__5);
+l_asm_quot___closed__6 = _init_l_asm_quot___closed__6();
+lean_mark_persistent(l_asm_quot___closed__6);
+l_asm_quot___closed__7 = _init_l_asm_quot___closed__7();
+lean_mark_persistent(l_asm_quot___closed__7);
+l_asm_quot___closed__8 = _init_l_asm_quot___closed__8();
+lean_mark_persistent(l_asm_quot___closed__8);
+l_asm_quot___closed__9 = _init_l_asm_quot___closed__9();
+lean_mark_persistent(l_asm_quot___closed__9);
+l_asm_quot___closed__10 = _init_l_asm_quot___closed__10();
+lean_mark_persistent(l_asm_quot___closed__10);
+l_asm_quot = _init_l_asm_quot();
+lean_mark_persistent(l_asm_quot);
+l_Lean_Parser_Category_asm = _init_l_Lean_Parser_Category_asm();
+lean_mark_persistent(l_Lean_Parser_Category_asm);
+l_asmAsm___x3a_____closed__1 = _init_l_asmAsm___x3a_____closed__1();
+lean_mark_persistent(l_asmAsm___x3a_____closed__1);
+l_asmAsm___x3a_____closed__2 = _init_l_asmAsm___x3a_____closed__2();
+lean_mark_persistent(l_asmAsm___x3a_____closed__2);
+l_asmAsm___x3a_____closed__3 = _init_l_asmAsm___x3a_____closed__3();
+lean_mark_persistent(l_asmAsm___x3a_____closed__3);
+l_asmAsm___x3a_____closed__4 = _init_l_asmAsm___x3a_____closed__4();
+lean_mark_persistent(l_asmAsm___x3a_____closed__4);
+l_asmAsm___x3a_____closed__5 = _init_l_asmAsm___x3a_____closed__5();
+lean_mark_persistent(l_asmAsm___x3a_____closed__5);
+l_asmAsm___x3a_____closed__6 = _init_l_asmAsm___x3a_____closed__6();
+lean_mark_persistent(l_asmAsm___x3a_____closed__6);
+l_asmAsm___x3a_____closed__7 = _init_l_asmAsm___x3a_____closed__7();
+lean_mark_persistent(l_asmAsm___x3a_____closed__7);
+l_asmAsm___x3a_____closed__8 = _init_l_asmAsm___x3a_____closed__8();
+lean_mark_persistent(l_asmAsm___x3a_____closed__8);
+l_asmAsm___x3a_____closed__9 = _init_l_asmAsm___x3a_____closed__9();
+lean_mark_persistent(l_asmAsm___x3a_____closed__9);
+l_asmAsm___x3a_____closed__10 = _init_l_asmAsm___x3a_____closed__10();
+lean_mark_persistent(l_asmAsm___x3a_____closed__10);
+l_asmAsm___x3a__ = _init_l_asmAsm___x3a__();
+lean_mark_persistent(l_asmAsm___x3a__);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__1 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__1();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__1);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__2 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__2();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__2);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__3 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__3();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__3);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__4 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__4();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__4);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__5 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__5();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__5);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__6 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__6();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__6);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__7 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__7();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__7);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__8 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__8();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__8);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__9 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__9();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__9);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__10 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__10();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__10);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__11 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__11();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__11);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__12 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__12();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__12);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__13 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__13();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__13);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__14 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__14();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__14);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__15 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__15();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__15);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__16 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__16();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__16);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__17 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__17();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__17);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__18 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__18();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__18);
+l_asmAsm___x3aVar_x28___x3a___x29___closed__19 = _init_l_asmAsm___x3aVar_x28___x3a___x29___closed__19();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29___closed__19);
+l_asmAsm___x3aVar_x28___x3a___x29 = _init_l_asmAsm___x3aVar_x28___x3a___x29();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__1 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__1();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__1);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__2 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__2();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__2);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__3 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__3();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__3);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__4 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__4();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__4);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__5 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__5();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__5);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__6 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__6();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__6);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__7 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__7();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__7);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__8 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__8();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__8);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__9 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__9();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__9);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__10 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__10();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__10);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__11 = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__11();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d_____closed__11);
+l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d__ = _init_l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d__();
+lean_mark_persistent(l_asmAsm___x3aVar_x28___x3a___x29_x3a_x3d__);
+l_target_quot___closed__1 = _init_l_target_quot___closed__1();
+lean_mark_persistent(l_target_quot___closed__1);
+l_target_quot___closed__2 = _init_l_target_quot___closed__2();
+lean_mark_persistent(l_target_quot___closed__2);
+l_target_quot___closed__3 = _init_l_target_quot___closed__3();
+lean_mark_persistent(l_target_quot___closed__3);
+l_target_quot___closed__4 = _init_l_target_quot___closed__4();
+lean_mark_persistent(l_target_quot___closed__4);
+l_target_quot___closed__5 = _init_l_target_quot___closed__5();
+lean_mark_persistent(l_target_quot___closed__5);
+l_target_quot___closed__6 = _init_l_target_quot___closed__6();
+lean_mark_persistent(l_target_quot___closed__6);
+l_target_quot___closed__7 = _init_l_target_quot___closed__7();
+lean_mark_persistent(l_target_quot___closed__7);
+l_target_quot___closed__8 = _init_l_target_quot___closed__8();
+lean_mark_persistent(l_target_quot___closed__8);
+l_target_quot___closed__9 = _init_l_target_quot___closed__9();
+lean_mark_persistent(l_target_quot___closed__9);
+l_target_quot___closed__10 = _init_l_target_quot___closed__10();
+lean_mark_persistent(l_target_quot___closed__10);
+l_target_quot = _init_l_target_quot();
+lean_mark_persistent(l_target_quot);
+l_Lean_Parser_Category_target = _init_l_Lean_Parser_Category_target();
+lean_mark_persistent(l_Lean_Parser_Category_target);
+l_target_____closed__1 = _init_l_target_____closed__1();
+lean_mark_persistent(l_target_____closed__1);
+l_target_____closed__2 = _init_l_target_____closed__2();
+lean_mark_persistent(l_target_____closed__2);
+l_target_____closed__3 = _init_l_target_____closed__3();
+lean_mark_persistent(l_target_____closed__3);
+l_target__ = _init_l_target__();
+lean_mark_persistent(l_target__);
+l_targetGoal___closed__1 = _init_l_targetGoal___closed__1();
+lean_mark_persistent(l_targetGoal___closed__1);
+l_targetGoal___closed__2 = _init_l_targetGoal___closed__2();
+lean_mark_persistent(l_targetGoal___closed__2);
+l_targetGoal___closed__3 = _init_l_targetGoal___closed__3();
+lean_mark_persistent(l_targetGoal___closed__3);
+l_targetGoal___closed__4 = _init_l_targetGoal___closed__4();
+lean_mark_persistent(l_targetGoal___closed__4);
+l_targetGoal___closed__5 = _init_l_targetGoal___closed__5();
+lean_mark_persistent(l_targetGoal___closed__5);
+l_targetGoal = _init_l_targetGoal();
+lean_mark_persistent(l_targetGoal);
+l_target____1___closed__1 = _init_l_target____1___closed__1();
+lean_mark_persistent(l_target____1___closed__1);
+l_target____1___closed__2 = _init_l_target____1___closed__2();
+lean_mark_persistent(l_target____1___closed__2);
+l_target____1___closed__3 = _init_l_target____1___closed__3();
+lean_mark_persistent(l_target____1___closed__3);
+l_target____1 = _init_l_target____1();
+lean_mark_persistent(l_target____1);
+l_sequent_quot___closed__1 = _init_l_sequent_quot___closed__1();
+lean_mark_persistent(l_sequent_quot___closed__1);
+l_sequent_quot___closed__2 = _init_l_sequent_quot___closed__2();
+lean_mark_persistent(l_sequent_quot___closed__2);
+l_sequent_quot___closed__3 = _init_l_sequent_quot___closed__3();
+lean_mark_persistent(l_sequent_quot___closed__3);
+l_sequent_quot___closed__4 = _init_l_sequent_quot___closed__4();
+lean_mark_persistent(l_sequent_quot___closed__4);
+l_sequent_quot___closed__5 = _init_l_sequent_quot___closed__5();
+lean_mark_persistent(l_sequent_quot___closed__5);
+l_sequent_quot___closed__6 = _init_l_sequent_quot___closed__6();
+lean_mark_persistent(l_sequent_quot___closed__6);
+l_sequent_quot___closed__7 = _init_l_sequent_quot___closed__7();
+lean_mark_persistent(l_sequent_quot___closed__7);
+l_sequent_quot___closed__8 = _init_l_sequent_quot___closed__8();
+lean_mark_persistent(l_sequent_quot___closed__8);
+l_sequent_quot___closed__9 = _init_l_sequent_quot___closed__9();
+lean_mark_persistent(l_sequent_quot___closed__9);
+l_sequent_quot___closed__10 = _init_l_sequent_quot___closed__10();
+lean_mark_persistent(l_sequent_quot___closed__10);
+l_sequent_quot = _init_l_sequent_quot();
+lean_mark_persistent(l_sequent_quot);
+l_Lean_Parser_Category_sequent = _init_l_Lean_Parser_Category_sequent();
+lean_mark_persistent(l_Lean_Parser_Category_sequent);
+l_sequent_____closed__1 = _init_l_sequent_____closed__1();
+lean_mark_persistent(l_sequent_____closed__1);
+l_sequent_____closed__2 = _init_l_sequent_____closed__2();
+lean_mark_persistent(l_sequent_____closed__2);
+l_sequent_____closed__3 = _init_l_sequent_____closed__3();
+lean_mark_persistent(l_sequent_____closed__3);
+l_sequent_____closed__4 = _init_l_sequent_____closed__4();
+lean_mark_persistent(l_sequent_____closed__4);
+l_sequent__ = _init_l_sequent__();
+lean_mark_persistent(l_sequent__);
+l_sequent___u22a2_____closed__1 = _init_l_sequent___u22a2_____closed__1();
+lean_mark_persistent(l_sequent___u22a2_____closed__1);
+l_sequent___u22a2_____closed__2 = _init_l_sequent___u22a2_____closed__2();
+lean_mark_persistent(l_sequent___u22a2_____closed__2);
+l_sequent___u22a2_____closed__3 = _init_l_sequent___u22a2_____closed__3();
+lean_mark_persistent(l_sequent___u22a2_____closed__3);
+l_sequent___u22a2_____closed__4 = _init_l_sequent___u22a2_____closed__4();
+lean_mark_persistent(l_sequent___u22a2_____closed__4);
+l_sequent___u22a2_____closed__5 = _init_l_sequent___u22a2_____closed__5();
+lean_mark_persistent(l_sequent___u22a2_____closed__5);
+l_sequent___u22a2_____closed__6 = _init_l_sequent___u22a2_____closed__6();
+lean_mark_persistent(l_sequent___u22a2_____closed__6);
+l_sequent___u22a2_____closed__7 = _init_l_sequent___u22a2_____closed__7();
+lean_mark_persistent(l_sequent___u22a2_____closed__7);
+l_sequent___u22a2_____closed__8 = _init_l_sequent___u22a2_____closed__8();
+lean_mark_persistent(l_sequent___u22a2_____closed__8);
+l_sequent___u22a2_____closed__9 = _init_l_sequent___u22a2_____closed__9();
+lean_mark_persistent(l_sequent___u22a2_____closed__9);
+l_sequent___u22a2_____closed__10 = _init_l_sequent___u22a2_____closed__10();
+lean_mark_persistent(l_sequent___u22a2_____closed__10);
+l_sequent___u22a2__ = _init_l_sequent___u22a2__();
+lean_mark_persistent(l_sequent___u22a2__);
+l_elimRuleName_quot___closed__1 = _init_l_elimRuleName_quot___closed__1();
+lean_mark_persistent(l_elimRuleName_quot___closed__1);
+l_elimRuleName_quot___closed__2 = _init_l_elimRuleName_quot___closed__2();
+lean_mark_persistent(l_elimRuleName_quot___closed__2);
+l_elimRuleName_quot___closed__3 = _init_l_elimRuleName_quot___closed__3();
+lean_mark_persistent(l_elimRuleName_quot___closed__3);
+l_elimRuleName_quot___closed__4 = _init_l_elimRuleName_quot___closed__4();
+lean_mark_persistent(l_elimRuleName_quot___closed__4);
+l_elimRuleName_quot___closed__5 = _init_l_elimRuleName_quot___closed__5();
+lean_mark_persistent(l_elimRuleName_quot___closed__5);
+l_elimRuleName_quot___closed__6 = _init_l_elimRuleName_quot___closed__6();
+lean_mark_persistent(l_elimRuleName_quot___closed__6);
+l_elimRuleName_quot___closed__7 = _init_l_elimRuleName_quot___closed__7();
+lean_mark_persistent(l_elimRuleName_quot___closed__7);
+l_elimRuleName_quot___closed__8 = _init_l_elimRuleName_quot___closed__8();
+lean_mark_persistent(l_elimRuleName_quot___closed__8);
+l_elimRuleName_quot___closed__9 = _init_l_elimRuleName_quot___closed__9();
+lean_mark_persistent(l_elimRuleName_quot___closed__9);
+l_elimRuleName_quot___closed__10 = _init_l_elimRuleName_quot___closed__10();
+lean_mark_persistent(l_elimRuleName_quot___closed__10);
+l_elimRuleName_quot = _init_l_elimRuleName_quot();
+lean_mark_persistent(l_elimRuleName_quot);
+l_Lean_Parser_Category_elimRuleName = _init_l_Lean_Parser_Category_elimRuleName();
+lean_mark_persistent(l_Lean_Parser_Category_elimRuleName);
+l_elimRuleNameAndElim___closed__1 = _init_l_elimRuleNameAndElim___closed__1();
+lean_mark_persistent(l_elimRuleNameAndElim___closed__1);
+l_elimRuleNameAndElim___closed__2 = _init_l_elimRuleNameAndElim___closed__2();
+lean_mark_persistent(l_elimRuleNameAndElim___closed__2);
+l_elimRuleNameAndElim___closed__3 = _init_l_elimRuleNameAndElim___closed__3();
+lean_mark_persistent(l_elimRuleNameAndElim___closed__3);
+l_elimRuleNameAndElim___closed__4 = _init_l_elimRuleNameAndElim___closed__4();
+lean_mark_persistent(l_elimRuleNameAndElim___closed__4);
+l_elimRuleNameAndElim___closed__5 = _init_l_elimRuleNameAndElim___closed__5();
+lean_mark_persistent(l_elimRuleNameAndElim___closed__5);
+l_elimRuleNameAndElim = _init_l_elimRuleNameAndElim();
+lean_mark_persistent(l_elimRuleNameAndElim);
+l_elimRuleNameOrElim___closed__1 = _init_l_elimRuleNameOrElim___closed__1();
+lean_mark_persistent(l_elimRuleNameOrElim___closed__1);
+l_elimRuleNameOrElim___closed__2 = _init_l_elimRuleNameOrElim___closed__2();
+lean_mark_persistent(l_elimRuleNameOrElim___closed__2);
+l_elimRuleNameOrElim___closed__3 = _init_l_elimRuleNameOrElim___closed__3();
+lean_mark_persistent(l_elimRuleNameOrElim___closed__3);
+l_elimRuleNameOrElim___closed__4 = _init_l_elimRuleNameOrElim___closed__4();
+lean_mark_persistent(l_elimRuleNameOrElim___closed__4);
+l_elimRuleNameOrElim___closed__5 = _init_l_elimRuleNameOrElim___closed__5();
+lean_mark_persistent(l_elimRuleNameOrElim___closed__5);
+l_elimRuleNameOrElim = _init_l_elimRuleNameOrElim();
+lean_mark_persistent(l_elimRuleNameOrElim);
+l_elimRuleNameOrElimLeft___closed__1 = _init_l_elimRuleNameOrElimLeft___closed__1();
+lean_mark_persistent(l_elimRuleNameOrElimLeft___closed__1);
+l_elimRuleNameOrElimLeft___closed__2 = _init_l_elimRuleNameOrElimLeft___closed__2();
+lean_mark_persistent(l_elimRuleNameOrElimLeft___closed__2);
+l_elimRuleNameOrElimLeft___closed__3 = _init_l_elimRuleNameOrElimLeft___closed__3();
+lean_mark_persistent(l_elimRuleNameOrElimLeft___closed__3);
+l_elimRuleNameOrElimLeft___closed__4 = _init_l_elimRuleNameOrElimLeft___closed__4();
+lean_mark_persistent(l_elimRuleNameOrElimLeft___closed__4);
+l_elimRuleNameOrElimLeft___closed__5 = _init_l_elimRuleNameOrElimLeft___closed__5();
+lean_mark_persistent(l_elimRuleNameOrElimLeft___closed__5);
+l_elimRuleNameOrElimLeft = _init_l_elimRuleNameOrElimLeft();
+lean_mark_persistent(l_elimRuleNameOrElimLeft);
+l_elimRuleNameOrElimRight___closed__1 = _init_l_elimRuleNameOrElimRight___closed__1();
+lean_mark_persistent(l_elimRuleNameOrElimRight___closed__1);
+l_elimRuleNameOrElimRight___closed__2 = _init_l_elimRuleNameOrElimRight___closed__2();
+lean_mark_persistent(l_elimRuleNameOrElimRight___closed__2);
+l_elimRuleNameOrElimRight___closed__3 = _init_l_elimRuleNameOrElimRight___closed__3();
+lean_mark_persistent(l_elimRuleNameOrElimRight___closed__3);
+l_elimRuleNameOrElimRight___closed__4 = _init_l_elimRuleNameOrElimRight___closed__4();
+lean_mark_persistent(l_elimRuleNameOrElimRight___closed__4);
+l_elimRuleNameOrElimRight___closed__5 = _init_l_elimRuleNameOrElimRight___closed__5();
+lean_mark_persistent(l_elimRuleNameOrElimRight___closed__5);
+l_elimRuleNameOrElimRight = _init_l_elimRuleNameOrElimRight();
+lean_mark_persistent(l_elimRuleNameOrElimRight);
+l_elimRuleNameNotElim___closed__1 = _init_l_elimRuleNameNotElim___closed__1();
+lean_mark_persistent(l_elimRuleNameNotElim___closed__1);
+l_elimRuleNameNotElim___closed__2 = _init_l_elimRuleNameNotElim___closed__2();
+lean_mark_persistent(l_elimRuleNameNotElim___closed__2);
+l_elimRuleNameNotElim___closed__3 = _init_l_elimRuleNameNotElim___closed__3();
+lean_mark_persistent(l_elimRuleNameNotElim___closed__3);
+l_elimRuleNameNotElim___closed__4 = _init_l_elimRuleNameNotElim___closed__4();
+lean_mark_persistent(l_elimRuleNameNotElim___closed__4);
+l_elimRuleNameNotElim___closed__5 = _init_l_elimRuleNameNotElim___closed__5();
+lean_mark_persistent(l_elimRuleNameNotElim___closed__5);
+l_elimRuleNameNotElim = _init_l_elimRuleNameNotElim();
+lean_mark_persistent(l_elimRuleNameNotElim);
+l_elimRuleNameImplElim___closed__1 = _init_l_elimRuleNameImplElim___closed__1();
+lean_mark_persistent(l_elimRuleNameImplElim___closed__1);
+l_elimRuleNameImplElim___closed__2 = _init_l_elimRuleNameImplElim___closed__2();
+lean_mark_persistent(l_elimRuleNameImplElim___closed__2);
+l_elimRuleNameImplElim___closed__3 = _init_l_elimRuleNameImplElim___closed__3();
+lean_mark_persistent(l_elimRuleNameImplElim___closed__3);
+l_elimRuleNameImplElim___closed__4 = _init_l_elimRuleNameImplElim___closed__4();
+lean_mark_persistent(l_elimRuleNameImplElim___closed__4);
+l_elimRuleNameImplElim___closed__5 = _init_l_elimRuleNameImplElim___closed__5();
+lean_mark_persistent(l_elimRuleNameImplElim___closed__5);
+l_elimRuleNameImplElim = _init_l_elimRuleNameImplElim();
+lean_mark_persistent(l_elimRuleNameImplElim);
+l_elimRuleNameImplElimRev___closed__1 = _init_l_elimRuleNameImplElimRev___closed__1();
+lean_mark_persistent(l_elimRuleNameImplElimRev___closed__1);
+l_elimRuleNameImplElimRev___closed__2 = _init_l_elimRuleNameImplElimRev___closed__2();
+lean_mark_persistent(l_elimRuleNameImplElimRev___closed__2);
+l_elimRuleNameImplElimRev___closed__3 = _init_l_elimRuleNameImplElimRev___closed__3();
+lean_mark_persistent(l_elimRuleNameImplElimRev___closed__3);
+l_elimRuleNameImplElimRev___closed__4 = _init_l_elimRuleNameImplElimRev___closed__4();
+lean_mark_persistent(l_elimRuleNameImplElimRev___closed__4);
+l_elimRuleNameImplElimRev___closed__5 = _init_l_elimRuleNameImplElimRev___closed__5();
+lean_mark_persistent(l_elimRuleNameImplElimRev___closed__5);
+l_elimRuleNameImplElimRev = _init_l_elimRuleNameImplElimRev();
+lean_mark_persistent(l_elimRuleNameImplElimRev);
+l_elimRuleNameIffElim___closed__1 = _init_l_elimRuleNameIffElim___closed__1();
+lean_mark_persistent(l_elimRuleNameIffElim___closed__1);
+l_elimRuleNameIffElim___closed__2 = _init_l_elimRuleNameIffElim___closed__2();
+lean_mark_persistent(l_elimRuleNameIffElim___closed__2);
+l_elimRuleNameIffElim___closed__3 = _init_l_elimRuleNameIffElim___closed__3();
+lean_mark_persistent(l_elimRuleNameIffElim___closed__3);
+l_elimRuleNameIffElim___closed__4 = _init_l_elimRuleNameIffElim___closed__4();
+lean_mark_persistent(l_elimRuleNameIffElim___closed__4);
+l_elimRuleNameIffElim___closed__5 = _init_l_elimRuleNameIffElim___closed__5();
+lean_mark_persistent(l_elimRuleNameIffElim___closed__5);
+l_elimRuleNameIffElim = _init_l_elimRuleNameIffElim();
+lean_mark_persistent(l_elimRuleNameIffElim);
+l_elimRuleNameIffElimRev___closed__1 = _init_l_elimRuleNameIffElimRev___closed__1();
+lean_mark_persistent(l_elimRuleNameIffElimRev___closed__1);
+l_elimRuleNameIffElimRev___closed__2 = _init_l_elimRuleNameIffElimRev___closed__2();
+lean_mark_persistent(l_elimRuleNameIffElimRev___closed__2);
+l_elimRuleNameIffElimRev___closed__3 = _init_l_elimRuleNameIffElimRev___closed__3();
+lean_mark_persistent(l_elimRuleNameIffElimRev___closed__3);
+l_elimRuleNameIffElimRev___closed__4 = _init_l_elimRuleNameIffElimRev___closed__4();
+lean_mark_persistent(l_elimRuleNameIffElimRev___closed__4);
+l_elimRuleNameIffElimRev___closed__5 = _init_l_elimRuleNameIffElimRev___closed__5();
+lean_mark_persistent(l_elimRuleNameIffElimRev___closed__5);
+l_elimRuleNameIffElimRev = _init_l_elimRuleNameIffElimRev();
+lean_mark_persistent(l_elimRuleNameIffElimRev);
+l_elimRuleNameForallElim___closed__1 = _init_l_elimRuleNameForallElim___closed__1();
+lean_mark_persistent(l_elimRuleNameForallElim___closed__1);
+l_elimRuleNameForallElim___closed__2 = _init_l_elimRuleNameForallElim___closed__2();
+lean_mark_persistent(l_elimRuleNameForallElim___closed__2);
+l_elimRuleNameForallElim___closed__3 = _init_l_elimRuleNameForallElim___closed__3();
+lean_mark_persistent(l_elimRuleNameForallElim___closed__3);
+l_elimRuleNameForallElim___closed__4 = _init_l_elimRuleNameForallElim___closed__4();
+lean_mark_persistent(l_elimRuleNameForallElim___closed__4);
+l_elimRuleNameForallElim___closed__5 = _init_l_elimRuleNameForallElim___closed__5();
+lean_mark_persistent(l_elimRuleNameForallElim___closed__5);
+l_elimRuleNameForallElim = _init_l_elimRuleNameForallElim();
+lean_mark_persistent(l_elimRuleNameForallElim);
+l_elimRuleNameExistsElim___closed__1 = _init_l_elimRuleNameExistsElim___closed__1();
+lean_mark_persistent(l_elimRuleNameExistsElim___closed__1);
+l_elimRuleNameExistsElim___closed__2 = _init_l_elimRuleNameExistsElim___closed__2();
+lean_mark_persistent(l_elimRuleNameExistsElim___closed__2);
+l_elimRuleNameExistsElim___closed__3 = _init_l_elimRuleNameExistsElim___closed__3();
+lean_mark_persistent(l_elimRuleNameExistsElim___closed__3);
+l_elimRuleNameExistsElim___closed__4 = _init_l_elimRuleNameExistsElim___closed__4();
+lean_mark_persistent(l_elimRuleNameExistsElim___closed__4);
+l_elimRuleNameExistsElim___closed__5 = _init_l_elimRuleNameExistsElim___closed__5();
+lean_mark_persistent(l_elimRuleNameExistsElim___closed__5);
+l_elimRuleNameExistsElim = _init_l_elimRuleNameExistsElim();
+lean_mark_persistent(l_elimRuleNameExistsElim);
+l_elimRuleNameElims___closed__1 = _init_l_elimRuleNameElims___closed__1();
+lean_mark_persistent(l_elimRuleNameElims___closed__1);
+l_elimRuleNameElims___closed__2 = _init_l_elimRuleNameElims___closed__2();
+lean_mark_persistent(l_elimRuleNameElims___closed__2);
+l_elimRuleNameElims___closed__3 = _init_l_elimRuleNameElims___closed__3();
+lean_mark_persistent(l_elimRuleNameElims___closed__3);
+l_elimRuleNameElims___closed__4 = _init_l_elimRuleNameElims___closed__4();
+lean_mark_persistent(l_elimRuleNameElims___closed__4);
+l_elimRuleNameElims___closed__5 = _init_l_elimRuleNameElims___closed__5();
+lean_mark_persistent(l_elimRuleNameElims___closed__5);
+l_elimRuleNameElims = _init_l_elimRuleNameElims();
+lean_mark_persistent(l_elimRuleNameElims);
+l_usingItem_quot___closed__1 = _init_l_usingItem_quot___closed__1();
+lean_mark_persistent(l_usingItem_quot___closed__1);
+l_usingItem_quot___closed__2 = _init_l_usingItem_quot___closed__2();
+lean_mark_persistent(l_usingItem_quot___closed__2);
+l_usingItem_quot___closed__3 = _init_l_usingItem_quot___closed__3();
+lean_mark_persistent(l_usingItem_quot___closed__3);
+l_usingItem_quot___closed__4 = _init_l_usingItem_quot___closed__4();
+lean_mark_persistent(l_usingItem_quot___closed__4);
+l_usingItem_quot___closed__5 = _init_l_usingItem_quot___closed__5();
+lean_mark_persistent(l_usingItem_quot___closed__5);
+l_usingItem_quot___closed__6 = _init_l_usingItem_quot___closed__6();
+lean_mark_persistent(l_usingItem_quot___closed__6);
+l_usingItem_quot___closed__7 = _init_l_usingItem_quot___closed__7();
+lean_mark_persistent(l_usingItem_quot___closed__7);
+l_usingItem_quot___closed__8 = _init_l_usingItem_quot___closed__8();
+lean_mark_persistent(l_usingItem_quot___closed__8);
+l_usingItem_quot___closed__9 = _init_l_usingItem_quot___closed__9();
+lean_mark_persistent(l_usingItem_quot___closed__9);
+l_usingItem_quot___closed__10 = _init_l_usingItem_quot___closed__10();
+lean_mark_persistent(l_usingItem_quot___closed__10);
+l_usingItem_quot = _init_l_usingItem_quot();
+lean_mark_persistent(l_usingItem_quot);
+l_Lean_Parser_Category_usingItem = _init_l_Lean_Parser_Category_usingItem();
+lean_mark_persistent(l_Lean_Parser_Category_usingItem);
+l_usingItem_____closed__1 = _init_l_usingItem_____closed__1();
+lean_mark_persistent(l_usingItem_____closed__1);
+l_usingItem_____closed__2 = _init_l_usingItem_____closed__2();
+lean_mark_persistent(l_usingItem_____closed__2);
+l_usingItem_____closed__3 = _init_l_usingItem_____closed__3();
+lean_mark_persistent(l_usingItem_____closed__3);
+l_usingItem__ = _init_l_usingItem__();
+lean_mark_persistent(l_usingItem__);
+l_usingItemGoal___closed__1 = _init_l_usingItemGoal___closed__1();
+lean_mark_persistent(l_usingItemGoal___closed__1);
+l_usingItemGoal___closed__2 = _init_l_usingItemGoal___closed__2();
+lean_mark_persistent(l_usingItemGoal___closed__2);
+l_usingItemGoal___closed__3 = _init_l_usingItemGoal___closed__3();
+lean_mark_persistent(l_usingItemGoal___closed__3);
+l_usingItemGoal = _init_l_usingItemGoal();
+lean_mark_persistent(l_usingItemGoal);
+l_usingItem____1___closed__1 = _init_l_usingItem____1___closed__1();
+lean_mark_persistent(l_usingItem____1___closed__1);
+l_usingItem____1___closed__2 = _init_l_usingItem____1___closed__2();
+lean_mark_persistent(l_usingItem____1___closed__2);
+l_usingItem____1___closed__3 = _init_l_usingItem____1___closed__3();
+lean_mark_persistent(l_usingItem____1___closed__3);
+l_usingItem____1 = _init_l_usingItem____1();
+lean_mark_persistent(l_usingItem____1);
+l_usingItemArith___closed__1 = _init_l_usingItemArith___closed__1();
+lean_mark_persistent(l_usingItemArith___closed__1);
+l_usingItemArith___closed__2 = _init_l_usingItemArith___closed__2();
+lean_mark_persistent(l_usingItemArith___closed__2);
+l_usingItemArith___closed__3 = _init_l_usingItemArith___closed__3();
+lean_mark_persistent(l_usingItemArith___closed__3);
+l_usingItemArith___closed__4 = _init_l_usingItemArith___closed__4();
+lean_mark_persistent(l_usingItemArith___closed__4);
+l_usingItemArith___closed__5 = _init_l_usingItemArith___closed__5();
+lean_mark_persistent(l_usingItemArith___closed__5);
+l_usingItemArith = _init_l_usingItemArith();
+lean_mark_persistent(l_usingItemArith);
+l_usingItemLogic___closed__1 = _init_l_usingItemLogic___closed__1();
+lean_mark_persistent(l_usingItemLogic___closed__1);
+l_usingItemLogic___closed__2 = _init_l_usingItemLogic___closed__2();
+lean_mark_persistent(l_usingItemLogic___closed__2);
+l_usingItemLogic___closed__3 = _init_l_usingItemLogic___closed__3();
+lean_mark_persistent(l_usingItemLogic___closed__3);
+l_usingItemLogic___closed__4 = _init_l_usingItemLogic___closed__4();
+lean_mark_persistent(l_usingItemLogic___closed__4);
+l_usingItemLogic___closed__5 = _init_l_usingItemLogic___closed__5();
+lean_mark_persistent(l_usingItemLogic___closed__5);
+l_usingItemLogic = _init_l_usingItemLogic();
+lean_mark_persistent(l_usingItemLogic);
+l_usingClause_quot___closed__1 = _init_l_usingClause_quot___closed__1();
+lean_mark_persistent(l_usingClause_quot___closed__1);
+l_usingClause_quot___closed__2 = _init_l_usingClause_quot___closed__2();
+lean_mark_persistent(l_usingClause_quot___closed__2);
+l_usingClause_quot___closed__3 = _init_l_usingClause_quot___closed__3();
+lean_mark_persistent(l_usingClause_quot___closed__3);
+l_usingClause_quot___closed__4 = _init_l_usingClause_quot___closed__4();
+lean_mark_persistent(l_usingClause_quot___closed__4);
+l_usingClause_quot___closed__5 = _init_l_usingClause_quot___closed__5();
+lean_mark_persistent(l_usingClause_quot___closed__5);
+l_usingClause_quot___closed__6 = _init_l_usingClause_quot___closed__6();
+lean_mark_persistent(l_usingClause_quot___closed__6);
+l_usingClause_quot___closed__7 = _init_l_usingClause_quot___closed__7();
+lean_mark_persistent(l_usingClause_quot___closed__7);
+l_usingClause_quot___closed__8 = _init_l_usingClause_quot___closed__8();
+lean_mark_persistent(l_usingClause_quot___closed__8);
+l_usingClause_quot___closed__9 = _init_l_usingClause_quot___closed__9();
+lean_mark_persistent(l_usingClause_quot___closed__9);
+l_usingClause_quot___closed__10 = _init_l_usingClause_quot___closed__10();
+lean_mark_persistent(l_usingClause_quot___closed__10);
+l_usingClause_quot = _init_l_usingClause_quot();
+lean_mark_persistent(l_usingClause_quot);
+l_Lean_Parser_Category_usingClause = _init_l_Lean_Parser_Category_usingClause();
+lean_mark_persistent(l_Lean_Parser_Category_usingClause);
+l_usingClauseUsing_____closed__1 = _init_l_usingClauseUsing_____closed__1();
+lean_mark_persistent(l_usingClauseUsing_____closed__1);
+l_usingClauseUsing_____closed__2 = _init_l_usingClauseUsing_____closed__2();
+lean_mark_persistent(l_usingClauseUsing_____closed__2);
+l_usingClauseUsing_____closed__3 = _init_l_usingClauseUsing_____closed__3();
+lean_mark_persistent(l_usingClauseUsing_____closed__3);
+l_usingClauseUsing_____closed__4 = _init_l_usingClauseUsing_____closed__4();
+lean_mark_persistent(l_usingClauseUsing_____closed__4);
+l_usingClauseUsing_____closed__5 = _init_l_usingClauseUsing_____closed__5();
+lean_mark_persistent(l_usingClauseUsing_____closed__5);
+l_usingClauseUsing_____closed__6 = _init_l_usingClauseUsing_____closed__6();
+lean_mark_persistent(l_usingClauseUsing_____closed__6);
+l_usingClauseUsing_____closed__7 = _init_l_usingClauseUsing_____closed__7();
+lean_mark_persistent(l_usingClauseUsing_____closed__7);
+l_usingClauseUsing_____closed__8 = _init_l_usingClauseUsing_____closed__8();
+lean_mark_persistent(l_usingClauseUsing_____closed__8);
+l_usingClauseUsing_____closed__9 = _init_l_usingClauseUsing_____closed__9();
+lean_mark_persistent(l_usingClauseUsing_____closed__9);
+l_usingClauseUsing_____closed__10 = _init_l_usingClauseUsing_____closed__10();
+lean_mark_persistent(l_usingClauseUsing_____closed__10);
+l_usingClauseUsing__ = _init_l_usingClauseUsing__();
+lean_mark_persistent(l_usingClauseUsing__);
+l_elimRule_quot___closed__1 = _init_l_elimRule_quot___closed__1();
+lean_mark_persistent(l_elimRule_quot___closed__1);
+l_elimRule_quot___closed__2 = _init_l_elimRule_quot___closed__2();
+lean_mark_persistent(l_elimRule_quot___closed__2);
+l_elimRule_quot___closed__3 = _init_l_elimRule_quot___closed__3();
+lean_mark_persistent(l_elimRule_quot___closed__3);
+l_elimRule_quot___closed__4 = _init_l_elimRule_quot___closed__4();
+lean_mark_persistent(l_elimRule_quot___closed__4);
+l_elimRule_quot___closed__5 = _init_l_elimRule_quot___closed__5();
+lean_mark_persistent(l_elimRule_quot___closed__5);
+l_elimRule_quot___closed__6 = _init_l_elimRule_quot___closed__6();
+lean_mark_persistent(l_elimRule_quot___closed__6);
+l_elimRule_quot___closed__7 = _init_l_elimRule_quot___closed__7();
+lean_mark_persistent(l_elimRule_quot___closed__7);
+l_elimRule_quot___closed__8 = _init_l_elimRule_quot___closed__8();
+lean_mark_persistent(l_elimRule_quot___closed__8);
+l_elimRule_quot___closed__9 = _init_l_elimRule_quot___closed__9();
+lean_mark_persistent(l_elimRule_quot___closed__9);
+l_elimRule_quot___closed__10 = _init_l_elimRule_quot___closed__10();
+lean_mark_persistent(l_elimRule_quot___closed__10);
+l_elimRule_quot = _init_l_elimRule_quot();
+lean_mark_persistent(l_elimRule_quot);
+l_Lean_Parser_Category_elimRule = _init_l_Lean_Parser_Category_elimRule();
+lean_mark_persistent(l_Lean_Parser_Category_elimRule);
+l_elimRule_______closed__1 = _init_l_elimRule_______closed__1();
+lean_mark_persistent(l_elimRule_______closed__1);
+l_elimRule_______closed__2 = _init_l_elimRule_______closed__2();
+lean_mark_persistent(l_elimRule_______closed__2);
+l_elimRule_______closed__3 = _init_l_elimRule_______closed__3();
+lean_mark_persistent(l_elimRule_______closed__3);
+l_elimRule_______closed__4 = _init_l_elimRule_______closed__4();
+lean_mark_persistent(l_elimRule_______closed__4);
+l_elimRule____ = _init_l_elimRule____();
+lean_mark_persistent(l_elimRule____);
+l_elimRule_________closed__1 = _init_l_elimRule_________closed__1();
+lean_mark_persistent(l_elimRule_________closed__1);
+l_elimRule_________closed__2 = _init_l_elimRule_________closed__2();
+lean_mark_persistent(l_elimRule_________closed__2);
+l_elimRule_________closed__3 = _init_l_elimRule_________closed__3();
+lean_mark_persistent(l_elimRule_________closed__3);
+l_elimRule_________closed__4 = _init_l_elimRule_________closed__4();
+lean_mark_persistent(l_elimRule_________closed__4);
+l_elimRule______ = _init_l_elimRule______();
+lean_mark_persistent(l_elimRule______);
+l_logicObjCat_quot___closed__1 = _init_l_logicObjCat_quot___closed__1();
+lean_mark_persistent(l_logicObjCat_quot___closed__1);
+l_logicObjCat_quot___closed__2 = _init_l_logicObjCat_quot___closed__2();
+lean_mark_persistent(l_logicObjCat_quot___closed__2);
+l_logicObjCat_quot___closed__3 = _init_l_logicObjCat_quot___closed__3();
+lean_mark_persistent(l_logicObjCat_quot___closed__3);
+l_logicObjCat_quot___closed__4 = _init_l_logicObjCat_quot___closed__4();
+lean_mark_persistent(l_logicObjCat_quot___closed__4);
+l_logicObjCat_quot___closed__5 = _init_l_logicObjCat_quot___closed__5();
+lean_mark_persistent(l_logicObjCat_quot___closed__5);
+l_logicObjCat_quot___closed__6 = _init_l_logicObjCat_quot___closed__6();
+lean_mark_persistent(l_logicObjCat_quot___closed__6);
+l_logicObjCat_quot___closed__7 = _init_l_logicObjCat_quot___closed__7();
+lean_mark_persistent(l_logicObjCat_quot___closed__7);
+l_logicObjCat_quot___closed__8 = _init_l_logicObjCat_quot___closed__8();
+lean_mark_persistent(l_logicObjCat_quot___closed__8);
+l_logicObjCat_quot___closed__9 = _init_l_logicObjCat_quot___closed__9();
+lean_mark_persistent(l_logicObjCat_quot___closed__9);
+l_logicObjCat_quot___closed__10 = _init_l_logicObjCat_quot___closed__10();
+lean_mark_persistent(l_logicObjCat_quot___closed__10);
+l_logicObjCat_quot = _init_l_logicObjCat_quot();
+lean_mark_persistent(l_logicObjCat_quot);
+l_Lean_Parser_Category_logicObjCat = _init_l_Lean_Parser_Category_logicObjCat();
+lean_mark_persistent(l_Lean_Parser_Category_logicObjCat);
+l_logicObjCatLemma___closed__1 = _init_l_logicObjCatLemma___closed__1();
+lean_mark_persistent(l_logicObjCatLemma___closed__1);
+l_logicObjCatLemma___closed__2 = _init_l_logicObjCatLemma___closed__2();
+lean_mark_persistent(l_logicObjCatLemma___closed__2);
+l_logicObjCatLemma___closed__3 = _init_l_logicObjCatLemma___closed__3();
+lean_mark_persistent(l_logicObjCatLemma___closed__3);
+l_logicObjCatLemma___closed__4 = _init_l_logicObjCatLemma___closed__4();
+lean_mark_persistent(l_logicObjCatLemma___closed__4);
+l_logicObjCatLemma___closed__5 = _init_l_logicObjCatLemma___closed__5();
+lean_mark_persistent(l_logicObjCatLemma___closed__5);
+l_logicObjCatLemma = _init_l_logicObjCatLemma();
+lean_mark_persistent(l_logicObjCatLemma);
+l_logicObjCatTheorem___closed__1 = _init_l_logicObjCatTheorem___closed__1();
+lean_mark_persistent(l_logicObjCatTheorem___closed__1);
+l_logicObjCatTheorem___closed__2 = _init_l_logicObjCatTheorem___closed__2();
+lean_mark_persistent(l_logicObjCatTheorem___closed__2);
+l_logicObjCatTheorem___closed__3 = _init_l_logicObjCatTheorem___closed__3();
+lean_mark_persistent(l_logicObjCatTheorem___closed__3);
+l_logicObjCatTheorem___closed__4 = _init_l_logicObjCatTheorem___closed__4();
+lean_mark_persistent(l_logicObjCatTheorem___closed__4);
+l_logicObjCatTheorem___closed__5 = _init_l_logicObjCatTheorem___closed__5();
+lean_mark_persistent(l_logicObjCatTheorem___closed__5);
+l_logicObjCatTheorem = _init_l_logicObjCatTheorem();
+lean_mark_persistent(l_logicObjCatTheorem);
+l_logicObjCatDefinition___closed__1 = _init_l_logicObjCatDefinition___closed__1();
+lean_mark_persistent(l_logicObjCatDefinition___closed__1);
+l_logicObjCatDefinition___closed__2 = _init_l_logicObjCatDefinition___closed__2();
+lean_mark_persistent(l_logicObjCatDefinition___closed__2);
+l_logicObjCatDefinition___closed__3 = _init_l_logicObjCatDefinition___closed__3();
+lean_mark_persistent(l_logicObjCatDefinition___closed__3);
+l_logicObjCatDefinition___closed__4 = _init_l_logicObjCatDefinition___closed__4();
+lean_mark_persistent(l_logicObjCatDefinition___closed__4);
+l_logicObjCatDefinition___closed__5 = _init_l_logicObjCatDefinition___closed__5();
+lean_mark_persistent(l_logicObjCatDefinition___closed__5);
+l_logicObjCatDefinition = _init_l_logicObjCatDefinition();
+lean_mark_persistent(l_logicObjCatDefinition);
+l_logicObjCatAxiom___closed__1 = _init_l_logicObjCatAxiom___closed__1();
+lean_mark_persistent(l_logicObjCatAxiom___closed__1);
+l_logicObjCatAxiom___closed__2 = _init_l_logicObjCatAxiom___closed__2();
+lean_mark_persistent(l_logicObjCatAxiom___closed__2);
+l_logicObjCatAxiom___closed__3 = _init_l_logicObjCatAxiom___closed__3();
+lean_mark_persistent(l_logicObjCatAxiom___closed__3);
+l_logicObjCatAxiom___closed__4 = _init_l_logicObjCatAxiom___closed__4();
+lean_mark_persistent(l_logicObjCatAxiom___closed__4);
+l_logicObjCatAxiom___closed__5 = _init_l_logicObjCatAxiom___closed__5();
+lean_mark_persistent(l_logicObjCatAxiom___closed__5);
+l_logicObjCatAxiom = _init_l_logicObjCatAxiom();
+lean_mark_persistent(l_logicObjCatAxiom);
+l_logicObj_quot___closed__1 = _init_l_logicObj_quot___closed__1();
+lean_mark_persistent(l_logicObj_quot___closed__1);
+l_logicObj_quot___closed__2 = _init_l_logicObj_quot___closed__2();
+lean_mark_persistent(l_logicObj_quot___closed__2);
+l_logicObj_quot___closed__3 = _init_l_logicObj_quot___closed__3();
+lean_mark_persistent(l_logicObj_quot___closed__3);
+l_logicObj_quot___closed__4 = _init_l_logicObj_quot___closed__4();
+lean_mark_persistent(l_logicObj_quot___closed__4);
+l_logicObj_quot___closed__5 = _init_l_logicObj_quot___closed__5();
+lean_mark_persistent(l_logicObj_quot___closed__5);
+l_logicObj_quot___closed__6 = _init_l_logicObj_quot___closed__6();
+lean_mark_persistent(l_logicObj_quot___closed__6);
+l_logicObj_quot___closed__7 = _init_l_logicObj_quot___closed__7();
+lean_mark_persistent(l_logicObj_quot___closed__7);
+l_logicObj_quot___closed__8 = _init_l_logicObj_quot___closed__8();
+lean_mark_persistent(l_logicObj_quot___closed__8);
+l_logicObj_quot___closed__9 = _init_l_logicObj_quot___closed__9();
+lean_mark_persistent(l_logicObj_quot___closed__9);
+l_logicObj_quot___closed__10 = _init_l_logicObj_quot___closed__10();
+lean_mark_persistent(l_logicObj_quot___closed__10);
+l_logicObj_quot = _init_l_logicObj_quot();
+lean_mark_persistent(l_logicObj_quot);
+l_Lean_Parser_Category_logicObj = _init_l_Lean_Parser_Category_logicObj();
+lean_mark_persistent(l_Lean_Parser_Category_logicObj);
+l_logicObj_____closed__1 = _init_l_logicObj_____closed__1();
+lean_mark_persistent(l_logicObj_____closed__1);
+l_logicObj_____closed__2 = _init_l_logicObj_____closed__2();
+lean_mark_persistent(l_logicObj_____closed__2);
+l_logicObj_____closed__3 = _init_l_logicObj_____closed__3();
+lean_mark_persistent(l_logicObj_____closed__3);
+l_logicObj__ = _init_l_logicObj__();
+lean_mark_persistent(l_logicObj__);
+l_contradictJustification_quot___closed__1 = _init_l_contradictJustification_quot___closed__1();
+lean_mark_persistent(l_contradictJustification_quot___closed__1);
+l_contradictJustification_quot___closed__2 = _init_l_contradictJustification_quot___closed__2();
+lean_mark_persistent(l_contradictJustification_quot___closed__2);
+l_contradictJustification_quot___closed__3 = _init_l_contradictJustification_quot___closed__3();
+lean_mark_persistent(l_contradictJustification_quot___closed__3);
+l_contradictJustification_quot___closed__4 = _init_l_contradictJustification_quot___closed__4();
+lean_mark_persistent(l_contradictJustification_quot___closed__4);
+l_contradictJustification_quot___closed__5 = _init_l_contradictJustification_quot___closed__5();
+lean_mark_persistent(l_contradictJustification_quot___closed__5);
+l_contradictJustification_quot___closed__6 = _init_l_contradictJustification_quot___closed__6();
+lean_mark_persistent(l_contradictJustification_quot___closed__6);
+l_contradictJustification_quot___closed__7 = _init_l_contradictJustification_quot___closed__7();
+lean_mark_persistent(l_contradictJustification_quot___closed__7);
+l_contradictJustification_quot___closed__8 = _init_l_contradictJustification_quot___closed__8();
+lean_mark_persistent(l_contradictJustification_quot___closed__8);
+l_contradictJustification_quot___closed__9 = _init_l_contradictJustification_quot___closed__9();
+lean_mark_persistent(l_contradictJustification_quot___closed__9);
+l_contradictJustification_quot___closed__10 = _init_l_contradictJustification_quot___closed__10();
+lean_mark_persistent(l_contradictJustification_quot___closed__10);
+l_contradictJustification_quot = _init_l_contradictJustification_quot();
+lean_mark_persistent(l_contradictJustification_quot);
+l_Lean_Parser_Category_contradictJustification = _init_l_Lean_Parser_Category_contradictJustification();
+lean_mark_persistent(l_Lean_Parser_Category_contradictJustification);
+l_contradictJustificationContradiction_____closed__1 = _init_l_contradictJustificationContradiction_____closed__1();
+lean_mark_persistent(l_contradictJustificationContradiction_____closed__1);
+l_contradictJustificationContradiction_____closed__2 = _init_l_contradictJustificationContradiction_____closed__2();
+lean_mark_persistent(l_contradictJustificationContradiction_____closed__2);
+l_contradictJustificationContradiction_____closed__3 = _init_l_contradictJustificationContradiction_____closed__3();
+lean_mark_persistent(l_contradictJustificationContradiction_____closed__3);
+l_contradictJustificationContradiction_____closed__4 = _init_l_contradictJustificationContradiction_____closed__4();
+lean_mark_persistent(l_contradictJustificationContradiction_____closed__4);
+l_contradictJustificationContradiction_____closed__5 = _init_l_contradictJustificationContradiction_____closed__5();
+lean_mark_persistent(l_contradictJustificationContradiction_____closed__5);
+l_contradictJustificationContradiction_____closed__6 = _init_l_contradictJustificationContradiction_____closed__6();
+lean_mark_persistent(l_contradictJustificationContradiction_____closed__6);
+l_contradictJustificationContradiction__ = _init_l_contradictJustificationContradiction__();
+lean_mark_persistent(l_contradictJustificationContradiction__);
+l_contradictJustificationContradiction___x2c_____closed__1 = _init_l_contradictJustificationContradiction___x2c_____closed__1();
+lean_mark_persistent(l_contradictJustificationContradiction___x2c_____closed__1);
+l_contradictJustificationContradiction___x2c_____closed__2 = _init_l_contradictJustificationContradiction___x2c_____closed__2();
+lean_mark_persistent(l_contradictJustificationContradiction___x2c_____closed__2);
+l_contradictJustificationContradiction___x2c_____closed__3 = _init_l_contradictJustificationContradiction___x2c_____closed__3();
+lean_mark_persistent(l_contradictJustificationContradiction___x2c_____closed__3);
+l_contradictJustificationContradiction___x2c_____closed__4 = _init_l_contradictJustificationContradiction___x2c_____closed__4();
+lean_mark_persistent(l_contradictJustificationContradiction___x2c_____closed__4);
+l_contradictJustificationContradiction___x2c_____closed__5 = _init_l_contradictJustificationContradiction___x2c_____closed__5();
+lean_mark_persistent(l_contradictJustificationContradiction___x2c_____closed__5);
+l_contradictJustificationContradiction___x2c_____closed__6 = _init_l_contradictJustificationContradiction___x2c_____closed__6();
+lean_mark_persistent(l_contradictJustificationContradiction___x2c_____closed__6);
+l_contradictJustificationContradiction___x2c__ = _init_l_contradictJustificationContradiction___x2c__();
+lean_mark_persistent(l_contradictJustificationContradiction___x2c__);
+l_simpleJustification_quot___closed__1 = _init_l_simpleJustification_quot___closed__1();
+lean_mark_persistent(l_simpleJustification_quot___closed__1);
+l_simpleJustification_quot___closed__2 = _init_l_simpleJustification_quot___closed__2();
+lean_mark_persistent(l_simpleJustification_quot___closed__2);
+l_simpleJustification_quot___closed__3 = _init_l_simpleJustification_quot___closed__3();
+lean_mark_persistent(l_simpleJustification_quot___closed__3);
+l_simpleJustification_quot___closed__4 = _init_l_simpleJustification_quot___closed__4();
+lean_mark_persistent(l_simpleJustification_quot___closed__4);
+l_simpleJustification_quot___closed__5 = _init_l_simpleJustification_quot___closed__5();
+lean_mark_persistent(l_simpleJustification_quot___closed__5);
+l_simpleJustification_quot___closed__6 = _init_l_simpleJustification_quot___closed__6();
+lean_mark_persistent(l_simpleJustification_quot___closed__6);
+l_simpleJustification_quot___closed__7 = _init_l_simpleJustification_quot___closed__7();
+lean_mark_persistent(l_simpleJustification_quot___closed__7);
+l_simpleJustification_quot___closed__8 = _init_l_simpleJustification_quot___closed__8();
+lean_mark_persistent(l_simpleJustification_quot___closed__8);
+l_simpleJustification_quot___closed__9 = _init_l_simpleJustification_quot___closed__9();
+lean_mark_persistent(l_simpleJustification_quot___closed__9);
+l_simpleJustification_quot___closed__10 = _init_l_simpleJustification_quot___closed__10();
+lean_mark_persistent(l_simpleJustification_quot___closed__10);
+l_simpleJustification_quot = _init_l_simpleJustification_quot();
+lean_mark_persistent(l_simpleJustification_quot);
+l_Lean_Parser_Category_simpleJustification = _init_l_Lean_Parser_Category_simpleJustification();
+lean_mark_persistent(l_Lean_Parser_Category_simpleJustification);
+l_simpleJustification_____closed__1 = _init_l_simpleJustification_____closed__1();
+lean_mark_persistent(l_simpleJustification_____closed__1);
+l_simpleJustification_____closed__2 = _init_l_simpleJustification_____closed__2();
+lean_mark_persistent(l_simpleJustification_____closed__2);
+l_simpleJustification_____closed__3 = _init_l_simpleJustification_____closed__3();
+lean_mark_persistent(l_simpleJustification_____closed__3);
+l_simpleJustification__ = _init_l_simpleJustification__();
+lean_mark_persistent(l_simpleJustification__);
+l_simpleJustificationLogic___closed__1 = _init_l_simpleJustificationLogic___closed__1();
+lean_mark_persistent(l_simpleJustificationLogic___closed__1);
+l_simpleJustificationLogic___closed__2 = _init_l_simpleJustificationLogic___closed__2();
+lean_mark_persistent(l_simpleJustificationLogic___closed__2);
+l_simpleJustificationLogic___closed__3 = _init_l_simpleJustificationLogic___closed__3();
+lean_mark_persistent(l_simpleJustificationLogic___closed__3);
+l_simpleJustificationLogic = _init_l_simpleJustificationLogic();
+lean_mark_persistent(l_simpleJustificationLogic);
+l_simpleJustificationArith___closed__1 = _init_l_simpleJustificationArith___closed__1();
+lean_mark_persistent(l_simpleJustificationArith___closed__1);
+l_simpleJustificationArith___closed__2 = _init_l_simpleJustificationArith___closed__2();
+lean_mark_persistent(l_simpleJustificationArith___closed__2);
+l_simpleJustificationArith___closed__3 = _init_l_simpleJustificationArith___closed__3();
+lean_mark_persistent(l_simpleJustificationArith___closed__3);
+l_simpleJustificationArith = _init_l_simpleJustificationArith();
+lean_mark_persistent(l_simpleJustificationArith);
+l_simpleJustification____1___closed__1 = _init_l_simpleJustification____1___closed__1();
+lean_mark_persistent(l_simpleJustification____1___closed__1);
+l_simpleJustification____1___closed__2 = _init_l_simpleJustification____1___closed__2();
+lean_mark_persistent(l_simpleJustification____1___closed__2);
+l_simpleJustification____1___closed__3 = _init_l_simpleJustification____1___closed__3();
+lean_mark_persistent(l_simpleJustification____1___closed__3);
+l_simpleJustification____1 = _init_l_simpleJustification____1();
+lean_mark_persistent(l_simpleJustification____1);
+l_justification_quot___closed__1 = _init_l_justification_quot___closed__1();
+lean_mark_persistent(l_justification_quot___closed__1);
+l_justification_quot___closed__2 = _init_l_justification_quot___closed__2();
+lean_mark_persistent(l_justification_quot___closed__2);
+l_justification_quot___closed__3 = _init_l_justification_quot___closed__3();
+lean_mark_persistent(l_justification_quot___closed__3);
+l_justification_quot___closed__4 = _init_l_justification_quot___closed__4();
+lean_mark_persistent(l_justification_quot___closed__4);
+l_justification_quot___closed__5 = _init_l_justification_quot___closed__5();
+lean_mark_persistent(l_justification_quot___closed__5);
+l_justification_quot___closed__6 = _init_l_justification_quot___closed__6();
+lean_mark_persistent(l_justification_quot___closed__6);
+l_justification_quot___closed__7 = _init_l_justification_quot___closed__7();
+lean_mark_persistent(l_justification_quot___closed__7);
+l_justification_quot___closed__8 = _init_l_justification_quot___closed__8();
+lean_mark_persistent(l_justification_quot___closed__8);
+l_justification_quot___closed__9 = _init_l_justification_quot___closed__9();
+lean_mark_persistent(l_justification_quot___closed__9);
+l_justification_quot___closed__10 = _init_l_justification_quot___closed__10();
+lean_mark_persistent(l_justification_quot___closed__10);
+l_justification_quot = _init_l_justification_quot();
+lean_mark_persistent(l_justification_quot);
+l_Lean_Parser_Category_justification = _init_l_Lean_Parser_Category_justification();
+lean_mark_persistent(l_Lean_Parser_Category_justification);
+l_justification_______closed__1 = _init_l_justification_______closed__1();
+lean_mark_persistent(l_justification_______closed__1);
+l_justification_______closed__2 = _init_l_justification_______closed__2();
+lean_mark_persistent(l_justification_______closed__2);
+l_justification_______closed__3 = _init_l_justification_______closed__3();
+lean_mark_persistent(l_justification_______closed__3);
+l_justification_______closed__4 = _init_l_justification_______closed__4();
+lean_mark_persistent(l_justification_______closed__4);
+l_justification____ = _init_l_justification____();
+lean_mark_persistent(l_justification____);
+l_justificationLogicUsing_____closed__1 = _init_l_justificationLogicUsing_____closed__1();
+lean_mark_persistent(l_justificationLogicUsing_____closed__1);
+l_justificationLogicUsing_____closed__2 = _init_l_justificationLogicUsing_____closed__2();
+lean_mark_persistent(l_justificationLogicUsing_____closed__2);
+l_justificationLogicUsing_____closed__3 = _init_l_justificationLogicUsing_____closed__3();
+lean_mark_persistent(l_justificationLogicUsing_____closed__3);
+l_justificationLogicUsing_____closed__4 = _init_l_justificationLogicUsing_____closed__4();
+lean_mark_persistent(l_justificationLogicUsing_____closed__4);
+l_justificationLogicUsing_____closed__5 = _init_l_justificationLogicUsing_____closed__5();
+lean_mark_persistent(l_justificationLogicUsing_____closed__5);
+l_justificationLogicUsing__ = _init_l_justificationLogicUsing__();
+lean_mark_persistent(l_justificationLogicUsing__);
+l_justificationArithUsing_____closed__1 = _init_l_justificationArithUsing_____closed__1();
+lean_mark_persistent(l_justificationArithUsing_____closed__1);
+l_justificationArithUsing_____closed__2 = _init_l_justificationArithUsing_____closed__2();
+lean_mark_persistent(l_justificationArithUsing_____closed__2);
+l_justificationArithUsing_____closed__3 = _init_l_justificationArithUsing_____closed__3();
+lean_mark_persistent(l_justificationArithUsing_____closed__3);
+l_justificationArithUsing_____closed__4 = _init_l_justificationArithUsing_____closed__4();
+lean_mark_persistent(l_justificationArithUsing_____closed__4);
+l_justificationArithUsing_____closed__5 = _init_l_justificationArithUsing_____closed__5();
+lean_mark_persistent(l_justificationArithUsing_____closed__5);
+l_justificationArithUsing__ = _init_l_justificationArithUsing__();
+lean_mark_persistent(l_justificationArithUsing__);
+l_justification_____closed__1 = _init_l_justification_____closed__1();
+lean_mark_persistent(l_justification_____closed__1);
+l_justification_____closed__2 = _init_l_justification_____closed__2();
+lean_mark_persistent(l_justification_____closed__2);
+l_justification_____closed__3 = _init_l_justification_____closed__3();
+lean_mark_persistent(l_justification_____closed__3);
+l_justification__ = _init_l_justification__();
+lean_mark_persistent(l_justification__);
+l_justification____1___closed__1 = _init_l_justification____1___closed__1();
+lean_mark_persistent(l_justification____1___closed__1);
+l_justification____1___closed__2 = _init_l_justification____1___closed__2();
+lean_mark_persistent(l_justification____1___closed__2);
+l_justification____1___closed__3 = _init_l_justification____1___closed__3();
+lean_mark_persistent(l_justification____1___closed__3);
+l_justification____1 = _init_l_justification____1();
+lean_mark_persistent(l_justification____1);
+l_justification____2___closed__1 = _init_l_justification____2___closed__1();
+lean_mark_persistent(l_justification____2___closed__1);
+l_justification____2___closed__2 = _init_l_justification____2___closed__2();
+lean_mark_persistent(l_justification____2___closed__2);
+l_justification____2___closed__3 = _init_l_justification____2___closed__3();
+lean_mark_persistent(l_justification____2___closed__3);
+l_justification____2___closed__4 = _init_l_justification____2___closed__4();
+lean_mark_persistent(l_justification____2___closed__4);
+l_justification____2 = _init_l_justification____2();
+lean_mark_persistent(l_justification____2);
+l_assertTarget_quot___closed__1 = _init_l_assertTarget_quot___closed__1();
+lean_mark_persistent(l_assertTarget_quot___closed__1);
+l_assertTarget_quot___closed__2 = _init_l_assertTarget_quot___closed__2();
+lean_mark_persistent(l_assertTarget_quot___closed__2);
+l_assertTarget_quot___closed__3 = _init_l_assertTarget_quot___closed__3();
+lean_mark_persistent(l_assertTarget_quot___closed__3);
+l_assertTarget_quot___closed__4 = _init_l_assertTarget_quot___closed__4();
+lean_mark_persistent(l_assertTarget_quot___closed__4);
+l_assertTarget_quot___closed__5 = _init_l_assertTarget_quot___closed__5();
+lean_mark_persistent(l_assertTarget_quot___closed__5);
+l_assertTarget_quot___closed__6 = _init_l_assertTarget_quot___closed__6();
+lean_mark_persistent(l_assertTarget_quot___closed__6);
+l_assertTarget_quot___closed__7 = _init_l_assertTarget_quot___closed__7();
+lean_mark_persistent(l_assertTarget_quot___closed__7);
+l_assertTarget_quot___closed__8 = _init_l_assertTarget_quot___closed__8();
+lean_mark_persistent(l_assertTarget_quot___closed__8);
+l_assertTarget_quot___closed__9 = _init_l_assertTarget_quot___closed__9();
+lean_mark_persistent(l_assertTarget_quot___closed__9);
+l_assertTarget_quot___closed__10 = _init_l_assertTarget_quot___closed__10();
+lean_mark_persistent(l_assertTarget_quot___closed__10);
+l_assertTarget_quot = _init_l_assertTarget_quot();
+lean_mark_persistent(l_assertTarget_quot);
+l_Lean_Parser_Category_assertTarget = _init_l_Lean_Parser_Category_assertTarget();
+lean_mark_persistent(l_Lean_Parser_Category_assertTarget);
+l_assertTarget_____closed__1 = _init_l_assertTarget_____closed__1();
+lean_mark_persistent(l_assertTarget_____closed__1);
+l_assertTarget_____closed__2 = _init_l_assertTarget_____closed__2();
+lean_mark_persistent(l_assertTarget_____closed__2);
+l_assertTarget_____closed__3 = _init_l_assertTarget_____closed__3();
+lean_mark_persistent(l_assertTarget_____closed__3);
+l_assertTarget__ = _init_l_assertTarget__();
+lean_mark_persistent(l_assertTarget__);
+l_assertTarget____1___closed__1 = _init_l_assertTarget____1___closed__1();
+lean_mark_persistent(l_assertTarget____1___closed__1);
+l_assertTarget____1___closed__2 = _init_l_assertTarget____1___closed__2();
+lean_mark_persistent(l_assertTarget____1___closed__2);
+l_assertTarget____1___closed__3 = _init_l_assertTarget____1___closed__3();
+lean_mark_persistent(l_assertTarget____1___closed__3);
+l_assertTarget____1 = _init_l_assertTarget____1();
+lean_mark_persistent(l_assertTarget____1);
+l_assertTargetGoal___closed__1 = _init_l_assertTargetGoal___closed__1();
+lean_mark_persistent(l_assertTargetGoal___closed__1);
+l_assertTargetGoal___closed__2 = _init_l_assertTargetGoal___closed__2();
+lean_mark_persistent(l_assertTargetGoal___closed__2);
+l_assertTargetGoal___closed__3 = _init_l_assertTargetGoal___closed__3();
+lean_mark_persistent(l_assertTargetGoal___closed__3);
+l_assertTargetGoal = _init_l_assertTargetGoal();
+lean_mark_persistent(l_assertTargetGoal);
+l_assertRule_quot___closed__1 = _init_l_assertRule_quot___closed__1();
+lean_mark_persistent(l_assertRule_quot___closed__1);
+l_assertRule_quot___closed__2 = _init_l_assertRule_quot___closed__2();
+lean_mark_persistent(l_assertRule_quot___closed__2);
+l_assertRule_quot___closed__3 = _init_l_assertRule_quot___closed__3();
+lean_mark_persistent(l_assertRule_quot___closed__3);
+l_assertRule_quot___closed__4 = _init_l_assertRule_quot___closed__4();
+lean_mark_persistent(l_assertRule_quot___closed__4);
+l_assertRule_quot___closed__5 = _init_l_assertRule_quot___closed__5();
+lean_mark_persistent(l_assertRule_quot___closed__5);
+l_assertRule_quot___closed__6 = _init_l_assertRule_quot___closed__6();
+lean_mark_persistent(l_assertRule_quot___closed__6);
+l_assertRule_quot___closed__7 = _init_l_assertRule_quot___closed__7();
+lean_mark_persistent(l_assertRule_quot___closed__7);
+l_assertRule_quot___closed__8 = _init_l_assertRule_quot___closed__8();
+lean_mark_persistent(l_assertRule_quot___closed__8);
+l_assertRule_quot___closed__9 = _init_l_assertRule_quot___closed__9();
+lean_mark_persistent(l_assertRule_quot___closed__9);
+l_assertRule_quot___closed__10 = _init_l_assertRule_quot___closed__10();
+lean_mark_persistent(l_assertRule_quot___closed__10);
+l_assertRule_quot = _init_l_assertRule_quot();
+lean_mark_persistent(l_assertRule_quot);
+l_Lean_Parser_Category_assertRule = _init_l_Lean_Parser_Category_assertRule();
+lean_mark_persistent(l_Lean_Parser_Category_assertRule);
+l_assertRuleAssert_____closed__1 = _init_l_assertRuleAssert_____closed__1();
+lean_mark_persistent(l_assertRuleAssert_____closed__1);
+l_assertRuleAssert_____closed__2 = _init_l_assertRuleAssert_____closed__2();
+lean_mark_persistent(l_assertRuleAssert_____closed__2);
+l_assertRuleAssert_____closed__3 = _init_l_assertRuleAssert_____closed__3();
+lean_mark_persistent(l_assertRuleAssert_____closed__3);
+l_assertRuleAssert_____closed__4 = _init_l_assertRuleAssert_____closed__4();
+lean_mark_persistent(l_assertRuleAssert_____closed__4);
+l_assertRuleAssert_____closed__5 = _init_l_assertRuleAssert_____closed__5();
+lean_mark_persistent(l_assertRuleAssert_____closed__5);
+l_assertRuleAssert_____closed__6 = _init_l_assertRuleAssert_____closed__6();
+lean_mark_persistent(l_assertRuleAssert_____closed__6);
+l_assertRuleAssert__ = _init_l_assertRuleAssert__();
+lean_mark_persistent(l_assertRuleAssert__);
+l_assertRuleAssert__By_____closed__1 = _init_l_assertRuleAssert__By_____closed__1();
+lean_mark_persistent(l_assertRuleAssert__By_____closed__1);
+l_assertRuleAssert__By_____closed__2 = _init_l_assertRuleAssert__By_____closed__2();
+lean_mark_persistent(l_assertRuleAssert__By_____closed__2);
+l_assertRuleAssert__By_____closed__3 = _init_l_assertRuleAssert__By_____closed__3();
+lean_mark_persistent(l_assertRuleAssert__By_____closed__3);
+l_assertRuleAssert__By_____closed__4 = _init_l_assertRuleAssert__By_____closed__4();
+lean_mark_persistent(l_assertRuleAssert__By_____closed__4);
+l_assertRuleAssert__By_____closed__5 = _init_l_assertRuleAssert__By_____closed__5();
+lean_mark_persistent(l_assertRuleAssert__By_____closed__5);
+l_assertRuleAssert__By_____closed__6 = _init_l_assertRuleAssert__By_____closed__6();
+lean_mark_persistent(l_assertRuleAssert__By_____closed__6);
+l_assertRuleAssert__By_____closed__7 = _init_l_assertRuleAssert__By_____closed__7();
+lean_mark_persistent(l_assertRuleAssert__By_____closed__7);
+l_assertRuleAssert__By__ = _init_l_assertRuleAssert__By__();
+lean_mark_persistent(l_assertRuleAssert__By__);
+l_substName_quot___closed__1 = _init_l_substName_quot___closed__1();
+lean_mark_persistent(l_substName_quot___closed__1);
+l_substName_quot___closed__2 = _init_l_substName_quot___closed__2();
+lean_mark_persistent(l_substName_quot___closed__2);
+l_substName_quot___closed__3 = _init_l_substName_quot___closed__3();
+lean_mark_persistent(l_substName_quot___closed__3);
+l_substName_quot___closed__4 = _init_l_substName_quot___closed__4();
+lean_mark_persistent(l_substName_quot___closed__4);
+l_substName_quot___closed__5 = _init_l_substName_quot___closed__5();
+lean_mark_persistent(l_substName_quot___closed__5);
+l_substName_quot___closed__6 = _init_l_substName_quot___closed__6();
+lean_mark_persistent(l_substName_quot___closed__6);
+l_substName_quot___closed__7 = _init_l_substName_quot___closed__7();
+lean_mark_persistent(l_substName_quot___closed__7);
+l_substName_quot___closed__8 = _init_l_substName_quot___closed__8();
+lean_mark_persistent(l_substName_quot___closed__8);
+l_substName_quot___closed__9 = _init_l_substName_quot___closed__9();
+lean_mark_persistent(l_substName_quot___closed__9);
+l_substName_quot___closed__10 = _init_l_substName_quot___closed__10();
+lean_mark_persistent(l_substName_quot___closed__10);
+l_substName_quot = _init_l_substName_quot();
+lean_mark_persistent(l_substName_quot);
+l_Lean_Parser_Category_substName = _init_l_Lean_Parser_Category_substName();
+lean_mark_persistent(l_Lean_Parser_Category_substName);
+l_substNameSubst___closed__1 = _init_l_substNameSubst___closed__1();
+lean_mark_persistent(l_substNameSubst___closed__1);
+l_substNameSubst___closed__2 = _init_l_substNameSubst___closed__2();
+lean_mark_persistent(l_substNameSubst___closed__2);
+l_substNameSubst___closed__3 = _init_l_substNameSubst___closed__3();
+lean_mark_persistent(l_substNameSubst___closed__3);
+l_substNameSubst___closed__4 = _init_l_substNameSubst___closed__4();
+lean_mark_persistent(l_substNameSubst___closed__4);
+l_substNameSubst___closed__5 = _init_l_substNameSubst___closed__5();
+lean_mark_persistent(l_substNameSubst___closed__5);
+l_substNameSubst = _init_l_substNameSubst();
+lean_mark_persistent(l_substNameSubst);
+l_substNameSubstRev___closed__1 = _init_l_substNameSubstRev___closed__1();
+lean_mark_persistent(l_substNameSubstRev___closed__1);
+l_substNameSubstRev___closed__2 = _init_l_substNameSubstRev___closed__2();
+lean_mark_persistent(l_substNameSubstRev___closed__2);
+l_substNameSubstRev___closed__3 = _init_l_substNameSubstRev___closed__3();
+lean_mark_persistent(l_substNameSubstRev___closed__3);
+l_substNameSubstRev___closed__4 = _init_l_substNameSubstRev___closed__4();
+lean_mark_persistent(l_substNameSubstRev___closed__4);
+l_substNameSubstRev___closed__5 = _init_l_substNameSubstRev___closed__5();
+lean_mark_persistent(l_substNameSubstRev___closed__5);
+l_substNameSubstRev = _init_l_substNameSubstRev();
+lean_mark_persistent(l_substNameSubstRev);
+l_substSrc_quot___closed__1 = _init_l_substSrc_quot___closed__1();
+lean_mark_persistent(l_substSrc_quot___closed__1);
+l_substSrc_quot___closed__2 = _init_l_substSrc_quot___closed__2();
+lean_mark_persistent(l_substSrc_quot___closed__2);
+l_substSrc_quot___closed__3 = _init_l_substSrc_quot___closed__3();
+lean_mark_persistent(l_substSrc_quot___closed__3);
+l_substSrc_quot___closed__4 = _init_l_substSrc_quot___closed__4();
+lean_mark_persistent(l_substSrc_quot___closed__4);
+l_substSrc_quot___closed__5 = _init_l_substSrc_quot___closed__5();
+lean_mark_persistent(l_substSrc_quot___closed__5);
+l_substSrc_quot___closed__6 = _init_l_substSrc_quot___closed__6();
+lean_mark_persistent(l_substSrc_quot___closed__6);
+l_substSrc_quot___closed__7 = _init_l_substSrc_quot___closed__7();
+lean_mark_persistent(l_substSrc_quot___closed__7);
+l_substSrc_quot___closed__8 = _init_l_substSrc_quot___closed__8();
+lean_mark_persistent(l_substSrc_quot___closed__8);
+l_substSrc_quot___closed__9 = _init_l_substSrc_quot___closed__9();
+lean_mark_persistent(l_substSrc_quot___closed__9);
+l_substSrc_quot___closed__10 = _init_l_substSrc_quot___closed__10();
+lean_mark_persistent(l_substSrc_quot___closed__10);
+l_substSrc_quot = _init_l_substSrc_quot();
+lean_mark_persistent(l_substSrc_quot);
+l_Lean_Parser_Category_substSrc = _init_l_Lean_Parser_Category_substSrc();
+lean_mark_persistent(l_Lean_Parser_Category_substSrc);
+l_substSrc_____closed__1 = _init_l_substSrc_____closed__1();
+lean_mark_persistent(l_substSrc_____closed__1);
+l_substSrc_____closed__2 = _init_l_substSrc_____closed__2();
+lean_mark_persistent(l_substSrc_____closed__2);
+l_substSrc_____closed__3 = _init_l_substSrc_____closed__3();
+lean_mark_persistent(l_substSrc_____closed__3);
+l_substSrc__ = _init_l_substSrc__();
+lean_mark_persistent(l_substSrc__);
+l_substSrc____1___closed__1 = _init_l_substSrc____1___closed__1();
+lean_mark_persistent(l_substSrc____1___closed__1);
+l_substSrc____1___closed__2 = _init_l_substSrc____1___closed__2();
+lean_mark_persistent(l_substSrc____1___closed__2);
+l_substSrc____1___closed__3 = _init_l_substSrc____1___closed__3();
+lean_mark_persistent(l_substSrc____1___closed__3);
+l_substSrc____1 = _init_l_substSrc____1();
+lean_mark_persistent(l_substSrc____1);
+l_substRule_quot___closed__1 = _init_l_substRule_quot___closed__1();
+lean_mark_persistent(l_substRule_quot___closed__1);
+l_substRule_quot___closed__2 = _init_l_substRule_quot___closed__2();
+lean_mark_persistent(l_substRule_quot___closed__2);
+l_substRule_quot___closed__3 = _init_l_substRule_quot___closed__3();
+lean_mark_persistent(l_substRule_quot___closed__3);
+l_substRule_quot___closed__4 = _init_l_substRule_quot___closed__4();
+lean_mark_persistent(l_substRule_quot___closed__4);
+l_substRule_quot___closed__5 = _init_l_substRule_quot___closed__5();
+lean_mark_persistent(l_substRule_quot___closed__5);
+l_substRule_quot___closed__6 = _init_l_substRule_quot___closed__6();
+lean_mark_persistent(l_substRule_quot___closed__6);
+l_substRule_quot___closed__7 = _init_l_substRule_quot___closed__7();
+lean_mark_persistent(l_substRule_quot___closed__7);
+l_substRule_quot___closed__8 = _init_l_substRule_quot___closed__8();
+lean_mark_persistent(l_substRule_quot___closed__8);
+l_substRule_quot___closed__9 = _init_l_substRule_quot___closed__9();
+lean_mark_persistent(l_substRule_quot___closed__9);
+l_substRule_quot___closed__10 = _init_l_substRule_quot___closed__10();
+lean_mark_persistent(l_substRule_quot___closed__10);
+l_substRule_quot = _init_l_substRule_quot();
+lean_mark_persistent(l_substRule_quot);
+l_Lean_Parser_Category_substRule = _init_l_Lean_Parser_Category_substRule();
+lean_mark_persistent(l_Lean_Parser_Category_substRule);
+l_substRule____Into_____closed__1 = _init_l_substRule____Into_____closed__1();
+lean_mark_persistent(l_substRule____Into_____closed__1);
+l_substRule____Into_____closed__2 = _init_l_substRule____Into_____closed__2();
+lean_mark_persistent(l_substRule____Into_____closed__2);
+l_substRule____Into_____closed__3 = _init_l_substRule____Into_____closed__3();
+lean_mark_persistent(l_substRule____Into_____closed__3);
+l_substRule____Into_____closed__4 = _init_l_substRule____Into_____closed__4();
+lean_mark_persistent(l_substRule____Into_____closed__4);
+l_substRule____Into_____closed__5 = _init_l_substRule____Into_____closed__5();
+lean_mark_persistent(l_substRule____Into_____closed__5);
+l_substRule____Into_____closed__6 = _init_l_substRule____Into_____closed__6();
+lean_mark_persistent(l_substRule____Into_____closed__6);
+l_substRule____Into_____closed__7 = _init_l_substRule____Into_____closed__7();
+lean_mark_persistent(l_substRule____Into_____closed__7);
+l_substRule____Into_____closed__8 = _init_l_substRule____Into_____closed__8();
+lean_mark_persistent(l_substRule____Into_____closed__8);
+l_substRule____Into_____closed__9 = _init_l_substRule____Into_____closed__9();
+lean_mark_persistent(l_substRule____Into_____closed__9);
+l_substRule____Into__ = _init_l_substRule____Into__();
+lean_mark_persistent(l_substRule____Into__);
+l_substRule____Into_______closed__1 = _init_l_substRule____Into_______closed__1();
+lean_mark_persistent(l_substRule____Into_______closed__1);
+l_substRule____Into_______closed__2 = _init_l_substRule____Into_______closed__2();
+lean_mark_persistent(l_substRule____Into_______closed__2);
+l_substRule____Into_______closed__3 = _init_l_substRule____Into_______closed__3();
+lean_mark_persistent(l_substRule____Into_______closed__3);
+l_substRule____Into_______closed__4 = _init_l_substRule____Into_______closed__4();
+lean_mark_persistent(l_substRule____Into_______closed__4);
+l_substRule____Into_______closed__5 = _init_l_substRule____Into_______closed__5();
+lean_mark_persistent(l_substRule____Into_______closed__5);
+l_substRule____Into____ = _init_l_substRule____Into____();
+lean_mark_persistent(l_substRule____Into____);
+l_substRule____Into__By_____closed__1 = _init_l_substRule____Into__By_____closed__1();
+lean_mark_persistent(l_substRule____Into__By_____closed__1);
+l_substRule____Into__By_____closed__2 = _init_l_substRule____Into__By_____closed__2();
+lean_mark_persistent(l_substRule____Into__By_____closed__2);
+l_substRule____Into__By_____closed__3 = _init_l_substRule____Into__By_____closed__3();
+lean_mark_persistent(l_substRule____Into__By_____closed__3);
+l_substRule____Into__By_____closed__4 = _init_l_substRule____Into__By_____closed__4();
+lean_mark_persistent(l_substRule____Into__By_____closed__4);
+l_substRule____Into__By_____closed__5 = _init_l_substRule____Into__By_____closed__5();
+lean_mark_persistent(l_substRule____Into__By_____closed__5);
+l_substRule____Into__By_____closed__6 = _init_l_substRule____Into__By_____closed__6();
+lean_mark_persistent(l_substRule____Into__By_____closed__6);
+l_substRule____Into__By_____closed__7 = _init_l_substRule____Into__By_____closed__7();
+lean_mark_persistent(l_substRule____Into__By_____closed__7);
+l_substRule____Into__By_____closed__8 = _init_l_substRule____Into__By_____closed__8();
+lean_mark_persistent(l_substRule____Into__By_____closed__8);
+l_substRule____Into__By__ = _init_l_substRule____Into__By__();
+lean_mark_persistent(l_substRule____Into__By__);
+l_caseRule_quot___closed__1 = _init_l_caseRule_quot___closed__1();
+lean_mark_persistent(l_caseRule_quot___closed__1);
+l_caseRule_quot___closed__2 = _init_l_caseRule_quot___closed__2();
+lean_mark_persistent(l_caseRule_quot___closed__2);
+l_caseRule_quot___closed__3 = _init_l_caseRule_quot___closed__3();
+lean_mark_persistent(l_caseRule_quot___closed__3);
+l_caseRule_quot___closed__4 = _init_l_caseRule_quot___closed__4();
+lean_mark_persistent(l_caseRule_quot___closed__4);
+l_caseRule_quot___closed__5 = _init_l_caseRule_quot___closed__5();
+lean_mark_persistent(l_caseRule_quot___closed__5);
+l_caseRule_quot___closed__6 = _init_l_caseRule_quot___closed__6();
+lean_mark_persistent(l_caseRule_quot___closed__6);
+l_caseRule_quot___closed__7 = _init_l_caseRule_quot___closed__7();
+lean_mark_persistent(l_caseRule_quot___closed__7);
+l_caseRule_quot___closed__8 = _init_l_caseRule_quot___closed__8();
+lean_mark_persistent(l_caseRule_quot___closed__8);
+l_caseRule_quot___closed__9 = _init_l_caseRule_quot___closed__9();
+lean_mark_persistent(l_caseRule_quot___closed__9);
+l_caseRule_quot___closed__10 = _init_l_caseRule_quot___closed__10();
+lean_mark_persistent(l_caseRule_quot___closed__10);
+l_caseRule_quot = _init_l_caseRule_quot();
+lean_mark_persistent(l_caseRule_quot);
+l_Lean_Parser_Category_caseRule = _init_l_Lean_Parser_Category_caseRule();
+lean_mark_persistent(l_Lean_Parser_Category_caseRule);
+l_caseRuleCases_____closed__1 = _init_l_caseRuleCases_____closed__1();
+lean_mark_persistent(l_caseRuleCases_____closed__1);
+l_caseRuleCases_____closed__2 = _init_l_caseRuleCases_____closed__2();
+lean_mark_persistent(l_caseRuleCases_____closed__2);
+l_caseRuleCases_____closed__3 = _init_l_caseRuleCases_____closed__3();
+lean_mark_persistent(l_caseRuleCases_____closed__3);
+l_caseRuleCases_____closed__4 = _init_l_caseRuleCases_____closed__4();
+lean_mark_persistent(l_caseRuleCases_____closed__4);
+l_caseRuleCases_____closed__5 = _init_l_caseRuleCases_____closed__5();
+lean_mark_persistent(l_caseRuleCases_____closed__5);
+l_caseRuleCases_____closed__6 = _init_l_caseRuleCases_____closed__6();
+lean_mark_persistent(l_caseRuleCases_____closed__6);
+l_caseRuleCases_____closed__7 = _init_l_caseRuleCases_____closed__7();
+lean_mark_persistent(l_caseRuleCases_____closed__7);
+l_caseRuleCases_____closed__8 = _init_l_caseRuleCases_____closed__8();
+lean_mark_persistent(l_caseRuleCases_____closed__8);
+l_caseRuleCases__ = _init_l_caseRuleCases__();
+lean_mark_persistent(l_caseRuleCases__);
+l_inductRule_quot___closed__1 = _init_l_inductRule_quot___closed__1();
+lean_mark_persistent(l_inductRule_quot___closed__1);
+l_inductRule_quot___closed__2 = _init_l_inductRule_quot___closed__2();
+lean_mark_persistent(l_inductRule_quot___closed__2);
+l_inductRule_quot___closed__3 = _init_l_inductRule_quot___closed__3();
+lean_mark_persistent(l_inductRule_quot___closed__3);
+l_inductRule_quot___closed__4 = _init_l_inductRule_quot___closed__4();
+lean_mark_persistent(l_inductRule_quot___closed__4);
+l_inductRule_quot___closed__5 = _init_l_inductRule_quot___closed__5();
+lean_mark_persistent(l_inductRule_quot___closed__5);
+l_inductRule_quot___closed__6 = _init_l_inductRule_quot___closed__6();
+lean_mark_persistent(l_inductRule_quot___closed__6);
+l_inductRule_quot___closed__7 = _init_l_inductRule_quot___closed__7();
+lean_mark_persistent(l_inductRule_quot___closed__7);
+l_inductRule_quot___closed__8 = _init_l_inductRule_quot___closed__8();
+lean_mark_persistent(l_inductRule_quot___closed__8);
+l_inductRule_quot___closed__9 = _init_l_inductRule_quot___closed__9();
+lean_mark_persistent(l_inductRule_quot___closed__9);
+l_inductRule_quot___closed__10 = _init_l_inductRule_quot___closed__10();
+lean_mark_persistent(l_inductRule_quot___closed__10);
+l_inductRule_quot = _init_l_inductRule_quot();
+lean_mark_persistent(l_inductRule_quot);
+l_Lean_Parser_Category_inductRule = _init_l_Lean_Parser_Category_inductRule();
+lean_mark_persistent(l_Lean_Parser_Category_inductRule);
+l_inductRuleInductNat___closed__1 = _init_l_inductRuleInductNat___closed__1();
+lean_mark_persistent(l_inductRuleInductNat___closed__1);
+l_inductRuleInductNat___closed__2 = _init_l_inductRuleInductNat___closed__2();
+lean_mark_persistent(l_inductRuleInductNat___closed__2);
+l_inductRuleInductNat___closed__3 = _init_l_inductRuleInductNat___closed__3();
+lean_mark_persistent(l_inductRuleInductNat___closed__3);
+l_inductRuleInductNat___closed__4 = _init_l_inductRuleInductNat___closed__4();
+lean_mark_persistent(l_inductRuleInductNat___closed__4);
+l_inductRuleInductNat___closed__5 = _init_l_inductRuleInductNat___closed__5();
+lean_mark_persistent(l_inductRuleInductNat___closed__5);
+l_inductRuleInductNat = _init_l_inductRuleInductNat();
+lean_mark_persistent(l_inductRuleInductNat);
+l_inductRuleInductStrongNat___closed__1 = _init_l_inductRuleInductStrongNat___closed__1();
+lean_mark_persistent(l_inductRuleInductStrongNat___closed__1);
+l_inductRuleInductStrongNat___closed__2 = _init_l_inductRuleInductStrongNat___closed__2();
+lean_mark_persistent(l_inductRuleInductStrongNat___closed__2);
+l_inductRuleInductStrongNat___closed__3 = _init_l_inductRuleInductStrongNat___closed__3();
+lean_mark_persistent(l_inductRuleInductStrongNat___closed__3);
+l_inductRuleInductStrongNat___closed__4 = _init_l_inductRuleInductStrongNat___closed__4();
+lean_mark_persistent(l_inductRuleInductStrongNat___closed__4);
+l_inductRuleInductStrongNat___closed__5 = _init_l_inductRuleInductStrongNat___closed__5();
+lean_mark_persistent(l_inductRuleInductStrongNat___closed__5);
+l_inductRuleInductStrongNat = _init_l_inductRuleInductStrongNat();
+lean_mark_persistent(l_inductRuleInductStrongNat);
+l_inductRuleInductPos___closed__1 = _init_l_inductRuleInductPos___closed__1();
+lean_mark_persistent(l_inductRuleInductPos___closed__1);
+l_inductRuleInductPos___closed__2 = _init_l_inductRuleInductPos___closed__2();
+lean_mark_persistent(l_inductRuleInductPos___closed__2);
+l_inductRuleInductPos___closed__3 = _init_l_inductRuleInductPos___closed__3();
+lean_mark_persistent(l_inductRuleInductPos___closed__3);
+l_inductRuleInductPos___closed__4 = _init_l_inductRuleInductPos___closed__4();
+lean_mark_persistent(l_inductRuleInductPos___closed__4);
+l_inductRuleInductPos___closed__5 = _init_l_inductRuleInductPos___closed__5();
+lean_mark_persistent(l_inductRuleInductPos___closed__5);
+l_inductRuleInductPos = _init_l_inductRuleInductPos();
+lean_mark_persistent(l_inductRuleInductPos);
+l_inductRuleInductStrongPos___closed__1 = _init_l_inductRuleInductStrongPos___closed__1();
+lean_mark_persistent(l_inductRuleInductStrongPos___closed__1);
+l_inductRuleInductStrongPos___closed__2 = _init_l_inductRuleInductStrongPos___closed__2();
+lean_mark_persistent(l_inductRuleInductStrongPos___closed__2);
+l_inductRuleInductStrongPos___closed__3 = _init_l_inductRuleInductStrongPos___closed__3();
+lean_mark_persistent(l_inductRuleInductStrongPos___closed__3);
+l_inductRuleInductStrongPos___closed__4 = _init_l_inductRuleInductStrongPos___closed__4();
+lean_mark_persistent(l_inductRuleInductStrongPos___closed__4);
+l_inductRuleInductStrongPos___closed__5 = _init_l_inductRuleInductStrongPos___closed__5();
+lean_mark_persistent(l_inductRuleInductStrongPos___closed__5);
+l_inductRuleInductStrongPos = _init_l_inductRuleInductStrongPos();
+lean_mark_persistent(l_inductRuleInductStrongPos);
+l_inductRuleInductList___closed__1 = _init_l_inductRuleInductList___closed__1();
+lean_mark_persistent(l_inductRuleInductList___closed__1);
+l_inductRuleInductList___closed__2 = _init_l_inductRuleInductList___closed__2();
+lean_mark_persistent(l_inductRuleInductList___closed__2);
+l_inductRuleInductList___closed__3 = _init_l_inductRuleInductList___closed__3();
+lean_mark_persistent(l_inductRuleInductList___closed__3);
+l_inductRuleInductList___closed__4 = _init_l_inductRuleInductList___closed__4();
+lean_mark_persistent(l_inductRuleInductList___closed__4);
+l_inductRuleInductList___closed__5 = _init_l_inductRuleInductList___closed__5();
+lean_mark_persistent(l_inductRuleInductList___closed__5);
+l_inductRuleInductList = _init_l_inductRuleInductList();
+lean_mark_persistent(l_inductRuleInductList);
+l_inductRuleInductStrongList___closed__1 = _init_l_inductRuleInductStrongList___closed__1();
+lean_mark_persistent(l_inductRuleInductStrongList___closed__1);
+l_inductRuleInductStrongList___closed__2 = _init_l_inductRuleInductStrongList___closed__2();
+lean_mark_persistent(l_inductRuleInductStrongList___closed__2);
+l_inductRuleInductStrongList___closed__3 = _init_l_inductRuleInductStrongList___closed__3();
+lean_mark_persistent(l_inductRuleInductStrongList___closed__3);
+l_inductRuleInductStrongList___closed__4 = _init_l_inductRuleInductStrongList___closed__4();
+lean_mark_persistent(l_inductRuleInductStrongList___closed__4);
+l_inductRuleInductStrongList___closed__5 = _init_l_inductRuleInductStrongList___closed__5();
+lean_mark_persistent(l_inductRuleInductStrongList___closed__5);
+l_inductRuleInductStrongList = _init_l_inductRuleInductStrongList();
+lean_mark_persistent(l_inductRuleInductStrongList);
+l_inductRuleInductSet___closed__1 = _init_l_inductRuleInductSet___closed__1();
+lean_mark_persistent(l_inductRuleInductSet___closed__1);
+l_inductRuleInductSet___closed__2 = _init_l_inductRuleInductSet___closed__2();
+lean_mark_persistent(l_inductRuleInductSet___closed__2);
+l_inductRuleInductSet___closed__3 = _init_l_inductRuleInductSet___closed__3();
+lean_mark_persistent(l_inductRuleInductSet___closed__3);
+l_inductRuleInductSet___closed__4 = _init_l_inductRuleInductSet___closed__4();
+lean_mark_persistent(l_inductRuleInductSet___closed__4);
+l_inductRuleInductSet___closed__5 = _init_l_inductRuleInductSet___closed__5();
+lean_mark_persistent(l_inductRuleInductSet___closed__5);
+l_inductRuleInductSet = _init_l_inductRuleInductSet();
+lean_mark_persistent(l_inductRuleInductSet);
+l_inductRuleInductStrongSet___closed__1 = _init_l_inductRuleInductStrongSet___closed__1();
+lean_mark_persistent(l_inductRuleInductStrongSet___closed__1);
+l_inductRuleInductStrongSet___closed__2 = _init_l_inductRuleInductStrongSet___closed__2();
+lean_mark_persistent(l_inductRuleInductStrongSet___closed__2);
+l_inductRuleInductStrongSet___closed__3 = _init_l_inductRuleInductStrongSet___closed__3();
+lean_mark_persistent(l_inductRuleInductStrongSet___closed__3);
+l_inductRuleInductStrongSet___closed__4 = _init_l_inductRuleInductStrongSet___closed__4();
+lean_mark_persistent(l_inductRuleInductStrongSet___closed__4);
+l_inductRuleInductStrongSet___closed__5 = _init_l_inductRuleInductStrongSet___closed__5();
+lean_mark_persistent(l_inductRuleInductStrongSet___closed__5);
+l_inductRuleInductStrongSet = _init_l_inductRuleInductStrongSet();
+lean_mark_persistent(l_inductRuleInductStrongSet);
+l_inductRuleInductStrongVertices___closed__1 = _init_l_inductRuleInductStrongVertices___closed__1();
+lean_mark_persistent(l_inductRuleInductStrongVertices___closed__1);
+l_inductRuleInductStrongVertices___closed__2 = _init_l_inductRuleInductStrongVertices___closed__2();
+lean_mark_persistent(l_inductRuleInductStrongVertices___closed__2);
+l_inductRuleInductStrongVertices___closed__3 = _init_l_inductRuleInductStrongVertices___closed__3();
+lean_mark_persistent(l_inductRuleInductStrongVertices___closed__3);
+l_inductRuleInductStrongVertices___closed__4 = _init_l_inductRuleInductStrongVertices___closed__4();
+lean_mark_persistent(l_inductRuleInductStrongVertices___closed__4);
+l_inductRuleInductStrongVertices___closed__5 = _init_l_inductRuleInductStrongVertices___closed__5();
+lean_mark_persistent(l_inductRuleInductStrongVertices___closed__5);
+l_inductRuleInductStrongVertices = _init_l_inductRuleInductStrongVertices();
+lean_mark_persistent(l_inductRuleInductStrongVertices);
+l_inductRuleInductStrongEdges___closed__1 = _init_l_inductRuleInductStrongEdges___closed__1();
+lean_mark_persistent(l_inductRuleInductStrongEdges___closed__1);
+l_inductRuleInductStrongEdges___closed__2 = _init_l_inductRuleInductStrongEdges___closed__2();
+lean_mark_persistent(l_inductRuleInductStrongEdges___closed__2);
+l_inductRuleInductStrongEdges___closed__3 = _init_l_inductRuleInductStrongEdges___closed__3();
+lean_mark_persistent(l_inductRuleInductStrongEdges___closed__3);
+l_inductRuleInductStrongEdges___closed__4 = _init_l_inductRuleInductStrongEdges___closed__4();
+lean_mark_persistent(l_inductRuleInductStrongEdges___closed__4);
+l_inductRuleInductStrongEdges___closed__5 = _init_l_inductRuleInductStrongEdges___closed__5();
+lean_mark_persistent(l_inductRuleInductStrongEdges___closed__5);
+l_inductRuleInductStrongEdges = _init_l_inductRuleInductStrongEdges();
+lean_mark_persistent(l_inductRuleInductStrongEdges);
+l_orIntroRuleName_quot___closed__1 = _init_l_orIntroRuleName_quot___closed__1();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__1);
+l_orIntroRuleName_quot___closed__2 = _init_l_orIntroRuleName_quot___closed__2();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__2);
+l_orIntroRuleName_quot___closed__3 = _init_l_orIntroRuleName_quot___closed__3();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__3);
+l_orIntroRuleName_quot___closed__4 = _init_l_orIntroRuleName_quot___closed__4();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__4);
+l_orIntroRuleName_quot___closed__5 = _init_l_orIntroRuleName_quot___closed__5();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__5);
+l_orIntroRuleName_quot___closed__6 = _init_l_orIntroRuleName_quot___closed__6();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__6);
+l_orIntroRuleName_quot___closed__7 = _init_l_orIntroRuleName_quot___closed__7();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__7);
+l_orIntroRuleName_quot___closed__8 = _init_l_orIntroRuleName_quot___closed__8();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__8);
+l_orIntroRuleName_quot___closed__9 = _init_l_orIntroRuleName_quot___closed__9();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__9);
+l_orIntroRuleName_quot___closed__10 = _init_l_orIntroRuleName_quot___closed__10();
+lean_mark_persistent(l_orIntroRuleName_quot___closed__10);
+l_orIntroRuleName_quot = _init_l_orIntroRuleName_quot();
+lean_mark_persistent(l_orIntroRuleName_quot);
+l_Lean_Parser_Category_orIntroRuleName = _init_l_Lean_Parser_Category_orIntroRuleName();
+lean_mark_persistent(l_Lean_Parser_Category_orIntroRuleName);
+l_orIntroRuleNameOrIntroLeft___closed__1 = _init_l_orIntroRuleNameOrIntroLeft___closed__1();
+lean_mark_persistent(l_orIntroRuleNameOrIntroLeft___closed__1);
+l_orIntroRuleNameOrIntroLeft___closed__2 = _init_l_orIntroRuleNameOrIntroLeft___closed__2();
+lean_mark_persistent(l_orIntroRuleNameOrIntroLeft___closed__2);
+l_orIntroRuleNameOrIntroLeft___closed__3 = _init_l_orIntroRuleNameOrIntroLeft___closed__3();
+lean_mark_persistent(l_orIntroRuleNameOrIntroLeft___closed__3);
+l_orIntroRuleNameOrIntroLeft___closed__4 = _init_l_orIntroRuleNameOrIntroLeft___closed__4();
+lean_mark_persistent(l_orIntroRuleNameOrIntroLeft___closed__4);
+l_orIntroRuleNameOrIntroLeft___closed__5 = _init_l_orIntroRuleNameOrIntroLeft___closed__5();
+lean_mark_persistent(l_orIntroRuleNameOrIntroLeft___closed__5);
+l_orIntroRuleNameOrIntroLeft = _init_l_orIntroRuleNameOrIntroLeft();
+lean_mark_persistent(l_orIntroRuleNameOrIntroLeft);
+l_orIntroRuleNameOrIntroRight___closed__1 = _init_l_orIntroRuleNameOrIntroRight___closed__1();
+lean_mark_persistent(l_orIntroRuleNameOrIntroRight___closed__1);
+l_orIntroRuleNameOrIntroRight___closed__2 = _init_l_orIntroRuleNameOrIntroRight___closed__2();
+lean_mark_persistent(l_orIntroRuleNameOrIntroRight___closed__2);
+l_orIntroRuleNameOrIntroRight___closed__3 = _init_l_orIntroRuleNameOrIntroRight___closed__3();
+lean_mark_persistent(l_orIntroRuleNameOrIntroRight___closed__3);
+l_orIntroRuleNameOrIntroRight___closed__4 = _init_l_orIntroRuleNameOrIntroRight___closed__4();
+lean_mark_persistent(l_orIntroRuleNameOrIntroRight___closed__4);
+l_orIntroRuleNameOrIntroRight___closed__5 = _init_l_orIntroRuleNameOrIntroRight___closed__5();
+lean_mark_persistent(l_orIntroRuleNameOrIntroRight___closed__5);
+l_orIntroRuleNameOrIntroRight = _init_l_orIntroRuleNameOrIntroRight();
+lean_mark_persistent(l_orIntroRuleNameOrIntroRight);
+l_introRule_quot___closed__1 = _init_l_introRule_quot___closed__1();
+lean_mark_persistent(l_introRule_quot___closed__1);
+l_introRule_quot___closed__2 = _init_l_introRule_quot___closed__2();
+lean_mark_persistent(l_introRule_quot___closed__2);
+l_introRule_quot___closed__3 = _init_l_introRule_quot___closed__3();
+lean_mark_persistent(l_introRule_quot___closed__3);
+l_introRule_quot___closed__4 = _init_l_introRule_quot___closed__4();
+lean_mark_persistent(l_introRule_quot___closed__4);
+l_introRule_quot___closed__5 = _init_l_introRule_quot___closed__5();
+lean_mark_persistent(l_introRule_quot___closed__5);
+l_introRule_quot___closed__6 = _init_l_introRule_quot___closed__6();
+lean_mark_persistent(l_introRule_quot___closed__6);
+l_introRule_quot___closed__7 = _init_l_introRule_quot___closed__7();
+lean_mark_persistent(l_introRule_quot___closed__7);
+l_introRule_quot___closed__8 = _init_l_introRule_quot___closed__8();
+lean_mark_persistent(l_introRule_quot___closed__8);
+l_introRule_quot___closed__9 = _init_l_introRule_quot___closed__9();
+lean_mark_persistent(l_introRule_quot___closed__9);
+l_introRule_quot___closed__10 = _init_l_introRule_quot___closed__10();
+lean_mark_persistent(l_introRule_quot___closed__10);
+l_introRule_quot = _init_l_introRule_quot();
+lean_mark_persistent(l_introRule_quot);
+l_Lean_Parser_Category_introRule = _init_l_Lean_Parser_Category_introRule();
+lean_mark_persistent(l_Lean_Parser_Category_introRule);
+l_introRule_________closed__1 = _init_l_introRule_________closed__1();
+lean_mark_persistent(l_introRule_________closed__1);
+l_introRule_________closed__2 = _init_l_introRule_________closed__2();
+lean_mark_persistent(l_introRule_________closed__2);
+l_introRule_________closed__3 = _init_l_introRule_________closed__3();
+lean_mark_persistent(l_introRule_________closed__3);
+l_introRule_________closed__4 = _init_l_introRule_________closed__4();
+lean_mark_persistent(l_introRule_________closed__4);
+l_introRule_________closed__5 = _init_l_introRule_________closed__5();
+lean_mark_persistent(l_introRule_________closed__5);
+l_introRule______ = _init_l_introRule______();
+lean_mark_persistent(l_introRule______);
+l_introRuleAndIntro___x2c_____closed__1 = _init_l_introRuleAndIntro___x2c_____closed__1();
+lean_mark_persistent(l_introRuleAndIntro___x2c_____closed__1);
+l_introRuleAndIntro___x2c_____closed__2 = _init_l_introRuleAndIntro___x2c_____closed__2();
+lean_mark_persistent(l_introRuleAndIntro___x2c_____closed__2);
+l_introRuleAndIntro___x2c_____closed__3 = _init_l_introRuleAndIntro___x2c_____closed__3();
+lean_mark_persistent(l_introRuleAndIntro___x2c_____closed__3);
+l_introRuleAndIntro___x2c_____closed__4 = _init_l_introRuleAndIntro___x2c_____closed__4();
+lean_mark_persistent(l_introRuleAndIntro___x2c_____closed__4);
+l_introRuleAndIntro___x2c_____closed__5 = _init_l_introRuleAndIntro___x2c_____closed__5();
+lean_mark_persistent(l_introRuleAndIntro___x2c_____closed__5);
+l_introRuleAndIntro___x2c_____closed__6 = _init_l_introRuleAndIntro___x2c_____closed__6();
+lean_mark_persistent(l_introRuleAndIntro___x2c_____closed__6);
+l_introRuleAndIntro___x2c_____closed__7 = _init_l_introRuleAndIntro___x2c_____closed__7();
+lean_mark_persistent(l_introRuleAndIntro___x2c_____closed__7);
+l_introRuleAndIntro___x2c_____closed__8 = _init_l_introRuleAndIntro___x2c_____closed__8();
+lean_mark_persistent(l_introRuleAndIntro___x2c_____closed__8);
+l_introRuleAndIntro___x2c__ = _init_l_introRuleAndIntro___x2c__();
+lean_mark_persistent(l_introRuleAndIntro___x2c__);
+l_introRuleOrIntro___x2c_____closed__1 = _init_l_introRuleOrIntro___x2c_____closed__1();
+lean_mark_persistent(l_introRuleOrIntro___x2c_____closed__1);
+l_introRuleOrIntro___x2c_____closed__2 = _init_l_introRuleOrIntro___x2c_____closed__2();
+lean_mark_persistent(l_introRuleOrIntro___x2c_____closed__2);
+l_introRuleOrIntro___x2c_____closed__3 = _init_l_introRuleOrIntro___x2c_____closed__3();
+lean_mark_persistent(l_introRuleOrIntro___x2c_____closed__3);
+l_introRuleOrIntro___x2c_____closed__4 = _init_l_introRuleOrIntro___x2c_____closed__4();
+lean_mark_persistent(l_introRuleOrIntro___x2c_____closed__4);
+l_introRuleOrIntro___x2c_____closed__5 = _init_l_introRuleOrIntro___x2c_____closed__5();
+lean_mark_persistent(l_introRuleOrIntro___x2c_____closed__5);
+l_introRuleOrIntro___x2c_____closed__6 = _init_l_introRuleOrIntro___x2c_____closed__6();
+lean_mark_persistent(l_introRuleOrIntro___x2c_____closed__6);
+l_introRuleOrIntro___x2c_____closed__7 = _init_l_introRuleOrIntro___x2c_____closed__7();
+lean_mark_persistent(l_introRuleOrIntro___x2c_____closed__7);
+l_introRuleOrIntro___x2c_____closed__8 = _init_l_introRuleOrIntro___x2c_____closed__8();
+lean_mark_persistent(l_introRuleOrIntro___x2c_____closed__8);
+l_introRuleOrIntro___x2c__ = _init_l_introRuleOrIntro___x2c__();
+lean_mark_persistent(l_introRuleOrIntro___x2c__);
+l_proofRule_quot___closed__1 = _init_l_proofRule_quot___closed__1();
+lean_mark_persistent(l_proofRule_quot___closed__1);
+l_proofRule_quot___closed__2 = _init_l_proofRule_quot___closed__2();
+lean_mark_persistent(l_proofRule_quot___closed__2);
+l_proofRule_quot___closed__3 = _init_l_proofRule_quot___closed__3();
+lean_mark_persistent(l_proofRule_quot___closed__3);
+l_proofRule_quot___closed__4 = _init_l_proofRule_quot___closed__4();
+lean_mark_persistent(l_proofRule_quot___closed__4);
+l_proofRule_quot___closed__5 = _init_l_proofRule_quot___closed__5();
+lean_mark_persistent(l_proofRule_quot___closed__5);
+l_proofRule_quot___closed__6 = _init_l_proofRule_quot___closed__6();
+lean_mark_persistent(l_proofRule_quot___closed__6);
+l_proofRule_quot___closed__7 = _init_l_proofRule_quot___closed__7();
+lean_mark_persistent(l_proofRule_quot___closed__7);
+l_proofRule_quot___closed__8 = _init_l_proofRule_quot___closed__8();
+lean_mark_persistent(l_proofRule_quot___closed__8);
+l_proofRule_quot___closed__9 = _init_l_proofRule_quot___closed__9();
+lean_mark_persistent(l_proofRule_quot___closed__9);
+l_proofRule_quot___closed__10 = _init_l_proofRule_quot___closed__10();
+lean_mark_persistent(l_proofRule_quot___closed__10);
+l_proofRule_quot = _init_l_proofRule_quot();
+lean_mark_persistent(l_proofRule_quot);
+l_Lean_Parser_Category_proofRule = _init_l_Lean_Parser_Category_proofRule();
+lean_mark_persistent(l_Lean_Parser_Category_proofRule);
+l_proofRule_____closed__1 = _init_l_proofRule_____closed__1();
+lean_mark_persistent(l_proofRule_____closed__1);
+l_proofRule_____closed__2 = _init_l_proofRule_____closed__2();
+lean_mark_persistent(l_proofRule_____closed__2);
+l_proofRule_____closed__3 = _init_l_proofRule_____closed__3();
+lean_mark_persistent(l_proofRule_____closed__3);
+l_proofRule__ = _init_l_proofRule__();
+lean_mark_persistent(l_proofRule__);
+l_proofRule____1___closed__1 = _init_l_proofRule____1___closed__1();
+lean_mark_persistent(l_proofRule____1___closed__1);
+l_proofRule____1___closed__2 = _init_l_proofRule____1___closed__2();
+lean_mark_persistent(l_proofRule____1___closed__2);
+l_proofRule____1___closed__3 = _init_l_proofRule____1___closed__3();
+lean_mark_persistent(l_proofRule____1___closed__3);
+l_proofRule____1 = _init_l_proofRule____1();
+lean_mark_persistent(l_proofRule____1);
+l_proofRule____2___closed__1 = _init_l_proofRule____2___closed__1();
+lean_mark_persistent(l_proofRule____2___closed__1);
+l_proofRule____2___closed__2 = _init_l_proofRule____2___closed__2();
+lean_mark_persistent(l_proofRule____2___closed__2);
+l_proofRule____2___closed__3 = _init_l_proofRule____2___closed__3();
+lean_mark_persistent(l_proofRule____2___closed__3);
+l_proofRule____2 = _init_l_proofRule____2();
+lean_mark_persistent(l_proofRule____2);
+l_proofRule____3___closed__1 = _init_l_proofRule____3___closed__1();
+lean_mark_persistent(l_proofRule____3___closed__1);
+l_proofRule____3___closed__2 = _init_l_proofRule____3___closed__2();
+lean_mark_persistent(l_proofRule____3___closed__2);
+l_proofRule____3___closed__3 = _init_l_proofRule____3___closed__3();
+lean_mark_persistent(l_proofRule____3___closed__3);
+l_proofRule____3 = _init_l_proofRule____3();
+lean_mark_persistent(l_proofRule____3);
+l_proofRule____4___closed__1 = _init_l_proofRule____4___closed__1();
+lean_mark_persistent(l_proofRule____4___closed__1);
+l_proofRule____4___closed__2 = _init_l_proofRule____4___closed__2();
+lean_mark_persistent(l_proofRule____4___closed__2);
+l_proofRule____4___closed__3 = _init_l_proofRule____4___closed__3();
+lean_mark_persistent(l_proofRule____4___closed__3);
+l_proofRule____4 = _init_l_proofRule____4();
+lean_mark_persistent(l_proofRule____4);
+l_proofRule____5___closed__1 = _init_l_proofRule____5___closed__1();
+lean_mark_persistent(l_proofRule____5___closed__1);
+l_proofRule____5___closed__2 = _init_l_proofRule____5___closed__2();
+lean_mark_persistent(l_proofRule____5___closed__2);
+l_proofRule____5___closed__3 = _init_l_proofRule____5___closed__3();
+lean_mark_persistent(l_proofRule____5___closed__3);
+l_proofRule____5 = _init_l_proofRule____5();
+lean_mark_persistent(l_proofRule____5);
+l_proofTree_quot___closed__1 = _init_l_proofTree_quot___closed__1();
+lean_mark_persistent(l_proofTree_quot___closed__1);
+l_proofTree_quot___closed__2 = _init_l_proofTree_quot___closed__2();
+lean_mark_persistent(l_proofTree_quot___closed__2);
+l_proofTree_quot___closed__3 = _init_l_proofTree_quot___closed__3();
+lean_mark_persistent(l_proofTree_quot___closed__3);
+l_proofTree_quot___closed__4 = _init_l_proofTree_quot___closed__4();
+lean_mark_persistent(l_proofTree_quot___closed__4);
+l_proofTree_quot___closed__5 = _init_l_proofTree_quot___closed__5();
+lean_mark_persistent(l_proofTree_quot___closed__5);
+l_proofTree_quot___closed__6 = _init_l_proofTree_quot___closed__6();
+lean_mark_persistent(l_proofTree_quot___closed__6);
+l_proofTree_quot___closed__7 = _init_l_proofTree_quot___closed__7();
+lean_mark_persistent(l_proofTree_quot___closed__7);
+l_proofTree_quot___closed__8 = _init_l_proofTree_quot___closed__8();
+lean_mark_persistent(l_proofTree_quot___closed__8);
+l_proofTree_quot___closed__9 = _init_l_proofTree_quot___closed__9();
+lean_mark_persistent(l_proofTree_quot___closed__9);
+l_proofTree_quot___closed__10 = _init_l_proofTree_quot___closed__10();
+lean_mark_persistent(l_proofTree_quot___closed__10);
+l_proofTree_quot = _init_l_proofTree_quot();
+lean_mark_persistent(l_proofTree_quot);
+l_Lean_Parser_Category_proofTree = _init_l_Lean_Parser_Category_proofTree();
+lean_mark_persistent(l_Lean_Parser_Category_proofTree);
+l_subproofTree_quot___closed__1 = _init_l_subproofTree_quot___closed__1();
+lean_mark_persistent(l_subproofTree_quot___closed__1);
+l_subproofTree_quot___closed__2 = _init_l_subproofTree_quot___closed__2();
+lean_mark_persistent(l_subproofTree_quot___closed__2);
+l_subproofTree_quot___closed__3 = _init_l_subproofTree_quot___closed__3();
+lean_mark_persistent(l_subproofTree_quot___closed__3);
+l_subproofTree_quot___closed__4 = _init_l_subproofTree_quot___closed__4();
+lean_mark_persistent(l_subproofTree_quot___closed__4);
+l_subproofTree_quot___closed__5 = _init_l_subproofTree_quot___closed__5();
+lean_mark_persistent(l_subproofTree_quot___closed__5);
+l_subproofTree_quot___closed__6 = _init_l_subproofTree_quot___closed__6();
+lean_mark_persistent(l_subproofTree_quot___closed__6);
+l_subproofTree_quot___closed__7 = _init_l_subproofTree_quot___closed__7();
+lean_mark_persistent(l_subproofTree_quot___closed__7);
+l_subproofTree_quot___closed__8 = _init_l_subproofTree_quot___closed__8();
+lean_mark_persistent(l_subproofTree_quot___closed__8);
+l_subproofTree_quot___closed__9 = _init_l_subproofTree_quot___closed__9();
+lean_mark_persistent(l_subproofTree_quot___closed__9);
+l_subproofTree_quot___closed__10 = _init_l_subproofTree_quot___closed__10();
+lean_mark_persistent(l_subproofTree_quot___closed__10);
+l_subproofTree_quot = _init_l_subproofTree_quot();
+lean_mark_persistent(l_subproofTree_quot);
+l_Lean_Parser_Category_subproofTree = _init_l_Lean_Parser_Category_subproofTree();
+lean_mark_persistent(l_Lean_Parser_Category_subproofTree);
+l_proofTree__QED_____closed__1 = _init_l_proofTree__QED_____closed__1();
+lean_mark_persistent(l_proofTree__QED_____closed__1);
+l_proofTree__QED_____closed__2 = _init_l_proofTree__QED_____closed__2();
+lean_mark_persistent(l_proofTree__QED_____closed__2);
+l_proofTree__QED_____closed__3 = _init_l_proofTree__QED_____closed__3();
+lean_mark_persistent(l_proofTree__QED_____closed__3);
+l_proofTree__QED_____closed__4 = _init_l_proofTree__QED_____closed__4();
+lean_mark_persistent(l_proofTree__QED_____closed__4);
+l_proofTree__QED_____closed__5 = _init_l_proofTree__QED_____closed__5();
+lean_mark_persistent(l_proofTree__QED_____closed__5);
+l_proofTree__QED_____closed__6 = _init_l_proofTree__QED_____closed__6();
+lean_mark_persistent(l_proofTree__QED_____closed__6);
+l_proofTree__QED_____closed__7 = _init_l_proofTree__QED_____closed__7();
+lean_mark_persistent(l_proofTree__QED_____closed__7);
+l_proofTree__QED_____closed__8 = _init_l_proofTree__QED_____closed__8();
+lean_mark_persistent(l_proofTree__QED_____closed__8);
+l_proofTree__QED__ = _init_l_proofTree__QED__();
+lean_mark_persistent(l_proofTree__QED__);
+l_proofTree__By_______closed__1 = _init_l_proofTree__By_______closed__1();
+lean_mark_persistent(l_proofTree__By_______closed__1);
+l_proofTree__By_______closed__2 = _init_l_proofTree__By_______closed__2();
+lean_mark_persistent(l_proofTree__By_______closed__2);
+l_proofTree__By_______closed__3 = _init_l_proofTree__By_______closed__3();
+lean_mark_persistent(l_proofTree__By_______closed__3);
+l_proofTree__By_______closed__4 = _init_l_proofTree__By_______closed__4();
+lean_mark_persistent(l_proofTree__By_______closed__4);
+l_proofTree__By_______closed__5 = _init_l_proofTree__By_______closed__5();
+lean_mark_persistent(l_proofTree__By_______closed__5);
+l_proofTree__By_______closed__6 = _init_l_proofTree__By_______closed__6();
+lean_mark_persistent(l_proofTree__By_______closed__6);
+l_proofTree__By____ = _init_l_proofTree__By____();
+lean_mark_persistent(l_proofTree__By____);
+l_proofTree__By___x7b___x7d___closed__1 = _init_l_proofTree__By___x7b___x7d___closed__1();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__1);
+l_proofTree__By___x7b___x7d___closed__2 = _init_l_proofTree__By___x7b___x7d___closed__2();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__2);
+l_proofTree__By___x7b___x7d___closed__3 = _init_l_proofTree__By___x7b___x7d___closed__3();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__3);
+l_proofTree__By___x7b___x7d___closed__4 = _init_l_proofTree__By___x7b___x7d___closed__4();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__4);
+l_proofTree__By___x7b___x7d___closed__5 = _init_l_proofTree__By___x7b___x7d___closed__5();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__5);
+l_proofTree__By___x7b___x7d___closed__6 = _init_l_proofTree__By___x7b___x7d___closed__6();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__6);
+l_proofTree__By___x7b___x7d___closed__7 = _init_l_proofTree__By___x7b___x7d___closed__7();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__7);
+l_proofTree__By___x7b___x7d___closed__8 = _init_l_proofTree__By___x7b___x7d___closed__8();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__8);
+l_proofTree__By___x7b___x7d___closed__9 = _init_l_proofTree__By___x7b___x7d___closed__9();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__9);
+l_proofTree__By___x7b___x7d___closed__10 = _init_l_proofTree__By___x7b___x7d___closed__10();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__10);
+l_proofTree__By___x7b___x7d___closed__11 = _init_l_proofTree__By___x7b___x7d___closed__11();
+lean_mark_persistent(l_proofTree__By___x7b___x7d___closed__11);
+l_proofTree__By___x7b___x7d = _init_l_proofTree__By___x7b___x7d();
+lean_mark_persistent(l_proofTree__By___x7b___x7d);
+l_proofTree__By___x3b_x7b___x7d___closed__1 = _init_l_proofTree__By___x3b_x7b___x7d___closed__1();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d___closed__1);
+l_proofTree__By___x3b_x7b___x7d___closed__2 = _init_l_proofTree__By___x3b_x7b___x7d___closed__2();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d___closed__2);
+l_proofTree__By___x3b_x7b___x7d___closed__3 = _init_l_proofTree__By___x3b_x7b___x7d___closed__3();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d___closed__3);
+l_proofTree__By___x3b_x7b___x7d___closed__4 = _init_l_proofTree__By___x3b_x7b___x7d___closed__4();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d___closed__4);
+l_proofTree__By___x3b_x7b___x7d___closed__5 = _init_l_proofTree__By___x3b_x7b___x7d___closed__5();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d___closed__5);
+l_proofTree__By___x3b_x7b___x7d___closed__6 = _init_l_proofTree__By___x3b_x7b___x7d___closed__6();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d___closed__6);
+l_proofTree__By___x3b_x7b___x7d___closed__7 = _init_l_proofTree__By___x3b_x7b___x7d___closed__7();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d___closed__7);
+l_proofTree__By___x3b_x7b___x7d___closed__8 = _init_l_proofTree__By___x3b_x7b___x7d___closed__8();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d___closed__8);
+l_proofTree__By___x3b_x7b___x7d___closed__9 = _init_l_proofTree__By___x3b_x7b___x7d___closed__9();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d___closed__9);
+l_proofTree__By___x3b_x7b___x7d = _init_l_proofTree__By___x3b_x7b___x7d();
+lean_mark_persistent(l_proofTree__By___x3b_x7b___x7d);
+l_subproofTreeSubproof___x3a_______closed__1 = _init_l_subproofTreeSubproof___x3a_______closed__1();
+lean_mark_persistent(l_subproofTreeSubproof___x3a_______closed__1);
+l_subproofTreeSubproof___x3a_______closed__2 = _init_l_subproofTreeSubproof___x3a_______closed__2();
+lean_mark_persistent(l_subproofTreeSubproof___x3a_______closed__2);
+l_subproofTreeSubproof___x3a_______closed__3 = _init_l_subproofTreeSubproof___x3a_______closed__3();
+lean_mark_persistent(l_subproofTreeSubproof___x3a_______closed__3);
+l_subproofTreeSubproof___x3a_______closed__4 = _init_l_subproofTreeSubproof___x3a_______closed__4();
+lean_mark_persistent(l_subproofTreeSubproof___x3a_______closed__4);
+l_subproofTreeSubproof___x3a_______closed__5 = _init_l_subproofTreeSubproof___x3a_______closed__5();
+lean_mark_persistent(l_subproofTreeSubproof___x3a_______closed__5);
+l_subproofTreeSubproof___x3a_______closed__6 = _init_l_subproofTreeSubproof___x3a_______closed__6();
+lean_mark_persistent(l_subproofTreeSubproof___x3a_______closed__6);
+l_subproofTreeSubproof___x3a_______closed__7 = _init_l_subproofTreeSubproof___x3a_______closed__7();
+lean_mark_persistent(l_subproofTreeSubproof___x3a_______closed__7);
+l_subproofTreeSubproof___x3a_______closed__8 = _init_l_subproofTreeSubproof___x3a_______closed__8();
+lean_mark_persistent(l_subproofTreeSubproof___x3a_______closed__8);
+l_subproofTreeSubproof___x3a_______closed__9 = _init_l_subproofTreeSubproof___x3a_______closed__9();
+lean_mark_persistent(l_subproofTreeSubproof___x3a_______closed__9);
+l_subproofTreeSubproof___x3a____ = _init_l_subproofTreeSubproof___x3a____();
+lean_mark_persistent(l_subproofTreeSubproof___x3a____);
+l_termProof_____closed__1 = _init_l_termProof_____closed__1();
+lean_mark_persistent(l_termProof_____closed__1);
+l_termProof_____closed__2 = _init_l_termProof_____closed__2();
+lean_mark_persistent(l_termProof_____closed__2);
+l_termProof_____closed__3 = _init_l_termProof_____closed__3();
+lean_mark_persistent(l_termProof_____closed__3);
+l_termProof_____closed__4 = _init_l_termProof_____closed__4();
+lean_mark_persistent(l_termProof_____closed__4);
+l_termProof_____closed__5 = _init_l_termProof_____closed__5();
+lean_mark_persistent(l_termProof_____closed__5);
+l_termProof_____closed__6 = _init_l_termProof_____closed__6();
+lean_mark_persistent(l_termProof_____closed__6);
+l_termProof__ = _init_l_termProof__();
+lean_mark_persistent(l_termProof__);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif
