@@ -38,8 +38,8 @@ Def Q4 := Proof
       Asm 12/2: ¬p
       QED Contradiction Asm 11, Asm 12/2
 
-
       ----------------------------------
+
       -- Case 2: Assume u.
       Subproof 2: "RHS of ∨"
       Asm 12/3: u

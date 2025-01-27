@@ -31,7 +31,9 @@ Def Q1 := Proof
     By ImplElim Asm 4 Using Asm 1/2
     Asm 1/3: r
     QED Asm 1/3
+
     -----------------------------------------
+
     Subproof 2: "RHS of ∨"
     Asm 2/1: q
     By ImplElim Asm 3 Using Asm 2/1
