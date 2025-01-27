@@ -22,3 +22,14 @@ Def Q4 := Proof
   Asm 9: r
   Asm 10: s → ¬p
   ⊢ w
+
+  By ImplElim Asm 1 Using Asm 9
+  Asm 11: p
+
+  By ImplElim Asm 5 Using Asm 11
+  Asm 12: s ∨ u
+
+By OrElim Asm 12
+  {
+    Subproof 1: ""
+  }
