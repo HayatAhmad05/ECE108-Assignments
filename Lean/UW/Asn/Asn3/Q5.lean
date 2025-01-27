@@ -10,7 +10,7 @@ import UW
 
 Def X := -1
 
-Def Q5a := X
+Def Q5a := 3
 
 /-
    * Q5b: How many hours did you spend in *
@@ -18,4 +18,4 @@ Def Q5a := X
    * Replace X below with the number of hours *
 -/
 
-Def Q5b := X
+Def Q5b := 4

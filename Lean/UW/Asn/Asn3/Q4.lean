@@ -29,7 +29,23 @@ Def Q4 := Proof
   By ImplElim Asm 5 Using Asm 11
   Asm 12: s ∨ u
 
-By OrElim Asm 12
-  {
-    Subproof 1: ""
-  }
+  By OrElim Asm 12
+    {
+      -- Case 1: Assume s.
+      Subproof 1: "LHS of ∨"
+      Asm 12/1: s
+      By ImplElim Asm 10 Using Asm 12/1
+      Asm 12/2: ¬p
+      QED Contradiction Asm 11, Asm 12/2
+
+
+      ----------------------------------
+      -- Case 2: Assume u.
+      Subproof 2: "RHS of ∨"
+      Asm 12/3: u
+      By AndIntro Asm 12/3, Asm 12/1
+      Asm 12/4: s ∧ u
+      By ImplElim Asm 2 Using Asm 12/4
+      Asm 12/5: w
+      QED Asm 12/5
+    }
