@@ -13,15 +13,20 @@ Def Q1 := Proof
   By ImplElim Goal
   Asm 1: p ∨ q
   ⊢ (p → s) → (q → s) → (s → r) → r
+
   By ImplElim Goal
   Asm 2: p → s
   ⊢ (q → s) → (s → r) → r
+
   By ImplElim Goal
   Asm 3: q → s
   ⊢ (s → r) → r
+
   By ImplElim Goal
   Asm 4: s → r
   ⊢ r
+
+
   By OrElim Asm 1
   {
     Subproof 1: "LHS of ∨"
