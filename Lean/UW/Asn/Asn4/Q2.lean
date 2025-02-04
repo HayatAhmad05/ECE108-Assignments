@@ -33,6 +33,7 @@ Def Q2 := Proof
   By ForallElim Asm 4 Using x = a, Asm 8
   Asm 9: r (g a)
 
+  -- this works, right? hopefully please
   By ForallElim Asm 3 Using g x = a
   Asm 10: r (g a) → q (a)
 
