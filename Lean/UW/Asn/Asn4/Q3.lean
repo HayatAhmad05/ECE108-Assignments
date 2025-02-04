@@ -24,14 +24,14 @@ Def Q3 := Proof
 
     -- prove p x y (turn into p a b)
     By ExistsElim Asm 6
-    Asm 7: (a : Ty)
+    Asm 7: Var (a : Ty)
     Asm 8: ∀ (y : Ty), p a y
 
     By ForallElim Asm 5 Using x = a
     Asm 9: ∃ (y : Ty), p a y
 
     By ExistsElim Asm 9
-    Asm 10: (b : Ty)
+    Asm 10: Var (b : Ty)
     Asm 11: p a b
 
     By ExistsElim Goal Using x = a, y = b
