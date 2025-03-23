@@ -48,6 +48,8 @@ Def Q3 := Proof
             By ForallElim Asm 1/1 Using y = b
             Asm 1/2: ¬ (p a b)
             QED Contradiction Asm 11, Asm 1/2
+            -- since lhs is false,
+            -- rhs can be assumed to be true
 
         --------------------------------------------
         Subproof 2: "assume rhs: ∀ (y : Ty), q a y"

@@ -8,7 +8,7 @@ import UW
    * Replace X below with the number of hours *
 -/
 
-Def X := -1
+Def X := 7
 
 Def Q4a := X
 
@@ -24,4 +24,4 @@ Def Q4a := X
    * look at invididual answers.
 -/
 
-Def Q4b := X
+Def Q4b := 3
