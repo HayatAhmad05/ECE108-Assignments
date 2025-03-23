@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+
+\title{ECE 108 - Assignment 9}
+\author{Sayed Hayat Ahmad, Robert Yin}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Question 4}
+
+You are developing software for an autonomous vehicle with two central computers. To save money, the manufacturer has chosen one computer to be a fast computer and one to be a slow computer. Your task is to define a sequence of tasks for each computer to perform.
+
+\begin{itemize}
+    \item The goal is to find an allocation of tasks between the two computers that results in the minimum total runtime to complete all tasks.
+    \item Due to optimizations such as multithreading and pipelining, the time that a computer takes to run a task depends upon the task that was run before it.
+    \item The fast computer is 50\% faster than the slow computer, so you choose to assign 50\% more tasks to the fast computer.
+    \item You have a total of 100 tasks to allocate between the two computers.
+\end{itemize}
+
+How many tests do you have to run to determine the minimum time needed to run the 100 tasks on the two computers?
+
+\section*{Solution}
+To determine the minimum time needed to run 100 tasks on two computers, we need to consider all possible task allocations that satisfy our constraints.
+
+Given:
+\begin{itemize}
+    \item We have 100 total tasks to allocate between two computers
+    \item The fast computer should receive 50\% more tasks than the slow computer
+    \item Task runtime depends on the previous task (due to multithreading/pipelining)
+\end{itemize}
+
+First, let's determine how many tasks should go to each computer:
+
+Let $x$ = number of tasks for the slow computer
+
+Let $y$ = number of tasks for the fast computer
+
+We know that $x + y = 100$ (total tasks)
+
+We know that $y = 1.5x$ (fast computer gets 50\% more)
+
+Solving these equations:
+\begin{align}
+x + 1.5x &= 100\\
+2.5x &= 100\\
+x &= 40 \text{ tasks for the slow computer}\\
+y &= 60 \text{ tasks for the fast computer}
+\end{align}
+
+Now, to determine the minimum runtime, we need to consider:
+\begin{itemize}
+    \item Which specific tasks go to each computer
+    \item The sequence of tasks on each computer
+\end{itemize}
+
+For the first consideration, we need to choose which 40 tasks out of 100 go to the slow computer (the remaining 60 automatically go to the fast computer). This gives us $\binom{100}{40}$ combinations.
+
+For the second consideration, we need to determine the optimal sequence for each computer. For the slow computer with 40 tasks, there are $40!$ possible sequences. For the fast computer with 60 tasks, there are $60!$ possible sequences.
+
+Therefore, the total number of tests needed would be:
+$\binom{100}{40} \times 40! \times 60! = 9.33 \times 10^{157}$
+
+\end{document}

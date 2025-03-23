@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\title{ECE 108 - Assignment 9}
+\author{Sayed Hayat Ahmad, Robert Yin}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Question 1a}
+
+% Write your question or problem statement here.
+
+\begin{itemize}
+    \item Suspension: soft, firm
+    \item Steering: comfort, sport
+    \item Throttle response: eco, normal, sport
+    \item Transmission: efficient, dynamic
+\end{itemize}
+
+How many different driving mode combinations can be created? 
+
+\section*{Solution}
+
+% Write your solution here.
+The new SUV can have $24$ different driving mode combinations.
+
+This is calculated by multiplying the number of options for each aspect of the driving system:
+\begin{itemize}
+    \item Suspension: $2$ options (soft/firm)
+    \item Steering: $2$ options (comfort/sport)
+    \item Throttle response: $3$ options (eco/normal/sport)
+    \item Transmission: $2$ options (efficient/dynamic)
+\end{itemize}
+
+Therefore: $2 \times 2 \times 3 \times 2 = 24$ total possible combinations.
+
+\section*{Question 1b}
+
+An autonomous vehicle has 8 different types of sensors (LIDAR, radar, cameras, etc.). For reliable operation in adverse conditions, engineers determine the vehicle needs data from:
+\begin{itemize}
+    \item at least 5 different sensor types in total 
+    \item of the 5 different types of sensors, at least 2 must come from the set \{LIDAR, radar, ultrasonic\}
+    \item of the 5 different types of sensors, at least 1 must come from the set \{infrared cameras, visible light cameras\}
+\end{itemize}
+
+How many different sensor configurations satisfy these requirements?
+
+\section*{Solution}
+
+Given:
+\begin{itemize}
+    \item Total of 8 different sensor types
+    \item Must use at least 5 different sensor types
+    \item At least 2 must come from \{LIDAR, radar, ultrasonic\}
+    \item At least 1 must come from \{infrared cameras, visible light cameras\}
+\end{itemize}
+
+Let's identify our sets:
+\begin{itemize}
+    \item Set A = \{LIDAR, radar, ultrasonic\} (3 sensors)
+    \item Set B = \{infrared cameras, visible light cameras\} (2 sensors)
+    \item Set C = remaining 3 sensors
+\end{itemize}
+
+The problem asks for exactly 5 different sensor types satisfying the conditions. 
+For set A, we need to select at least 2 sensors:
+\begin{itemize}
+    \item Choose 2 from set A: $\binom{3}{2} = 3$ ways
+    \item Choose 3 from set A: $\binom{3}{3} = 1$ way
+\end{itemize}
+
+For set B, we need to select at least 1 sensor:
+\begin{itemize}
+    \item Choose 1 from set B: $\binom{2}{1} = 2$ ways
+    \item Choose 2 from set B: $\binom{2}{2} = 1$ way
+\end{itemize}
+
+Let's count the valid combinations:
+
+Case 1: 2 from A, 1 from B, 2 from C
+$\binom{3}{2} \times \binom{2}{1} \times \binom{3}{2} = 3 \times 2 \times 3 = 18$ configurations
+
+Case 2: 2 from A, 2 from B, 1 from C
+$\binom{3}{2} \times \binom{2}{2} \times \binom{3}{1} = 3 \times 1 \times 3 = 9$ configurations
+
+Case 3: 3 from A, 1 from B, 1 from C
+$\binom{3}{3} \times \binom{2}{1} \times \binom{3}{1} = 1 \times 2 \times 3 = 6$ configurations
+
+Case 4: 3 from A, 2 from B, 0 from C
+$\binom{3}{3} \times \binom{2}{2} \times \binom{3}{0} = 1 \times 1 \times 1 = 1$ configuration
+
+Total number of valid configurations = 18 + 9 + 6 + 1 = 34 configurations.
+
+\end{document}

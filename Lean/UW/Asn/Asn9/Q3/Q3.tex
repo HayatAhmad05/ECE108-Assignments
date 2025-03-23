@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+
+\title{ECE 108 - Assignment 9}
+\author{Sayed Hayat Ahmad, Robert Yin}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Question 3a}
+
+If you want to test all possible configurations of devices connected to the bus, how many configurations satisfy the criteria below?
+
+\begin{itemize}
+    \item All slots are identical -- that is, a configuration is dependent upon only which devices are connected to the bus, independent of which slot a device is in.
+    \item Empty slots are allowed.
+\end{itemize}
+
+\begin{itemize}
+    \item \textbf{Multiple} devices of the \textbf{same category} from \textbf{different manufacturers} may be used.
+    \item \textbf{At most one} instance of the same device (\textbf{same category} and \textbf{same manufacturer}) may be used.
+    \item Multiple \textbf{different categories} from the \textbf{same manufacturer} may be used.
+\end{itemize}
+
+\section*{Solution}
+
+To find the number of configurations that satisfy the criteria:
+
+Each unique device (specific category and manufacturer combination) has two possibilities:
+\begin{itemize}
+    \item Include it once
+    \item Don't include it
+\end{itemize}
+
+Since we can choose independently for each unique device, the total number of configurations is:
+\begin{align}
+    2^n
+\end{align}
+
+Where $n =$ total number of unique devices 
+
+For example, with 3 categories and 4 manufacturers, there would be 12 unique devices, giving $2^{12} = 4,096$ possible configurations.
+
+
+\section*{Question 3b}
+
+If you want to test all possible configurations of devices connected to the bus, how many configurations satisfy the criteria below?
+
+\begin{itemize}
+    \item All slots are identical 
+    \item Each slot has a device (no empty slots)
+\end{itemize}
+
+\begin{itemize}
+    \item \textbf{At most one} device from \textbf{each category} may be used.
+    \item Multiple \textbf{different categories} from the \textbf{same manufacturer} may be used.
+\end{itemize}
+
+\section*{Solution}
+
+To find the number of configurations that satisfy the criteria:
+
+For each category, we have the following options:
+\begin{itemize}
+    \item Choose one device from any manufacturer
+    \item Don't use any device from this category
+\end{itemize}
+
+The number of choices for each category is $(m + 1)$, where $m$ is the number of manufacturers.
+
+Using the multiplication principle of counting, the total number of possible configurations is:
+\begin{align}
+    (m + 1)^c
+\end{align}
+
+Where:
+\begin{itemize}
+    \item $m =$ number of manufacturers
+    \item $c =$ number of categories
+\end{itemize}
+
+However, since empty slots are not allowed (each slot must have a device), we must exclude the configuration where no devices are selected.
+
+Therefore, the final answer is:
+\begin{align}
+    (m + 1)^c - 1
+\end{align}
+
+For example, with 3 manufacturers and 4 categories, we would have $(3 + 1)^4 - 1 = 4^4 - 1 = 256 - 1 = 255$ possible configurations.
+
+
+
+\section*{Question 3c}
+
+If we modify Q3b to allow empty slots, the problem does not fit any of our standard techniques. Explain why.
+
+
+\section*{Solution}
+
+The modified problem doesn't fit standard combinatorial techniques because it creates a complex relationship between two factors:
+
+\begin{enumerate}
+    \item The selection of devices (at most one per category)
+    \item The arrangement of these devices in slots (with some slots potentially empty)
+\end{enumerate}
+
+This creates a dependency that's difficult to model with basic formulas:
+\begin{itemize}
+    \item The number of ways to arrange devices depends on how many we select
+    \item The number of valid device selections depends on how many slots we have
+\end{itemize}
+
+Unlike the previous version where we could simply count device selections, we now need to consider both selection and arrangement simultaneously. This makes the problem more complex and requires a different approach to solve.
+
+
+
+
+
+
+
+\end{document}

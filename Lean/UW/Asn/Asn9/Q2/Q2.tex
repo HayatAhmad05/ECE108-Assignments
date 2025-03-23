@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+
+\title{ECE 108 - Assignment 9}
+\author{Sayed Hayat Ahmad, Robert Yin}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Question 2a}
+
+You are verifying the correctness of floating-point divider circuits.  Your first task is to figure out how large of a circuit (as measured in the number of bits in the input data) you can verify.
+
+\begin{itemize}
+    \item The circuit has 2 inputs, each of $n$ bits, where $n$ is the value that you need to determine.
+    
+    \item It takes 2000 clock cycles on a computer to simulate one test case.
+    
+    \item Your computers have a clock speed of 3.5 GHz.
+    
+    \item You have a rack of 200 computers to use for simulation.
+    
+    \item You may run the simulations for 3 months (90 days).
+\end{itemize}
+
+What is the maximum value of $n$ that satisfies your constraints?
+
+\section*{Solution}
+The maximum value of $n$ that satisfies the given constraints is 25 bits.
+
+To arrive at this conclusion, let's break down the problem:
+
+\textbf{Total available clock cycles:}
+\begin{align*}
+\text{Clock speed} &= 3.5 \text{ GHz} = 3.5 \times 10^9 \text{ Hz} \\
+\text{Number of computers} &= 200 \\
+\text{Simulation duration} &= 90 \text{ days} = 90 \times 24 \times 60 \times 60 \text{ seconds} \\
+\text{Total clock cycles} &= 3.5 \times 10^9 \times 200 \times 90 \times 24 \times 60 \times 60 \\
+&= 5.4432 \times 10^{18} \text{ cycles}
+\end{align*}
+
+\textbf{Maximum number of test cases:}
+\begin{align*}
+\text{Each test case requires} &= 2000 \text{ clock cycles} \\
+\text{Maximum test cases} &= \frac{5.4432 \times 10^{18}}{2000} \approx 2.7216 \times 10^{15} \text{ test cases}
+\end{align*}
+
+\textbf{Determining the maximum value of $n$:}
+\begin{align*}
+\text{Each input is $n$ bits, and there are 2 inputs} \\
+\text{Total possible combinations} &= 2^{2n} \\
+\text{We need } 2^{2n} &\leq 2.7216 \times 10^{15} \\
+\text{Solving this inequality: } n &\leq \log_2(\sqrt{2.7216 \times 10^{15}}) \\
+\end{align*}
+
+The floor of this value gives us the maximum integer $n$: 25
+
+\section*{Question 2b}
+
+If the circuit has 64 bit inputs, how long will it take to run the verification?
+
+\section*{Solution}
+
+To determine how long it will take to run verification with 64-bit inputs, we need to calculate:
+
+\textbf{Total number of test cases:}
+\begin{align*}
+\text{With two 64-bit inputs} &= 2^{(2 \times 64)} = 2^{128} \text{ possible input combinations} \\
+&= 3.40282 \times 10^{38} \text{ test cases}
+\end{align*}
+
+\textbf{Total available computational power:}
+\begin{align*}
+\text{Clock speed} &= 3.5 \text{ GHz} = 3.5 \times 10^9 \text{ cycles per second} \\
+\text{Number of computers} &= 200 \\
+\text{Simulation duration} &= 90 \text{ days} = 90 \times 24 \times 60 \times 60 \text{ seconds} \\
+\text{Total available clock cycles} &= 3.5 \times 10^9 \times 200 \times 90 \times 24 \times 60 \times 60 \\
+&= 5.4432 \times 10^{18} \text{ cycles}
+\end{align*}
+
+\textbf{Time required for verification:}
+\begin{align*}
+\text{Each test case requires} &= 2000 \text{ clock cycles} \\
+\text{Total clock cycles needed} &= 3.40282 \times 10^{38} \times 2000 \\
+&= 6.80564 \times 10^{41} \text{ cycles} \\
+\text{Time required (in seconds)} &= \frac{6.80564 \times 10^{41}}{5.4432 \times 10^{18}} \\
+&= 1.25031 \times 10^{23} \text{ seconds} \\
+\text{Time required (in years)} &= \frac{1.25031 \times 10^{23}}{60 \times 60 \times 24 \times 365} \\
+&= 3.96468 \times 10^{15} \text{ years}
+\end{align*}
+
+Therefore, it would take approximately $3.96 \times 10^{15}$ years to complete the verification of a circuit with two 64-bit inputs.
+
+\end{document}
