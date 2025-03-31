@@ -1,0 +1,82 @@
+% filepath: c:\Users\sayed\School\1-B\ECE-108\Lean\UW\Asn\Asn10\Q2\Q2.tex
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{enumitem}
+
+\title{ECE-108 Assignment 10: Printed Circuit Boards}
+\author{Sayed Hayat Ahmad, Robert Yin}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Printed Circuit Boards}
+
+\subsection*{Information}
+
+You work for a company that makes engine control units (ECU) for cars.  
+
+\begin{itemize}
+    \item The ECE consists of a printed circuit board (PCB) with 20 chips on it.  
+    \item The defect rate (probability that an ECU does not work correctly) is 3\%.  
+    \item A defect is the result of a problem in manufacturing and affects an individual ECU. In comparison, a design bug affects all ECUs. This question is concerned only with defects, not bugs.
+    \item All possible defects are independent.
+\end{itemize}
+
+\subsection*{Q2a: Probability of 10 Good ECUs}
+
+If you randomly sample 10 ECUs from the production line, what is the probability that all 10 of the ECUs work correctly (do not have a defect)?
+
+\subsubsection*{Q2a Solution}
+
+Given information:
+\begin{itemize}
+    \item The defect rate (probability that an ECU doesn't work) is 3\%.
+    \item We need the probability that all 10 randomly selected ECUs work correctly.
+\end{itemize}
+
+Solution:
+\begin{itemize}
+    \item Probability that one ECU works correctly = 1 - 0.03 = 0.97 (97\%)
+    \item For all 10 ECUs to work correctly, each must work independently
+    \item Probability = $(0.97)^{10} \approx 0.7374$ or about $73.74\%$
+\end{itemize}
+
+\fbox{Answer: The probability that all 10 ECUs work correctly is $73.74\%$.}
+
+\subsection*{Q2b: Component Defect Rate}
+
+An ECU works correctly iff the PCB and all of the chips work correctly. Assuming that the PCB and all of the chips have the same defect rate, calculate the defect rate for the PCB.
+
+\subsubsection*{Q2b Solution}
+
+Given information:
+\begin{itemize}
+    \item An ECU consists of a PCB with 20 chips
+    \item The ECU defect rate is 3\%
+    \item The ECU works correctly if and only if the PCB and all 20 chips work correctly
+    \item All components (PCB and chips) have the same defect rate
+\end{itemize}
+
+Let's call the defect rate of an individual component (PCB or chip) as $p$.
+
+Solution:
+\begin{itemize}
+    \item Probability that a component works correctly = $1-p$
+    \item For the ECU to work, all 21 components (1 PCB + 20 chips) must work
+    \item Probability ECU works = $(1-p)^{21}$
+    \item Given: Probability ECU works = $0.97$
+\end{itemize}
+
+Thus:
+\begin{align}
+(1-p)^{21} &= 0.97\\
+1-p &= (0.97)^{1/21}\\
+1-p &\approx 0.9986\\
+p &\approx 0.0014
+\end{align}
+
+\fbox{Answer: The defect rate for each component (including the PCB) is approximately $0.14\%$.}
+
+\end{document}

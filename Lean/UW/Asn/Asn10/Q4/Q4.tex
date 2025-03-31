@@ -1,0 +1,135 @@
+% filepath: c:\Users\sayed\School\1-B\ECE-108\Lean\UW\Asn\Asn10\Q4\Q4.tex
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+
+\title{ECE-108 Assignment 10: Analysis of Covid-19 Rapid Test}
+\author{Sayed Hayat Ahmad, Robert Yin}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Analysis of Covid-19 Rapid Test}
+\textbf{Given information:}
+\begin{itemize}
+    \item The Covid-19 rapid test has:
+    \begin{itemize}
+        \item Sensitivity = 78\%
+        \item Specificity = 99\%
+    \end{itemize}
+    \item First scenario: Covid-19 actual prevalence = 10\%
+    \item Second scenario: Covid-19 actual prevalence = 1\%
+\end{itemize}
+
+\subsection*{Q4a: Positive Results (10\% prevalence)}
+
+What percentage of people test positive for Covid-19?
+
+\subsubsection*{Solution}
+
+We need to calculate the percentage of people who test positive.
+
+Total positive test results = True positives + False positives
+\begin{align}
+\text{True positives} &= \text{Sensitivity} \times \text{Prevalence} = 0.78 \times 0.10 = 0.078 \text{ (7.8\%)}\\
+\text{False positives} &= (1 - \text{Specificity}) \times (1 - \text{Prevalence}) = 0.01 \times 0.90 = 0.009 \text{ (0.9\%)}\\
+\text{Total positive tests} &= 0.078 + 0.009 = 0.087 \text{ (8.7\%)}
+\end{align}
+
+\fbox{Answer: 8.7\% of people test positive for Covid-19.}
+
+\subsection*{Q4b: False Negatives (10\% prevalence)}
+
+What percentage of people get a false negative result from the test?
+
+\subsubsection*{Solution}
+
+False negatives occur when infected people test negative:
+\begin{align}
+\text{False negative rate} &= (1 - \text{Sensitivity}) \times \text{Prevalence}\\
+&= 0.22 \times 0.10 = 0.022 \text{ (2.2\%)}
+\end{align}
+
+\fbox{Answer: 2.2\% of people get a false negative result from the test.}
+
+\subsection*{Q4c: Estimated Prevalence (10\% prevalence)}
+
+Based on the test results, what is the estimated prevalence?
+
+\subsubsection*{Solution}
+
+The estimated prevalence is the percentage of people who test positive:
+
+\fbox{Answer: The estimated prevalence is 8.7\%.}
+
+\subsection*{Q4d: Analysis of Estimated Prevalence}
+
+Why does the estimated prevalence differ from the actual prevalence?
+
+\subsubsection*{Solution}
+
+The estimated prevalence (8.7\%) is lower than the actual prevalence (10\%) because:
+\begin{itemize}
+    \item The test's sensitivity isn't perfect (78\%)
+    \item This means 22\% of actual positive cases are missed (false negatives)
+    \item Even though there are some false positives, they don't fully compensate for the missed cases
+\end{itemize}
+
+\section*{Repeat for an actual prevalence of 1\%}
+
+\subsection*{Q4e: Positive Results (1\% prevalence)}
+
+What percentage of people test positive for Covid-19?
+
+\subsubsection*{Solution}
+
+Total positive test results = True positives + False positives
+\begin{align}
+\text{True positives} &= \text{Sensitivity} \times \text{Prevalence} = 0.78 \times 0.01 = 0.0078 \text{ (0.78\%)}\\
+\text{False positives} &= (1 - \text{Specificity}) \times (1 - \text{Prevalence}) = 0.01 \times 0.99 = 0.0099 \text{ (0.99\%)}\\
+\text{Total positive tests} &= 0.0078 + 0.0099 = 0.0177 \text{ (1.77\%)}
+\end{align}
+
+\fbox{Answer: 1.77\% of people test positive for Covid-19.}
+
+\subsection*{Q4f: False Negatives (1\% prevalence)}
+
+What percentage of people get a false negative result from the test?
+
+\subsubsection*{Solution}
+
+False negatives occur when infected people test negative:
+\begin{align}
+\text{False negative rate} &= (1 - \text{Sensitivity}) \times \text{Prevalence}\\
+&= 0.22 \times 0.01 = 0.0022 \text{ (0.22\%)}
+\end{align}
+
+\fbox{Answer: 0.22\% of people get a false negative result from the test.}
+
+\subsection*{Q4g: Estimated Prevalence (1\% prevalence)}
+
+Based on the test results, what is the estimated prevalence?
+
+\subsubsection*{Solution}
+
+The estimated prevalence is the percentage of people who test positive:
+
+\fbox{Answer: The estimated prevalence is 1.77\%.}
+
+\subsection*{Q4h: Analysis of Effect of Prevalence}
+
+Why does the actual prevalence affect the difference between the actual and estimated prevalence?
+
+\subsubsection*{Solution}
+
+The actual prevalence affects the difference between actual and estimated prevalence because:
+\begin{itemize}
+    \item At lower prevalence (1\%), false positives become more significant relative to true positives
+    \item This causes the estimated prevalence (1.77\%) to be higher than the actual (1\%)
+    \item At higher prevalence (10\%), false negatives become more significant 
+    \item This causes the estimated prevalence (8.7\%) to be lower than the actual (10\%)
+    \item The balance point depends on the test's sensitivity and specificity values
+\end{itemize}
+
+\end{document}

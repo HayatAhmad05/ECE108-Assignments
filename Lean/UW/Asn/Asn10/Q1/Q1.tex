@@ -1,0 +1,100 @@
+% filepath: c:\Users\sayed\School\1-B\ECE-108\Lean\UW\Asn\Asn10\Q1\Q1.tex
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{enumitem}
+
+\title{ECE-108 Assignment 10: Polymer Arrangements}
+\author{Sayed Hayat Ahmad, Robert Yin}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Polymers}
+
+\subsection*{Information}
+
+You have a friend in mechanical engineering who is developing a composite material by layering 8 different polymers named A, B, C, D, E, F, G, and H. Due to chemical compatibility issued, the material must satisfy some constraints about the layers. Your friend is trying to calculate how many different arrangements of the layers can be constructed under various constraints. Your friend knows that you are master of composite combinatorics, and so has asked you to help.
+
+\begin{enumerate}
+    \item Each polymer is used exactly once
+    \item Polymer H shall be the top layer
+\end{enumerate}
+
+\subsection*{Q1a: Number of Possible Composite Materials}
+
+How many different arrangements of the polymers are possible if you take into account constraints 1 and 2 above and:
+
+\begin{enumerate}[resume]
+    \item Polymers A and B must be adjacent
+\end{enumerate}
+
+\subsubsection*{Q1a Solution}
+
+Since H is fixed at the top position, we need to arrange the other 7 polymers (A through G). We can treat A and B as a single unit (either AB or BA) since they must be adjacent to each other. This gives us 6 units to arrange: (A,B), C, D, E, F, and G.
+
+Number of arrangements:
+\begin{itemize}
+    \item Ways to arrange A and B within their unit: $2! = 2$ (AB or BA)
+    \item Ways to arrange 6 units: $6! = 720$
+    \item Total: $2 \times 6! = 2 \times 720 = 1,440$
+\end{itemize}
+
+\fbox{Answer: $1,440$ different arrangements are possible.}
+
+\subsection*{Q1b: Different Constraint}
+
+How many different arrangements of the polymers are possible if you take into account constraints 1 and 2 above and:
+
+\begin{enumerate}[resume]
+    \item Polymer A shall not be adjacent to polymer B or polymer A shall not be adjacent to polymer C.
+\end{enumerate}
+
+\subsubsection*{Q1b Solution}
+
+This constraint means "not(A adjacent to B) OR not(A adjacent to C)". This is equivalent to "not(A adjacent to both B AND C)".
+
+\begin{itemize}
+    \item Total arrangements with H fixed at the top: $7! = 5,040$
+    \item We need to subtract arrangements where A is adjacent to both B and C
+    \item For A to be adjacent to both B and C, they must form a sequence like ABC, ACB, BAC, or CAB
+    \item These 3 elements can be treated as a single unit with internal arrangements
+    \item Internal arrangements of A,B,C: $3! = 6$ ways to arrange A,B,C
+    \item But only 2 of these have A adjacent to both B and C: BAC and CAB
+    \item So we have 2 ways to make a unit where A is adjacent to both B and C
+    \item Ways to arrange the 5 units (the A,B,C unit plus D,E,F,G): $5! = 120$
+    \item Arrangements to exclude: $2 \times 5! = 2 \times 120 = 240$
+\end{itemize}
+
+Total = $7! - 240 = 5,040 - 240 = 4,800$
+
+\fbox{Answer: $4,800$ different arrangements are possible.}
+
+\subsection*{Q1c: Yet Another Different Constraint}
+
+How many different arrangements of the polymers are possible if you take into account constraints 1 and 2 above and:
+
+\begin{enumerate}[resume]
+    \item Polymer A shall be adjacent to polymer B or polymer C. (NOTE: This is \textit{not} the negation of the constraint from Q1b.)
+\end{enumerate}
+
+\subsubsection*{Q1c Solution}
+
+For this constraint, A must be adjacent to at least one of B or C.
+
+\begin{itemize}
+    \item Total arrangements with H fixed at the top: $7! = 5,040$
+    \item We need to subtract arrangements where A is not adjacent to either B or C
+\end{itemize}
+
+\begin{itemize}
+    \item Total arrangements: $7! = 5,040$
+    \item Complement: Arrangements where A is not adjacent to either B or C
+    \item From our calculations, there are $1,440$ such arrangements
+    \item Result: $7! - 1,440 = 5,040 - 1,440 = 3,600$
+\end{itemize}
+
+\fbox{Answer: $3,600$ different arrangements are possible.}
+
+\end{document}
